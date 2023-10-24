@@ -1,0 +1,611 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"texts",
+				"\\textstyle"
+			],
+			[
+				"un",
+				"\\underset{}{}"
+			],
+			[
+				"ove",
+				"\\overset{}{}"
+			],
+			[
+				"under",
+				"\\underbrace{}{}"
+			],
+			[
+				"upa",
+				"\\uparrow"
+			],
+			[
+				"hs",
+				"\\hspace"
+			],
+			[
+				"text",
+				"\\textnormal{}"
+			],
+			[
+				"n",
+				"number_plane3"
+			],
+			[
+				"num",
+				"number_plane2"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"e1_",
+				"e1_v1"
+			],
+			[
+				"s",
+				"shift"
+			],
+			[
+				"e",
+				"e_group"
+			],
+			[
+				"V",
+				"VGroup"
+			],
+			[
+				"set_",
+				"set_opacity"
+			],
+			[
+				"x",
+				"x_group"
+			],
+			[
+				"Fade",
+				"FadeIn"
+			],
+			[
+				"Fa",
+				"FadeOut"
+			],
+			[
+				"Fad",
+				"FadeOut"
+			],
+			[
+				"fade",
+				"FadeIn"
+			],
+			[
+				"a",
+				"align_on_border"
+			],
+			[
+				"am",
+				"animate"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MB.tex",
+			"settings":
+			{
+				"buffer_size": 151,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "settings/inputs.tex",
+			"settings":
+			{
+				"buffer_size": 47,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "parts/test.tex",
+			"settings":
+			{
+				"buffer_size": 447,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"042",
+				"LaTeX042A: open keymaps compiled file"
+			],
+			[
+				"upd",
+				"LaTeX042A: update resources"
+			],
+			[
+				"edit ke",
+				"LaTeX042A: edit keymaps"
+			],
+			[
+				"upda",
+				"LaTeX042A: update resources"
+			],
+			[
+				"open ",
+				"LaTeX042A: open keymaps compiled file"
+			],
+			[
+				"42A",
+				"LaTeX042A: open keymaps compiled file"
+			],
+			[
+				"e",
+				"LaTeX042A: edit keymaps"
+			],
+			[
+				"editke",
+				"LaTeX042A: edit keymaps"
+			],
+			[
+				"042A",
+				"LaTeX042A: edit settings"
+			],
+			[
+				"op",
+				"OpenPath: Open file folder"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"edi",
+				"LaTeX042A: edit snippets"
+			],
+			[
+				"edit",
+				"LaTeX042A: edit snippets"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"add rep",
+				"Package Control: Add Repository"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"chec",
+				"LaTeXTools: Check system"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/git/notes_QST/MB"
+	],
+	"file_history":
+	[
+		"/D/git/notes_QST/QM/parts/test.tex",
+		"/D/git/notes_QST/QM/settings/inputs.tex",
+		"/C/Users/ka124/AppData/Roaming/Sublime Text/Packages/LaTeX042A/support/Default.sublime-keymap",
+		"/C/Users/ka124/Desktop/plan.txt",
+		"/C/Users/ka124/Desktop/ВТСП.tex",
+		"/D/workspace/python/heart3/hand/H1/Арсенцева/Арсенцева_0L.txt",
+		"/D/git/notes_QST/README.md",
+		"/C/Users/ka124/Desktop/s.tex",
+		"/D/downloads/chrome/ЗАПЯСТЬЯ/ЗАПЯСТЬЯ/Больница 08.07 руки/Арсенцева/Арсенцева_31S.txt",
+		"/G/Мой диск/DOCS/Munchen_room/base.txt",
+		"/D/workspace/TeX/DQMC/parts/rwgf.tex",
+		"/D/workspace/TeX/DQMC/settings/inputs.tex",
+		"/D/workspace/python/heart3/data/d1/Artyushina/artyushina-256l.txt",
+		"/D/workspace/python/heart3/data/d1/telkova/telkova 154l.txt",
+		"/D/workspace/python/heart3/data/d1/tyurina/tyurina 26l.txt",
+		"/D/workspace/python/heart3/data/d1/vasyutin/vasyut 98l.txt",
+		"/D/workspace/python/heart3/data/d1/volchok/volch 88l.txt",
+		"/D/workspace/python/heart3/data/d1/volodin/volod 247l.txt",
+		"/D/workspace/python/heart3/data/d1/sazonova/sazon 158l.txt",
+		"/D/workspace/python/heart3/data/d1/seleznev/seleznev 54l.txt",
+		"/D/workspace/TeX/DQMC/parts/tmp.tex",
+		"/D/workspace/TeX/DQMC/parts/dqmc.tex",
+		"/D/workspace/TeX/DQMC/parts/rw.tex",
+		"/D/workspace/TeX/DQMC/settings/packages.tex",
+		"/D/workspace/TeX/DQMC/parts/dmc.tex",
+		"/D/workspace/TeX/DQMC/settings/preambule.tex",
+		"/D/workspace/TeX/DQMC/dqmc.tex",
+		"/D/workspace/TeX/DQMC/parts/test.tex",
+		"/C/Users/ka124/Desktop/scripts/min.txt",
+		"/D/workspace/TeX/DQMC/settings/colors.tex",
+		"/D/workspace/TeX/DQMC/parts/se.tex",
+		"/D/workspace/TeX/DQMC/settings/header.tex",
+		"/D/apps/miktex/tex/latex/enumitem/enumitem.sty",
+		"/D/workspace/TeX/DQMC/settings/environments.tex",
+		"/D/workspace/TeX/DQMC/settings/settings.tex",
+		"/D/workspace/TeX/DQMC/parts/gp.tex",
+		"/D/workspace/Manim/project_1/tmp.py",
+		"/D/workspace/TeX/DQMC/settings/commands.tex",
+		"/D/workspace/TeX/DQMC/name.tex",
+		"/C/Users/ka124/Desktop/tmp_GP.tex",
+		"/C/Users/ka124/Desktop/template/sample.bib",
+		"/C/Users/ka124/Desktop/template/settings/heading_eng_exam.tex",
+		"/C/Users/ka124/Desktop/template/settings/packages.tex",
+		"/C/Users/ka124/Desktop/template/settings/preambule.tex",
+		"/C/Users/ka124/Desktop/template/settings/inputs.tex",
+		"/D/downloads/chrome/10.1038_s41567-021-01461-3-citation.ris",
+		"/D/downloads/chrome/028756 (1).ris",
+		"/D/downloads/chrome/028756.ris",
+		"/C/Users/ka124/Desktop/template/settings/heading.tex",
+		"/D/git/notes_6sem/physics/cq/settings/inputs.tex",
+		"/D/git/notes_6sem/physics/cq/settings/commands.tex",
+		"/C/Users/ka124/Desktop/kate_info.tex",
+		"/D/workspace/Manim/project_1/custom_config.yml",
+		"/D/workspace/Manim/project_1/manim.cfg",
+		"/D/workspace/Manim/project_1/tex_template.tex",
+		"/D/git/notes_6sem/eqs_phys/exam/settings/commands.tex",
+		"/C/Users/ka124/Desktop/notes.txt",
+		"/D/workspace/Manim/manim/example_scenes.py",
+		"/D/workspace/Manim/manim/manimlib/default_config.yml",
+		"/D/workspace/Manim/project_1/media/videos/scene/1080p60/partial_movie_files/CreateCircle/partial_movie_file_list.txt",
+		"/D/workspace/Manim/manim/test_scenes.py",
+		"/D/downloads/chrome/ffmpeg-2022-06-01-git-c6364b711b-full_build/ffmpeg-2022-06-01-git-c6364b711b-full_build/README.txt",
+		"/D/workspace/Manim/tmp/custom_config.yml",
+		"/D/workspace/Manim/manim/manimlib/tex_templates/tex_template.tex",
+		"/D/downloads/chrome/Shotgun.King.The.Final.Checkmate/HOW TO RUN GAME!!.txt",
+		"/D/downloads/chrome/win64_27.20.100.8425/ReadMe.txt",
+		"/D/git/notes_6sem/eqs_phys/hw/settings/commands.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/w5.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/theory_min_2.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/theory_min_1.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/w1.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/w3.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/eqs_phys_hw.tex",
+		"/C/Users/ka124/AppData/Roaming/Sublime Text/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/ka124/Desktop/jupyter.bat",
+		"/C/Users/ka124/Desktop/jupyter.txt",
+		"/D/downloads/google_drive/118323136727669123942/content_cache/d55/d33/33555",
+		"/D/downloads/google_drive/118323136727669123942/content_cache/d53/d76/36769",
+		"/D/downloads/google_drive/118323136727669123942/content_cache/d53/d109/37104",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/w2.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/parts/theory_min.tex",
+		"/D/git/notes_6sem/eqs_phys/hw/settings/inputs.tex",
+		"/D/downloads/torrent/Mathematica130/Readme.txt"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MB.tex",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "settings/inputs.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "parts/test.tex",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 45.6
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "p_MB.sublime-project",
+	"replace":
+	{
+		"height": 60.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
