@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  30 OCT 2023 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  30 OCT 2023 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -845,7 +845,7 @@ File: figs/p23_1.pdf Graphic file (type pdf)
 <use figs/p23_1.pdf>
 Package pdftex.def Info: figs/p23_1.pdf  used on input line 40.
 (pdftex.def)             Requested size: 511.86491pt x 117.68759pt.
-<figs/p23_2.pdf, id=50, 473.77pt x 146.5475pt>
+<figs/p23_2.pdf, id=51, 473.77pt x 146.5475pt>
 File: figs/p23_2.pdf Graphic file (type pdf)
 <use figs/p23_2.pdf>
 Package pdftex.def Info: figs/p23_2.pdf  used on input line 56.
@@ -864,10 +864,10 @@ Package rerunfilecheck Info: File `QH.out' has not changed.
 (rerunfilecheck)             Checksum: 323E3017C1F80F07DA4F10E8F7578B60;992.
  ) 
 Here is how much of TeX's memory you used:
- 15741 strings out of 475248
- 248139 string characters out of 5767627
+ 15742 strings out of 475248
+ 248148 string characters out of 5767627
  1977785 words of memory out of 5000000
- 36919 multiletter control sequences out of 15000+600000
+ 36920 multiletter control sequences out of 15000+600000
  570009 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,10n,99p,566b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -886,9 +886,9 @@ rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/symbols/msbm7.pfb>
-Output written on QH.pdf (2 pages, 271095 bytes).
+Output written on QH.pdf (2 pages, 271321 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
+ 293 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
