@@ -1,0 +1,54 @@
+\subsection{Second Quantization}
+
+We could consider
+\begin{equation*}
+	\ket{\alpha_1,\ldots,\alpha_N} = \frac{1}{\sqrt{N!}} \sum_{P} \zeta^{\sigma(P)} 
+	\ket{\alpha_{P(1)}} \otimes \ldots \otimes \ket{\alpha_{P(N)}},
+\end{equation*}
+where $\zeta= \pm 1$ for bosons and fermions respectively. We define creation operator via
+\begin{equation*}
+	a_{\beta}\D \ket{\alpha_1,\ldots,\alpha_N} \overset{\mathrm{def}}{=} \ket{\beta,\alpha_1,\ldots,\alpha_N}.
+\end{equation*}
+\begin{enumerate}
+	\item Adjoint $a_\beta$ could be expressed as
+	\begin{align*}
+		a_\beta\D &= \sum_{\{\theta\}} \kb{\beta, \theta_1, \ldots, \theta_M}{\theta_1, \ldots, \theta_{M}}, \\
+		a_\beta &= \sum_{\{\theta\}} \kb{\theta_1, \ldots, \theta_M}{\beta, \theta_1, \ldots, \theta_{M}}.
+	\end{align*}
+	Than it could be shown that
+	\begin{equation*}
+		a_\beta \ket{\alpha_1,\ldots,\alpha_N} = \sum_k C_k \ket{\alpha_1,\ldots,\cancel{\alpha_k},\ldots,\alpha_N},
+	\end{equation*}
+	with 
+	\begin{align*}
+		C_k = \bk{\beta,\alpha_1,\ldots,\cancel{\alpha_k},\ldots,\alpha_N}{\alpha_1,\ldots,\alpha_N} 
+		= \frac{1}{\sqrt{N!}}\sum_{P} \bra{\alpha_{P(1)}} \otimes \ldots \otimes \bra{\beta}_{P(k)} \otimes \ldots \otimes \bra{\alpha_{P(N)}} \alpha_1,\ldots,\alpha_N \big\rangle,
+	\end{align*}
+	where we could <<move>> $\bra{\beta}$  to the start, by $P(k)-1$ transpositions, and due to $N!$ equal permutations we could neglect $\frac{1}{N!}$  coming to
+	\begin{equation*}
+		C_k = \zeta^{k-1} \bk{\beta}{\alpha_k}.
+	\end{equation*}
+	\item We also could find, that $a_\beta$ and $a_\beta\D$ fuldill the (anti)-commutation relations 
+	\begin{align*}
+		a_\beta\D a_\alpha \ket{\theta_1,\ldots,\theta_N} &= a_\beta\D \sum_{k=1}^{N} \zeta^{k-1} \bk{\alpha}{\theta_k} \ket{\theta_1,\ldots,\cancel{\theta_k},\ldots,\theta_N} = \sum_{k=1}^{N} \zeta^{k-1} \bk{\alpha}{\theta_k} \ket{\beta,\theta_1,\ldots,\cancel{\theta_k},\ldots,\theta_N}, \\
+		a_\alpha a_\beta\D \ket{\theta_1,\ldots,\theta_N} &= a_\alpha \ket{\beta,\theta_1,\ldots,\theta_N} = \sum_{k=1}^{N} \zeta^{k} \bk{\alpha}{\theta_k} \ket{\beta,\theta_1,\ldots,\cancel{\theta_k},\ldots,\theta_N} + \bk{\alpha}{\beta} \ket{\theta_1,\ldots,\theta_N},
+	\end{align*}
+	so for bosons $\zeta=1$ we have
+	\begin{equation*}
+		[a_\alpha, a_\beta\D] \overset{\mathrm{def}}{=} a_\alpha a_\beta\D - a_\beta\D a_\alpha = \bk{\alpha}{\beta} = \delta_{\alpha,\beta},
+	\end{equation*}
+	and in the same way for fermions $\zeta=-1$ and
+	\begin{equation*}
+		\{a_\alpha, a_\beta\D\} \overset{\mathrm{def}}{=} a_\alpha a_\beta\D + a_\beta\D a_\alpha = \bk{\alpha}{\beta} = \delta_{\alpha,\beta}.
+	\end{equation*}
+	\item For density operator 
+	\begin{equation*}
+		\hat{\rho}(x) = \sum_{j=1}^{N} \delta(x-\hat{x}_j),
+	\end{equation*}
+	we could find second quantized form
+	\begin{equation*}
+		\hat{\rho}(x) = \sum_{\alpha \beta} \bk{\alpha}[\delta(x-\hat{x})]{\beta} \hat{a}_\alpha\D \hat{a}_\beta = \sum_{\alpha \beta} \int
+		\bk{\alpha}{x'} \bk{x'}{\beta} \delta(x-x') \d x' \hat{a}_\alpha\D \hat{a}_\beta = \sum_{\alpha \beta} \bk{\alpha}{x} \bk{x}{\beta} \hat{a}_\alpha\D \hat{a}_\beta,
+	\end{equation*}
+	what could be reduced to the $\hat{a}_x\D \hat{a}_x$ form if $\ket{\alpha}$ and $\ket{\beta}$ corresponds to the coordinates.
+\end{enumerate}

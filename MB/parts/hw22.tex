@@ -1,0 +1,51 @@
+\subsection{Mapping between Quantum and Classical Systems}
+
+We could rewrite classical 1D Ising chain partitin function as
+\begin{equation*}
+	\sub{\mathcal{Z}}{c} = T_{s_1,s_2} \ldots T_{s_{N-1},s_{N}} T_{s_N, s_1} = \tr\left(T^N\right),
+\end{equation*}
+with transfer matrix
+\begin{equation*}
+	T = T^a T^b = \left(
+\begin{array}{cc}
+ e^{h_\text{c}+K_\text{c}} & e^{h_\text{c}-K_\text{c}} \\
+ e^{-h_\text{c}-K_\text{c}} & e^{K_\text{c}-h_\text{c}} \\
+\end{array}
+\right),
+	\hspace{10mm}
+	T^a = \begin{pmatrix}
+	    e^{\Hc} & 0 \\
+	    0 & e^{-\Hc} \\
+	\end{pmatrix} 
+	,\ \ \ 
+	T^{b} = \begin{pmatrix}
+	    e^{\Kc } & e^{-\Kc } \\
+	    e^{-\Kc } & e^{\Kc } \\
+	\end{pmatrix}.
+\end{equation*}
+There are different ways to define $T$,because important just eigenvalues
+\begin{equation*}
+	\lambda_{1,2} = \frac{1}{2} e^{-h_{\text{c}}-K_{\text{c}}} \left(e^{2 \left(h_{\text{c}}+K_{\text{c}}\right)}+e^{2 K_{\text{c}}} \pm \sqrt{ e^{4 K_{\text{c}}} \left(e^{2 h_{\text{c}}}-1\right)^2 +4 e^{2 h_{\text{c}}}}\right).
+\end{equation*}
+For a quantum system the partitin function 
+\begin{equation*}
+	\sub{\mathcal{Z}}{q} = \tr e^{-\beta H},
+\end{equation*}
+and we want to achieve
+\begin{equation*}
+	\sub{\mathcal{Z}}{q} = \sub{\mathcal{Z}}{c} = \tr\left(
+		e^{-\frac{\beta}{N}H_1} e^{-\frac{\beta}{N}H_2}
+	\right)^N,
+	\hspace{10 mm} 
+	e^{- \frac{\beta}{N} H_1} = T^a,
+	\hspace{5 mm} 
+	e^{- \frac{\beta}{N} H_2} = T^b.
+\end{equation*}
+Using formulas to the Pauli matrix exponents, we could find
+\begin{equation*}
+	H_1 = \frac{N}{-\beta} \alpha_3 \sigma_z,
+	\hspace{10 mm} 
+	H_2 = \frac{N}{-\beta} (\alpha_0 \1 - \alpha_1 \sigma_x),
+\end{equation*}
+with $\alpha_0 = \ln \sh(2 \Kc) + \ln 2$, $\alpha_1 = \ln \th \Kc$ and $\alpha_3 = \Hc$. I think it is possible to find other $H_1$ and $H_2$, my choice was ruled by separating $\Kc$ and $\Hc$ dependences.
+

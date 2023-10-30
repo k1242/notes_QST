@@ -1,0 +1,38 @@
+
+Density matrix could be decomposed as 
+\begin{equation*}
+	\hat{\rho} = \frac{1}{2^N} \sum_{\{\alpha_j\}} C_{\alpha_1 \ldots \alpha_N} \hat{\sigma}_{\alpha_1} \otimes \ldots \otimes \hat{\sigma}_{\alpha_N},
+\end{equation*}
+with Pauli matrix $\hat{\sigma}_{j}$ and $\alpha = 0,1,2,3$
+\begin{equation*}
+ 	\hat{\sigma}_0 = \begin{pmatrix}
+ 	    1 & 0 \\
+ 	    0 & 1 \\
+ 	\end{pmatrix},
+ 	\hspace{5 mm}
+ 	\hat{\sigma}_1 = \begin{pmatrix}
+ 	    0 & 1 \\
+ 	    1 & 0 \\
+ 	\end{pmatrix},
+ 	\hspace{5 mm} 
+ 	\hat{\sigma}_2 = \begin{pmatrix}
+ 	    0 & -i \\
+ 	    i & 0 \\
+ 	\end{pmatrix},
+ 	\hspace{5 mm} 
+ 	\hat{\sigma}_z = \begin{pmatrix}
+ 	    1 & 0 \\
+ 	    0 & -1 \\
+ 	\end{pmatrix}.
+\end{equation*} 
+Coefficients $C_{\alpha_1 \ldots \alpha_N}$ could be measured using $\hat{\sigma}_j^2 = \hat{\sigma}_0$
+\begin{equation*}
+	C_{\alpha_1 \ldots \alpha_N} = \tr \left(
+		\hat{\rho} \  \hat{\sigma}_{\alpha_1} \otimes \ldots \otimes \hat{\sigma}_{\alpha_N}
+	\right),
+\end{equation*}
+so we need $4^{N}-1$ measurements (remembering $\tr \rho = 1$). Doing finite number of shots we measure not average values by themselves, but their estemations, so we could observe not normalized states. For 2-qubit system a complete set of measurement operators is
+\begin{equation*}
+	\{\sigma_{\alpha_1} \otimes \sigma_{\alpha_2}\},
+\end{equation*}
+except $\alpha_1 = \alpha_2 = 0$.

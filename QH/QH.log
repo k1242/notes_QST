@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  27 OCT 2023 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  29 OCT 2023 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/ka1242/git/QST/QM/QM.tex
-(C:/ka1242/git/QST/QM/QM.tex
+**C:/ka1242/git/QST/QH/QH.tex
+(C:/ka1242/git/QST/QH/QH.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -728,8 +728,8 @@ Package: arydshln 2019/02/21 v1.76
 \adl@everyvbox=\toks35
 \adl@LTpagetotal=\dimen186
 )))
-(QM.aux)
-\openout1 = `QM.aux'.
+(QH.aux)
+\openout1 = `QH.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -788,9 +788,9 @@ LaTeX Info: Redefining \th on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 5.
-(QM.out) (QM.out)
+(QH.out) (QH.out)
 \@outlinefile=\write3
-\openout3 = `QM.out'.
+\openout3 = `QH.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
@@ -816,60 +816,66 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(settings/settings.tex) (settings/inputs.tex (parts/hw1.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+(settings/settings.tex) (settings/inputs.tex (parts/hw21.tex (parts/hw21_a.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-1.
+3.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))) [1
+))
+(parts/hw21_b.tex) (parts/hw22_a.tex))) [1
 
-{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (QM.aux)
+{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (QH.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-Package rerunfilecheck Info: File `QM.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `QH.out' has not changed.
+(rerunfilecheck)             Checksum: 8CFBF26BC3D5CB5F51581D7CF0B2E683;426.
  ) 
 Here is how much of TeX's memory you used:
- 15709 strings out of 475248
- 246780 string characters out of 5767627
- 1918785 words of memory out of 5000000
- 36940 multiletter control sequences out of 15000+600000
- 562312 words of font info for 57 fonts, out of 8000000 for 9000
+ 15758 strings out of 475248
+ 247685 string characters out of 5767627
+ 1943785 words of memory out of 5000000
+ 36973 multiletter control sequences out of 15000+600000
+ 563933 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,99p,560b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,99p,560b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm10
-00.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on QM.pdf (1 page, 33111 bytes).
+00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+bx1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on QH.pdf (1 page, 118435 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
