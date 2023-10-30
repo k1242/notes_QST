@@ -1,0 +1,40 @@
+We could simply solve Lindblad equation
+\begin{equation}
+	i \hbar \partial_t \hat{\rho} = \left[\hat{H}, \hat{\rho}\right] + i \hbar \hat{L}(\hat{\rho}),
+	\hspace{5 mm} 
+	\hat{L}(\hat{\rho}) = -\Gamma \begin{pmatrix}
+	    -\rho_{22} & \tfrac{1}{2}\rho_{12} \\
+	    \tfrac{1}{2}\rho_{21}& \rho_{22} \\
+	\end{pmatrix}.
+	\label{leq}
+\end{equation}
+Considering that the detuning is zero we have evolution 
+% \begin{equation*}
+% 	\partial_t \hat{\rho} = \frac{1}{2}\left(
+% \begin{array}{cc}
+%  2 \Gamma  \rho _{22}+\rho _{12} \Omega -\rho _{21} \Omega  & -\rho _{12} (\Gamma +2 \delta )+\rho _{11} \Omega -\rho _{22} \Omega  \\
+%  -\rho _{21} (\Gamma -2 \delta )+\rho _{11} (-\Omega )+\rho _{22} \Omega  & -2 \Gamma  \rho _{22}+\rho _{12} (-\Omega )+\rho _{21} \Omega  \\
+% \end{array}
+% \right).
+% \end{equation*}
+%  and introducing $$ we have
+\begin{equation*}
+	\partial_t \hat{\rho} = \Gamma \left(
+\begin{array}{cc}
+ \rho _{22} & -\tfrac{\rho _{12}}{2} \\
+ -\tfrac{\rho _{21}}{2} & -\rho _{22} \\
+\end{array}
+\right) - \frac{i \Omega}{2} \left(
+\begin{array}{cc}
+ \rho _{12}-\rho _{21} & \rho _{11}-\rho _{22} \\
+ \rho _{22}-\rho _{11} & \rho _{21}-\rho _{12} \\
+\end{array}
+\right).
+\end{equation*}
+Consider the behavior of the $\rho_{22}$
+ % $w = \tr(\hat{\rho} \hat{\sigma}_z) = \rho_{11}-\rho_{22}$
+  with $\alpha = \Omega / \Gamma \ll 1$
+\begin{equation*}
+	\rho_{22} = \alpha^2 - \alpha ^2 e^{-\Gamma t} \left(2 e^{\frac{1}{2}\Gamma  t}-1\right) + O(\alpha^4).
+\end{equation*}
+With $\alpha = \Gamma / \Omega \ll 1$ we will have Rabi oscillations, converging to the $\rho_{11} = \rho_{22} = 1/2$ with envelope $\sim e^{-\alpha t}$.

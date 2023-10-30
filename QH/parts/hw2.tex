@@ -1,0 +1,86 @@
+\subsection{Quantum State Tomography}
+
+\begin{enumerate}[label=(\alph*)]
+	\item \input{parts/hw21_a}
+	\item \input{parts/hw21_b}
+\end{enumerate}
+
+
+\subsection{Semi-Classical Light–Matter Interaction}
+
+We have basic light-atom interaction
+\begin{equation*}
+	\hat{H} = \hat{H}_0 + \hat{V}
+	,
+	\hspace{10 mm} 
+	\hat{H}_0 = - \frac{\hbar \omega}{2} \hat{\sigma}_z,
+	\hspace{5 mm} 
+	\hat{V}(t) = - \hbar \Omega \cos(\omega_L t) \hat{\sigma}_x,
+\end{equation*}
+with Rabi frequency $\Omega = d E_0 / \hbar$.
+
+\begin{enumerate}[label=(\alph*)]
+	\item \input{parts/hw22_a}
+	\item \input{parts/hw22_b}
+	\item \input{parts/hw22_c}
+	\item \input{parts/hw22_d}
+	\item \input{parts/hw22_e}
+	\item \input{parts/hw22_f}
+	\item \input{parts/hw22_g}
+\end{enumerate}
+
+
+
+\subsection{Driven System Dynamics and Rotating-Wave Approximation}
+
+Consider $H_0 = - \frac{\hbar \omega}{2} \sigma_z$ with $V = \frac{\hbar\Omega}{2}\cos(\omega t) \sigma_z - \frac{\hbar\Omega}{2} \sin(\omega t) \sigma_y $ (black dashed line) and $\sub{V}{RWA} = \hbar \Omega \cos(\omega t) \sigma_x$ (\blue{blue} line) in resonant $(\omega=\omega_0)$ case (fig. \ref{fig:rwa}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figs/p23_1.pdf}
+    \caption{Comparison of the exact solution (black) and the solution in the rotating wave approximation (blue).}
+    \label{fig:rwa}
+\end{figure}
+
+
+We could find solution in general case $\delta \neq 0$ in RWA:
+\begin{equation*}
+	\langle \sigma_z\rangle(t) = \cos (\Omega_\delta t) + \frac{\delta ^2}{\delta ^2+\Omega ^2}(1-\cos (\Omega_\delta t )),
+	\hspace{10 mm} 
+	\Omega_\delta = \sqrt{\Omega^2 + \delta^2},
+\end{equation*}
+with general Rabi frequency $\Omega_\delta$. For different $\delta = 0, \Omega, 2 \Omega$ and $\Omega=2\pi$ we could compare different behaviour (fig. 2).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figs/p23_2.pdf}
+    \caption{}
+    %\label{fig:}
+\end{figure}
+
+
+\subsection{Dephasing and Decoherence in a TLS}
+
+We could calculate $\langle \vc{\sigma}\rangle$, using  \eqref{leq}:
+\begin{equation*}
+	\rho(t) = \begin{pmatrix}
+	    1-|\beta|^2 e^{- \Gamma_1 t} & \alpha \bar{\beta} e^{-\Gamma_2 t} \\
+	    \bar{\alpha} \beta e^{- \Gamma_2 t} & |\beta|^2 e^{-\Gamma_1 t} \\
+	\end{pmatrix},
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\left.\begin{aligned}
+	   \langle \sigma_x\rangle &= (\alpha \bar{\beta} + \bar{\alpha} \beta ) e^{- \Gamma_2 t}\\
+	   \langle \sigma_y\rangle &= i(\alpha \bar{\beta} - \bar{\alpha} \beta ) e^{- \Gamma_2 t} \\
+	   \langle \sigma_z\rangle &= 1 - 2 |\beta|^2 e^{-t \Gamma_1}
+	\end{aligned}\right.
+\end{equation*}
+Substituting the initial state $\tfrac{1}{\sqrt{2}}\ket{0} + \tfrac{1}{\sqrt{2}}\ket{1}$
+\begin{equation*}
+	\langle \sigma_x\rangle = 1 - e^{- \Gamma_1 t},
+	\hspace{10 mm} 
+	\langle \sigma_y\rangle = 0,
+	\hspace{10 mm}
+	\langle \sigma_z\rangle = e^{- \Gamma_2 t},
+\end{equation*}
+thus by measuring the various components we can find the $\Gamma_1$ and $\Gamma_2$, it's just exponential decay.
+

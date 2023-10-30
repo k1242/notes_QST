@@ -1,0 +1,18 @@
+Using unitary tranform $\hat{U} = \exp\left(
+	- \frac{i}{2} \omega t \hat{\sigma}_z
+\right)$ we could substitute $\ket{\psi} = \hat{U}\D |\tilde{\psi}\rangle$ and find new $\sub{H}{I} = U H U\D - i \hbar U \partial_t U\D$:
+\begin{equation*}
+	\sub{\hat{H}}{I} = - \frac{\hbar}{2} \delta \begin{pmatrix}
+	    1 & 0 \\
+	    0 & -1 \\
+	\end{pmatrix}
+	 - \frac{\hbar}{2} \Omega \begin{pmatrix}
+	     0 & 1 \\
+	     1 & 0 \\
+	 \end{pmatrix}
+	 \grey{- \frac{\hbar}{2} \Omega \begin{pmatrix}
+	     0 & e^{-2 i \omega_L t} \\
+	     e^{2 i \omega_L t} & 0 \\
+	 \end{pmatrix} },
+\end{equation*}
+with $\delta = \omega - \omega_L$.
