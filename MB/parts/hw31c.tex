@@ -1,0 +1,19 @@
+Summarising, spins are mapped into fermions using
+\begin{equation*}
+	\left.\begin{aligned}
+	    \hat{\sigma}_x &= \hat{K}_j(\hat{c}_j\D + \hat{c}_j) ,\\
+	    \hat{\sigma}_y &= \hat{K}_j i(\hat{c}_j\D - \hat{c}_j) ,\\
+	    \hat{\sigma}_z &= 1 - 2 \hat{c}_j\D \hat{c}_j,
+	\end{aligned}\right.
+	\hspace{10 mm} 
+	% \text{with}
+	\hspace{10 mm} 
+	\hat{K}_j = \prod_{i=1}^{j-1} (1-2 \hat{c}_i\D \hat{c}_i).
+\end{equation*}
+This is the Jordan Wigner transformation of the TFIM
+\begin{align*}
+	\hat{H} &= h L - J \sum_{j=1}^{L-1} \left(\hat{c}_j\D \hat{c}_{j+1} + \hat{c}\D_j \hat{c}_{j+1}\D + \hc \right) +  2 h \sum_{j=1}^L \hat{c}_j\D \hat{c}_j \\  
+	&\phantom{=} + J\left(-1\right)^{\hat{N}} \left(\hat{c}_L\D \hat{c}_1 +\hat{c}\D_L \hat{c}_{1}\D+\hc \right)
+	.
+\end{align*} 
+The number of fermions is not conserved, because of terms $\hat{c}\D \hat{c}\D$, but $[(-1)^{\hat{N}}, \hat{H}]=0$, so parity is constant. With $(-1)^{\hat{N}}=1$ we have antiperiodic boundary conditions and periodic otherwise.

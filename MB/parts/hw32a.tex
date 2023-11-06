@@ -1,0 +1,24 @@
+To diagonalize $\hat{H}$ we could start from Fourier Transform
+\begin{equation*}
+	\hat{c}_k = \frac{1}{\sqrt{L}} \sum_j e^{i k j} \hat{c}_j,
+	\hspace{10 mm} 
+	\hat{c}_j = \frac{1}{\sqrt{L}} \sum_k e^{-i k j} \hat{c}_k.
+\end{equation*}
+Consider $L$ is even. If we want $\hat{c}_{L+1}= \hat{c}_1$ we have $H_1$ and
+\begin{equation*}
+	\mathcal K_{p=1} = \left\{
+		k = \frac{\pi }{L}2n \ \big| \ n= - \tfrac{1}{2}L+1, \ldots, 0,\ldots,\tfrac{1}{2}L
+	\right\},
+\end{equation*}
+otherwise $\hat{c}_{L+1} = - \hat{c}_1$ in $H_0$ and
+\begin{equation*}
+	\mathcal K_{p=0} = \left\{
+		k =  \frac{ \pi }{L}(2n-1) \ \big| \  n= - \tfrac{1}{2}L+1, \ldots, 0,\ldots,\tfrac{1}{2}L
+	\right\}.
+\end{equation*}
+And rewriting in terms of $\mathcal K_p$ hamiltonian we have
+\begin{equation*}
+	\hat{H}_{p} = -\sum_{k \in \mathcal K_p} (J \cos k + h) \left(
+		\hat{c}\D_k \hat{c}_k - \hat{c}_{-k} \hat{c}\D_{-k}
+	\right) - J \sum_{k \in \mathcal K_p} \left(e^{ik} \hat{c}_k\D \hat{c}_{-k}\D + \hc \right)
+\end{equation*}

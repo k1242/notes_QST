@@ -1,0 +1,14 @@
+Ground state we could find in $\hat{H}_0$ such that $\hat{\gamma}_k \gs = 0 \ \forall k$. As in BCS theory we could start from some state (not orthogonal $\gs$), apply $\hat{\gamma}_k$ and normalize, coming to the
+\begin{equation*}
+	\gs = \frac{\prod_k \hat{\gamma}_{-k} \hat{\gamma}_k}{\left\|\prod_k \hat{\gamma}_{-k} \hat{\gamma}_k \ket{0}\right\|} \ket{0} = \prod_{k \in \mathcal K^+_0} \left(u_k + v_k \hat{c}_k\D \hat{c}\D_{-k}\right) \ket{0},
+	\hspace{10 mm} 
+	E_0 = - \sum_{k \in \mathcal K^+_0} \varepsilon_k,
+\end{equation*}
+with $\ket{0} \sim \ket{\downarrow\ldots\downarrow}$ -- vacuum for the original fermions $\hat{c}_k \ket{0} = 0 \ \forall k$. 
+% \red{Add calculations of normalization.} 
+% \red{Add proof that $p=1$ is not about ground state.} 
+ If we want to continue exist in separated Hilbert space, than elementary excitation should save parity
+\begin{equation*}
+    \hat{\gamma}_{k_1}\D \hat{\gamma}_{k_2}\D \gs = \hat{c}_{k_1}\D \hat{c}_{k_2}\D \prod_{k \neq |k_1|,|k_2|}^{K^+_0} \left(\bar{u}_k - \bar{v}_k \hat{c}\D_k \hat{c}_{-k}\D \right) \ket{0}.
+\end{equation*}
+Going to the even amount of fermions we could apply even amount of $\hat{\gamma}_k$ to the $\gs$.

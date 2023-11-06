@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  6 NOV 2023 03:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  6 NOV 2023 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/ka1242/git/notes_QST/MB/MB.tex
-(C:/ka1242/git/notes_QST/MB/MB.tex
+**C:/ka1242/git/notes_QST/notes/notes.tex
+(C:/ka1242/git/notes_QST/notes/notes.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -268,7 +268,17 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
+)
+(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/babel-russian\russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/ru\babel-russian.tex
+Package babel Info: Importing font and identification data for russian
+(babel)             from babel-ru.ini. Reported on input line 11.
+)
 (C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -371,6 +381,7 @@ File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `unicode' set `true' on input line 3153.
 Package hyperref Info: Option `unicode' set `true' on input line 4050.
 Package hyperref Info: Hyper figures OFF on input line 4167.
 Package hyperref Info: Link nesting OFF on input line 4172.
@@ -717,8 +728,8 @@ Package: arydshln 2019/02/21 v1.76
 \adl@everyvbox=\toks35
 \adl@LTpagetotal=\dimen186
 )))
-(MB.aux)
-\openout1 = `MB.aux'.
+(notes.aux)
+\openout1 = `notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -740,6 +751,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+LaTeX Info: Redefining \th on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -748,7 +760,7 @@ LaTeX Font Info:    ... okay on input line 5.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(51.21504pt, 511.86491pt, 51.21504pt)
 * v-part:(T,H,B)=(51.21504pt, 692.5399pt, 51.21504pt)
 * \paperwidth=614.295pt
@@ -762,7 +774,7 @@ LaTeX Font Info:    ... okay on input line 5.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=121.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -770,20 +782,21 @@ LaTeX Font Info:    ... okay on input line 5.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 5.
-(MB.out) (MB.out)
+(notes.out) (notes.out)
 \@outlinefile=\write3
-\openout3 = `MB.out'.
+\openout3 = `notes.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count305
 \scratchdimen=\dimen187
@@ -804,139 +817,82 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(settings/settings.tex) (settings/inputs.tex (parts/hw3.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+(settings/settings.tex) (settings/inputs.tex (parts/test.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-4.
+7.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
+LaTeX Font Info:    Trying to load font information for U+esint on input line 7
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-(parts/hw31.tex (parts/hw31a.tex
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 11.
+<s1.pdf, id=3, 177.66376pt x 176.66pt>
+File: s1.pdf Graphic file (type pdf)
+<use s1.pdf>
+Package pdftex.def Info: s1.pdf  used on input line 8.
+(pdftex.def)             Requested size: 51.1896pt x 50.90121pt.
+<s2.pdf, id=4, 178.6675pt x 177.66376pt>
+File: s2.pdf Graphic file (type pdf)
+<use s2.pdf>
+Package pdftex.def Info: s2.pdf  used on input line 9.
+(pdftex.def)             Requested size: 51.1896pt x 50.90036pt.
+<s3.pdf, id=5, 175.65625pt x 175.65625pt>
+File: s3.pdf Graphic file (type pdf)
+<use s3.pdf>
+Package pdftex.def Info: s3.pdf  used on input line 10.
+(pdftex.def)             Requested size: 51.1896pt x 51.18826pt.
+)) [1
 
+{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./s1.pdf> <.
+/s2.pdf
 
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/bbm\ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)) (parts/hw31b.tex) (parts/hw31c.tex)) (parts/hw32.tex
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-10.
+pdfTeX warning: pdflatex (file ./s2.pdf): PDF inclusion: multiple pdfs with pag
+e group included in a single page
+> <./s3.pdf
 
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [1{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-]
-<imgs/3H.pdf, id=31, 72.27pt x 72.27pt>
-File: imgs/3H.pdf Graphic file (type pdf)
-<use imgs/3H.pdf>
-Package pdftex.def Info: imgs/3H.pdf  used on input line 40.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3U.pdf, id=32, 72.27pt x 72.27pt>
-File: imgs/3U.pdf Graphic file (type pdf)
-<use imgs/3U.pdf>
-Package pdftex.def Info: imgs/3U.pdf  used on input line 41.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3UHU.pdf, id=33, 72.27pt x 72.27pt>
-File: imgs/3UHU.pdf Graphic file (type pdf)
-<use imgs/3UHU.pdf>
-Package pdftex.def Info: imgs/3UHU.pdf  used on input line 42.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3bl.pdf, id=34, 35.13126pt x 100.375pt>
-File: imgs/3bl.pdf Graphic file (type pdf)
-<use imgs/3bl.pdf>
-Package pdftex.def Info: imgs/3bl.pdf  used on input line 43.
-(pdftex.def)             Requested size: 35.13115pt x 100.37474pt.
- (parts/hw32a.tex)
-(parts/hw32b.tex [2 <./imgs/3H.pdf> <./imgs/3U.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3U.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
-> <./imgs/3UHU.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3UHU.pdf): PDF inclusion: multiple pdfs w
-ith page group included in a single page
-> <./imgs/3bl.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3bl.pdf): PDF inclusion: multiple pdfs wi
-th page group included in a single page
->])) (parts/hw33.tex
-<imgs/3gap.pdf, id=70, 492.84125pt x 110.4125pt>
-File: imgs/3gap.pdf Graphic file (type pdf)
-<use imgs/3gap.pdf>
-Package pdftex.def Info: imgs/3gap.pdf  used on input line 4.
-(pdftex.def)             Requested size: 460.6753pt x 103.21156pt.
- (parts/hw33a.tex) (parts/hw33b.tex
-<imgs/3F.pdf, id=73, 637.38126pt x 146.5475pt>
-File: imgs/3F.pdf Graphic file (type pdf)
-<use imgs/3F.pdf>
-Package pdftex.def Info: imgs/3F.pdf  used on input line 10.
-(pdftex.def)             Requested size: 460.6753pt x 105.91884pt.
-)) [3 <./imgs/3gap.pdf> <./imgs/3F.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3F.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
->] (parts/hw34.tex
-<imgs/3rad.pdf, id=139, 144.54pt x 144.54pt>
-File: imgs/3rad.pdf Graphic file (type pdf)
-<use imgs/3rad.pdf>
-Package pdftex.def Info: imgs/3rad.pdf  used on input line 15.
-(pdftex.def)             Requested size: 127.96622pt x 127.96529pt.
-))) [4 <./imgs/3rad.pdf>] (MB.aux)
+pdfTeX warning: pdflatex (file ./s3.pdf): PDF inclusion: multiple pdfs with pag
+e group included in a single page
+>] (notes.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: 157E8BE9A927B1B6B13B1F235CA20597;220.
+Package rerunfilecheck Info: File `notes.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15818 strings out of 475248
- 250137 string characters out of 5767627
- 1973785 words of memory out of 5000000
- 36989 multiletter control sequences out of 15000+600000
- 567977 words of font info for 67 fonts, out of 8000000 for 9000
+ 15730 strings out of 475248
+ 247370 string characters out of 5767627
+ 1920785 words of memory out of 5000000
+ 36961 multiletter control sequences out of 15000+600000
+ 562312 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,13n,99p,566b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm07
-00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-tt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\lati1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/
-dpi600\bbm10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\larm1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\lasl1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on MB.pdf (4 pages, 342391 bytes).
+ 89i,5n,99p,572b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm10
+00.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on notes.pdf (1 page, 47862 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,65 @@
+We could separate Hilbert space as $\mathcal{H}=\sub{\mathcal{H}}{even} \oplus \sub{\mathcal{H}}{odd}$, and conserving parity of fermions $\hat{H}$ as
+\begin{equation*}
+	\hat{H} = \hat{P}_0 \hat{H} \hat{P}_0 + \hat{P}_1 \hat{H} \hat{P}_1 = \begin{pmatrix}
+	    \hat{H}_0 & 0 \\
+	    0 & \hat{H}_1 \\
+	\end{pmatrix}
+	,
+	\hspace{10 mm} 
+	\hat{P}_{0,1} = \tfrac{1 \pm (-1)^{\hat{N}}}{2}.
+\end{equation*}
+% Consider $L=2$, than
+% \begin{equation*}
+% 	\hat{H} = 2\left(
+% \begin{array}{cccc}
+%  -h & 0 & 0 & 0 \\
+%  0 & 0 & - J & 0 \\
+%  0 & - J & 0 & 0 \\
+%  0 & 0 & 0 &  h \\
+% \end{array}
+% \right), \ \ \ 
+% \hat{U} = \left(
+% \begin{array}{cccc}
+%  1 & 0 & 0 & 0 \\
+%  0 & 0 & 1 & 0 \\
+%  0 & 0 & 0 & 1 \\
+%  0 & 1 & 0 & 0 \\
+% \end{array}
+% \right), \ \ \
+% 	\hat{U}\D\hat{H} \hat{U} = 2\left(
+% \begin{array}{cccc}
+%  -h & 0 & 0 & 0 \\
+%  0 &  h & 0 & 0 \\
+%  0 & 0 & 0 & - J \\
+%  0 & 0 & - J & 0 \\
+% \end{array}
+% \right)
+% \end{equation*}
+Consider $L=4$, than we could visualize such transform for $J=h=1$ as \vspace{-2mm}
+\begin{equation*}
+	\hat{H} = \left(\raisebox{-12mm}{\includegraphics{imgs/3H.pdf}}\right), \hspace{5 mm} 
+	\hat{U} = \left(\raisebox{-12mm}{\includegraphics{imgs/3U.pdf}}\right), \hspace{5 mm} 
+	\hat{U}\D\hat{H} \hat{U} = \left(\raisebox{-12mm}{\includegraphics{imgs/3UHU.pdf}}\right). \hspace{5 mm} 
+	\raisebox{-18mm}{\includegraphics{imgs/3bl.pdf}}
+\end{equation*}
+where $\hat{U}$ represents reordering basis from
+\begin{gather*}
+	\ket{0000},\ket{0001},\ket{0010},\ket{0011},
+	\ket{0100},\ket{0101},\ket{0110},\ket{0111}, \\
+	\ket{1000},\ket{1001},\ket{1010},\ket{1011}, 
+	\ket{1100},\ket{1101},\ket{1110},\ket{1111}
+\end{gather*}
+to 
+\begin{gather*}
+	\ket{0000},\ket{0011},\ket{0101},\ket{0110}, 
+	\ket{1001},\ket{1010},\ket{1100},\ket{1111}, \\
+	\ket{0001},\ket{0010},\ket{0100},\ket{0111},
+	\ket{1000},\ket{1011},\ket{1101},\ket{1110}.
+\end{gather*}
+
+
+\begin{enumerate}[label=(\alph*)]
+    \item \input{parts/hw32a}
+    \item \input{parts/hw32b}
+\end{enumerate}
+

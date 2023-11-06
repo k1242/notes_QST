@@ -1,0 +1,78 @@
+It is useful to combine $k=0$ and $k=\pi$ for $p=1$
+\begin{equation*}
+	\hat{H}_{k=0,\pi} = - 2J (\hat{n}_0 - \hat{n}_\pi) + 2 h (\hat{n}_0 + \hat{n}_{\pi} - 2).
+\end{equation*}
+The remaining terms come into pairs $(k,-k)$, so we could go to the positive $k$:
+\begin{align*}
+	\mathcal K_1^+ &= \left\{
+		k =  \frac{ \pi }{L}2n\ \big| \  n= 1,\ldots,\tfrac{1}{2}L-1
+	\right\}, \\
+	\mathcal K_0^+ &= \left\{
+		k =  \frac{ \pi }{L}(2n-1) \ \big| \  n= 1,\ldots,\tfrac{1}{2}L
+	\right\}.
+\end{align*}
+The $\hat{H}$ can be expressed as
+\begin{equation*}
+	\hat{H}_0 = \sum_{k \in \mathcal K_0^+} \hat{H}_k,
+	\hspace{10 mm} 
+	\hat{H}_1 = \hat{H}_{k=0,\pi} +  \sum_{k \in \mathcal K_1^+} \hat{H}_k,
+\end{equation*}
+with
+\begin{equation*}
+	\hat{H}_k = -2(J \cos k + h) \left(\hat{c}_k\D \hat{c}_k - \hat{c}_{-k} \hat{c}_{-k}\D\right) - 2 i J \sin k \left(
+		\hat{c}_{k}\D \hat{c}_{-k}\D - \hat{c}_{-k} \hat{c}_{-k}
+	\right).
+\end{equation*}
+Introducing $\hat{\Psi}\D_k = (\hat{c}_k\D,\ \hat{c}_{-k})$ we could simplify $\hat{H}_k$ to the
+\begin{equation*}
+	\hat{H} = \hat{\Psi}_k\D H_k \hat{\Psi}_k,
+	\hspace{10 mm} 
+	H_k = -2 J\begin{pmatrix}
+	    -\tfrac{h}{J} + \cos k &  i \sin k \\
+	    -  i \sin k & \tfrac{h}{J} - \cos k \\
+	\end{pmatrix}.
+\end{equation*}
+Great, we have reduced the Hamiltonian to quadratic form and ready for the \textit{Bogolyubov transform}:
+\begin{equation*}
+	\hat{\Psi}_k = U \hat{\Phi}_k,
+	\hspace{0.25cm} \Rightarrow \hspace{0.25cm}
+	\hat{H}_k = \hat{\Phi}_k\D D_k \hat{\Phi}_k,
+	\hspace{5 mm} 
+	D_k = U\D H_k U = \begin{pmatrix}
+	    \varepsilon_k & 0 \\
+	    0 & -\varepsilon_k \\
+	\end{pmatrix},
+\end{equation*}
+where $\hat{\Phi}_k\D \overset{\mathrm{def}}{=}   (\hat{\gamma}_k\D,\ \hat{\gamma}_{-k})$ -- our new operators. Diagonalizing $H_k$ we have
+\begin{equation}
+	U_k = \begin{pmatrix}
+	    u_k & -\bar{v}_k \\
+	    v_k & u_k \\
+	\end{pmatrix} = 
+	\frac{1}{\sqrt{\varepsilon_k(\varepsilon_k + z_k)}} \begin{pmatrix}
+	    \varepsilon_k + z_k & i y_k \\
+	    i y_k & \varepsilon_k + z_k \\
+	\end{pmatrix},
+	\hspace{5 mm} 
+	\boxed{
+	\varepsilon_k = 2 J \sqrt{\left(\cos k - \tfrac{h}{J}\right)^2 + \sin(k)^{2}}
+	}
+	\label{gap}
+\end{equation}
+where we introduced new parameters
+\begin{equation*}
+	u_k = \frac{\varepsilon_k + z_k}{\sqrt{\varepsilon_k (\varepsilon_k + z_k)}},
+	\hspace{10 mm} 
+	v_k = \frac{i y_k}{\sqrt{\varepsilon_k (\varepsilon_k + z_k)}},
+	\hspace{10 mm} 
+	\left.\begin{aligned}
+    	z_k &= 2(h-J\cos k), \\
+		y_k &= 2 J \sin k.
+	\end{aligned}\right.
+\end{equation*}
+We could show that still
+\begin{equation*}
+	\{\hat{\gamma}_k, \hat{\gamma}_k\D\} = \{\bar{u}_k \hat{c}_k + \bar{v}_k \hat{c}\D_{-k},\ u_k \hat{c}_k\D + v_k \hat{c}_{-k}\} = |u_k|^2 + |v_k|^2 = 1,
+\end{equation*}
+so $\hat{\gamma}$ is a fermion. \red{Calculate commutators? But they are fermions!}
+

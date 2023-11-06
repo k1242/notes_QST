@@ -1,0 +1,40 @@
+In 1D it's useful to modify bosons to spinless fermions by \textit{Jordan Wigner transformation}
+\begin{equation*}
+	\hat{b}_j = \hat{K}_j \hat{c}_j = \hat{c}_j \hat{K}_j,
+	\hspace{10 mm} 
+	\hat{K}_j = \prod_{i=1}^{j-1} (1-2 \hat{n}_i) = \pm 1, 
+\end{equation*}
+where non-local string operator $\hat{K}_j$ corresponds just to a sign and $\hat{K}_j = \hat{K}_j\D = \hat{K}_j^{-1}$. So if $\hat{c}$ are fermions then $\hat{b}$ satisfies the commutation and anticommutation relations 
+\begin{equation}
+\renewcommand{\arraystretch}{1.4}
+	\begin{tabular}{ccc}
+	$[\hat{b}_i, \hat{b}_j] = 0,$ & $[\hat{b}_i, \hat{b}_j\D] = 0,$ & $[\hat{b}_i\D, \hat{b}_j\D] = 0,$ \\
+	$\{\hat{b}_j, \hat{b}_j\} = 0,$ & $\{\hat{b}_j, \hat{b}_j\D\} = 0,$ & $\{\hat{b}_j\D, \hat{b}_j\D\} = 0.$
+	\end{tabular}
+	\label{P12}
+\end{equation}
+Second row could be proven using
+\begin{equation*}
+	\hat{b}\D_j \hat{b}_j = \hat{c}_j\D \hat{K}_j\D \hat{K}_j \hat{c}_j = \hat{c}_j\D \hat{c}_j,
+	\hspace{5 mm} 
+	\hat{b}\D_j \hat{b}_j\D = \hat{c}_j\D \hat{K}_j\D \hat{K}_j\D \hat{c}_j\D = \hat{c}_j\D \hat{c}_j\D,
+	\hspace{5 mm} 
+	\hat{b}_j \hat{b}_j = \hat{c}_j \hat{K}_j \hat{K}_j \hat{c}_j = \hat{c}_j \hat{c}_j.
+\end{equation*}
+And without loss of generality for $j>i$
+\begin{equation*}
+	\hat{b}_i \hat{b}_j\D = \hat{c}_i \hat{K}_{i,j} \hat{c}_j\D,
+	\hspace{5 mm} 
+	\hat{b}_j\D \hat{b}_i = \hat{c}_j\D \hat{K}_{i,j} \hat{c}_i \overset{1}{=}  -\hat{K}_{i,j} \hat{c}_i   \hat{c}_j\D \overset{2}{=} \hat{c}_i \hat{K}_{i,j} \hat{c}_j\D,
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	[\hat{b}_i, \hat{b}_j\D] = 0,
+\end{equation*}
+with $\hat{K}_{i,j} = \prod_{k=i}^{j}(1-2\hat{n}_k)$. It was used in $\overset{1}{=}$ that 
+$\{\hat{c}_i, \hat{c}_j\D\}=0$ and in $\overset{2}{=}$ that $\hat{c}_i$ changes parity for $\hat{K}_{i,j}$. The operators conjugation does not change the calculations, so we have proved \eqref{P12}. We need carefully work with PBS
+\begin{equation*}
+	\hat{b}_L\D \hat{b}_{1} = \hat{K}_L \hat{c}_L\D \hat{c}_1 \overset{3}{=}  -\left( \textstyle \prod_{i=1}^{L} (1-2 \hat{c}_i\D \hat{c}_i)\right) \hat{c}_L\D \hat{c}_1 = - (-1)^{\hat{N}}  \hat{c}_L\D \hat{c}_1,
+	\hspace{10 mm} 
+	\hat{N} = \sum_{j=1}^{L} \hat{c}_j\D \hat{c}_j,
+\end{equation*}
+where we used in $\overset{3}{=}$ that $j$-site occupied and we could complete to $- (-1)^{\hat{N}} $.
+
