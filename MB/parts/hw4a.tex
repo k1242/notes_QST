@@ -1,0 +1,18 @@
+Writing the path as $q(t) = q_c(t) = y(t)$, due to $\delta S[q_c(t)] = 0$ we could rewrite $S$ as 
+\begin{equation*}
+	S[q(t)] = \int_{0}^{T} \frac{m}{2}\left(
+		(\dot{q}_c + \dot{y})^2 - \omega^2 (q_c + y)^2
+	\right) \d t = S[q_c(t)] + S[y(t)] + \int_{0}^{T} m\left(
+		\dot{q}_c \d y - \omega^2 q_c y \d t
+	\right)  = S[q_c(t)] + S[y(t)].
+\end{equation*}
+It was used that Euler-Lagrange equation $\partial_x L - \frac{d }{d t} \partial_{\dot{x}} L = 0$ leads to classical equation of motion $\ddot{q}_c = - m \omega^2 q_c(t)$:
+\begin{equation*}
+	\int_{0}^{T}  m \dot{q}_c \d y = y(t) \dot{q}_c \bigg|_0^T - \int_{0}^{T} m y \ddot{q}_c \d t = \int_{0}^{T}  m \omega^2 y q_c \d t. 
+\end{equation*}
+Thus we could factorise $K$
+\begin{equation*}
+	K = e^{i S[q_c(t)]} F(T),
+	\hspace{10 mm} 
+	F(T) = \int e^{i S[y(t)]} \F y(t).
+\end{equation*}

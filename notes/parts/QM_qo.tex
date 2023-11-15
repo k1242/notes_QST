@@ -1,0 +1,81 @@
+The s.c. eq of motion 
+\begin{equation*}
+	\hbar \dot{\vc{k}} = - \frac{e}{c} \vc{v} \times \vc{B} = - \frac{e}{\hbar^2 c} \nabla_{\vc{k}} \varepsilon_n(\vc{k}) \times \vc{B},
+\end{equation*}
+hence we get
+\begin{equation*}
+	\frac{d \varepsilon)n (\vc{k})}{d t}  = \vc{k} \left[\nabla_{\vc{k}}, \varepsilon_n(\vc{k})\right] = 0,
+\end{equation*}
+thus $\varepsilon_n(\vc{k})$ is a c.o.m.
+
+% cdot, times keymaps
+Consider 2D system with holes and electrons: $\vc{k} \cdot \vc{B} = 0$. What is corresponding real space trajectory? We could look at components
+\begin{equation*}
+  	\vc{e}_B \times \hbar \dot{\vc{k}} = - \frac{e}{c} \vc{e}_B \times \left[
+  		\vc{v} \times \vc{B}
+  	\right] 
+  	= - \frac{e B}{c} \left[
+  		\vc{v}_n (\vc{k}) - \vc{e}_B \cdot (\vc{e}_B \cdot \vc{v}_n (\vc{k}))
+  	\right]
+  	= - \frac{eB}{c} \vc{v}_\bot.
+\end{equation*}  
+We could integrate over time
+\begin{equation*}
+	 \vc{r}_\bot - \vc{r}_\bot(0) = - \frac{\hbar c}{e B} \vc{e}_B \times \left[
+	 	\vc{k}(t) - \vc{k}(0)
+	 \right].
+\end{equation*}
+Thus $\vc{r}_\bot$ orbit is simpy the rotated momentum space orbit:
+\begin{equation*}
+	z(t) - z(0) = \int_{0}^{t} \frac{1}{\hbar} \partial_{k_z} \varepsilon_n (\vc{k}(z))\d z
+	\hspace{5 mm} 
+	\red{\text{maybe}}.
+\end{equation*}
+
+The period of an orbit
+\begin{equation*}
+	T = \int_{t_1}^{t_2} \d t = \oint \frac{1}{|\dot{\vc{k}}|} \d |\vc{k}| = \oint
+	\frac{\d |\vc{k}|}{|(\nabla_{\vc{k}} \cdot \varepsilon_n(\vc{k}))_\bot|} \frac{\hbar^2 c}{eB}.
+\end{equation*}
+Consider two trajectories with energy difference $\Delta \varepsilon$ and $\Delta k$ in momentum space:
+\begin{equation*}
+	\Delta \varepsilon = \nabla_{\vc{k}} \varepsilon_n (\vc{k}) \cdot \vc{\Delta}(\vc{k}) = | (\nabla_{\vc{k}} \varepsilon_n)_\bot| \cdot |\vc{\Delta} (\vc{k})|.
+\end{equation*}
+and back to the period
+\begin{equation*}
+	T = \frac{\hbar^2 c}{eB} \oint |d \vc{k}| \frac{| \vc{\Delta}(\vc{k})|}{\Delta \varepsilon} = \frac{\hbar^2 v}{eB} \frac{A(\varepsilon+\Delta \varepsilon) - A(\varepsilon)}{\Delta \varepsilon} = \frac{\hbar^2 c}{e B} \frac{\partial A}{\partial \varepsilon} \bigg|_{kz}.
+\end{equation*}
+% With $A(\varepsilon)$ the two 
+For example with $\varepsilon = \frac{\hbar^2 k^2}{2m}$ we have $T = \frac{2\pi}{\omega_c}$ with $\omega_c = \frac{e B}{m^* c}$.
+
+
+
+
+\subsection*{The Bohr-Sommerfeld quantization rule}
+
+It is true that
+\begin{equation*}
+	\Delta \varepsilon = \frac{2 \pi \hbar}{T} = \frac{2 \pi e B}{\hbar c} \left(
+		\frac{\partial A(\varepsilon)}{\partial \varepsilon} 
+	\right)^{-1},
+\end{equation*}
+and that directly leads to a quantization of momentum space. 
+\begin{equation*}
+	\left(\frac{\partial A}{\partial \varepsilon} \right) \Delta \varepsilon = \Delta A = \frac{2 T e B}{\hbar c} \hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	A_n = \frac{2 \pi e B}{\hbar c} (n + \nu),
+\end{equation*}
+with $\nu$ is arbitrary. Energy thus 
+\begin{equation*}
+	\varepsilon_n = \hbar \omega_c \left(n + \tfrac{1}{2}\right).
+\end{equation*}
+
+
+% \subsection*{The Lifshitz-Kosevih theory of QO}
+
+% Lattinger function
+% \begin{equation*}
+% 	\Omega = - T \tr \left[
+% 		\ln - G^{-1}(i \omega_n)
+% 	\right] - T  \tr
+% \end{equation*}
+% finite temperature Green Function

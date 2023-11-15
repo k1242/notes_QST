@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  6 NOV 2023 03:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.27)  15 NOV 2023 02:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,139 +804,78 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(settings/settings.tex) (settings/inputs.tex (parts/hw3.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+(settings/settings.tex) (settings/inputs.tex (parts/hw4.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-4.
+2.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-(parts/hw31.tex (parts/hw31a.tex
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 11.
-
-
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/bbm\ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)) (parts/hw31b.tex) (parts/hw31c.tex)) (parts/hw32.tex
+(parts/hw4a.tex) (parts/hw4b.tex) (parts/hw4c.tex) (parts/hw4d.tex))
+(parts/hw42.tex
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-10.
+8.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [1{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
-<imgs/3H.pdf, id=31, 72.27pt x 72.27pt>
-File: imgs/3H.pdf Graphic file (type pdf)
-<use imgs/3H.pdf>
-Package pdftex.def Info: imgs/3H.pdf  used on input line 40.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3U.pdf, id=32, 72.27pt x 72.27pt>
-File: imgs/3U.pdf Graphic file (type pdf)
-<use imgs/3U.pdf>
-Package pdftex.def Info: imgs/3U.pdf  used on input line 41.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3UHU.pdf, id=33, 72.27pt x 72.27pt>
-File: imgs/3UHU.pdf Graphic file (type pdf)
-<use imgs/3UHU.pdf>
-Package pdftex.def Info: imgs/3UHU.pdf  used on input line 42.
-(pdftex.def)             Requested size: 72.2698pt x 72.2698pt.
-<imgs/3bl.pdf, id=34, 35.13126pt x 100.375pt>
-File: imgs/3bl.pdf Graphic file (type pdf)
-<use imgs/3bl.pdf>
-Package pdftex.def Info: imgs/3bl.pdf  used on input line 43.
-(pdftex.def)             Requested size: 35.13115pt x 100.37474pt.
- (parts/hw32a.tex)
-(parts/hw32b.tex [2 <./imgs/3H.pdf> <./imgs/3U.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3U.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
-> <./imgs/3UHU.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3UHU.pdf): PDF inclusion: multiple pdfs w
-ith page group included in a single page
-> <./imgs/3bl.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3bl.pdf): PDF inclusion: multiple pdfs wi
-th page group included in a single page
->])) (parts/hw33.tex
-<imgs/3gap.pdf, id=70, 492.84125pt x 110.4125pt>
-File: imgs/3gap.pdf Graphic file (type pdf)
-<use imgs/3gap.pdf>
-Package pdftex.def Info: imgs/3gap.pdf  used on input line 4.
-(pdftex.def)             Requested size: 460.6753pt x 103.21156pt.
- (parts/hw33a.tex) (parts/hw33b.tex
-<imgs/3F.pdf, id=73, 637.38126pt x 146.5475pt>
-File: imgs/3F.pdf Graphic file (type pdf)
-<use imgs/3F.pdf>
-Package pdftex.def Info: imgs/3F.pdf  used on input line 10.
-(pdftex.def)             Requested size: 460.6753pt x 105.91884pt.
-)) [3 <./imgs/3gap.pdf> <./imgs/3F.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/3F.pdf): PDF inclusion: multiple pdfs wit
-h page group included in a single page
->] (parts/hw34.tex
-<imgs/3rad.pdf, id=139, 144.54pt x 144.54pt>
-File: imgs/3rad.pdf Graphic file (type pdf)
-<use imgs/3rad.pdf>
-Package pdftex.def Info: imgs/3rad.pdf  used on input line 15.
-(pdftex.def)             Requested size: 127.96622pt x 127.96529pt.
-))) [4 <./imgs/3rad.pdf>] (MB.aux)
+] (parts/hw421.tex)
+(parts/hw422.tex) (parts/hw423.tex))) [2] (MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: 157E8BE9A927B1B6B13B1F235CA20597;220.
+(rerunfilecheck)             Checksum: E1EDAE80AA97FCB8FCAE57491802EDE2;486.
  ) 
 Here is how much of TeX's memory you used:
- 15818 strings out of 475248
- 250137 string characters out of 5767627
- 1973785 words of memory out of 5000000
- 36989 multiletter control sequences out of 15000+600000
- 567977 words of font info for 67 fonts, out of 8000000 for 9000
+ 15687 strings out of 475248
+ 247311 string characters out of 5767627
+ 1949785 words of memory out of 5000000
+ 36886 multiletter control sequences out of 15000+600000
+ 565097 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,13n,99p,566b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm07
-00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-tt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\lati1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/
-dpi600\bbm10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\larm1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\lasl1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on MB.pdf (4 pages, 342391 bytes).
+ 89i,12n,99p,566b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt10
+00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600
+\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
+600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\larm1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
+-t2a/dpi600\lasl1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MB.pdf (2 pages, 156580 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

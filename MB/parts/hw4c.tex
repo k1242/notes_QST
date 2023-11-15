@@ -1,0 +1,30 @@
+The fluctuations can be expressed as a Fourier series
+\begin{equation*}
+	y(t) = \sum_{n=1}^{\infty} a_n \sin\left(
+		\frac{n \pi t}{T}
+	\right),
+\end{equation*}
+we go to the integration over $\prod_n a_n$. It is useful to calculate
+\begin{equation*}
+	\int_{0}^{T} \dot{y}^2 \d t = \frac{T}{2} \sum_{n=1}^{\infty} \left(\frac{\pi n}{T}\right)^2 a_n^2,
+	\hspace{10 mm} 
+	\int_{0}^{T} y^2 \d t = \frac{T}{2} \sum_{n=1}^{\infty} a_n^2.
+\end{equation*}
+So we could find $F$ as
+\begin{equation*}
+	F(T) \propto \int \exp\left(
+		-\sum_{n=1}^{\infty} \alpha_n  a_n^2
+	\right) \prod_n \d a_n = \prod_{n=1}^{\infty} \sqrt{\frac{\pi}{\alpha_n}},
+	\hspace{10 mm} 
+	\alpha_n = \frac{m}{2 i \hbar}\frac{T}{2} \left(\frac{\pi n}{T}\right)^2 \left(1 - \frac{\omega^2 T^2}{n^2 \pi^2}\right) .
+\end{equation*}
+Ignoring all factors without $\omega$, we have
+\begin{equation*}
+	F(T) = C \prod_{n=1}^{\infty} \left(1 -  \frac{\omega^2 T^2}{n^2 \pi^2}\right)^{-1/2} = C \sqrt{\frac{\omega T}{\sin (\omega T)}},
+\end{equation*}
+with some constant $C$ that could be find from the free particle case $\omega \to 0$
+\begin{equation*}
+	\lim_{\omega \to 0} F(T) = C = \sqrt{\frac{m}{2\pi i \hbar T}},
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}	
+	F(T) = \sqrt{\frac{m \omega}{2\pi i \hbar \sin(\omega T)}}.
+\end{equation*}

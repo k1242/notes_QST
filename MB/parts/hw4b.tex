@@ -1,0 +1,19 @@
+Solving $\ddot{q}_c = - m \omega^2 q_c(t)$ with boundary conditions $q(0) = q_i$ and $q(T) = q_f$ we get
+\begin{equation*}
+	q_c(t) = A \cos (\omega t) + B \sin (t),
+	\hspace{0.25cm} \Rightarrow \hspace{0.25cm}
+	\left\{\begin{aligned}
+	    q_i &= B \\
+	    q_f &= A \sin(\omega T) + B \cos(\omega T)
+	\end{aligned}\right.
+	\hspace{0.25cm} \Rightarrow \hspace{0.25cm}
+	A = \frac{q_f - q_i \cos(\omega T)}{\sin(\omega T)},
+	\hspace{2.5 mm} 
+	B = q_i,
+\end{equation*}
+and substituting into the action \eqref{S}
+\begin{equation*}
+	S[q_c(t)] = \frac{m \omega}{2 \sin(\omega T)} \left(
+		(q_i^2 +q_f^2) \cos(\omega T) - 2 q_i q_f
+	\right).
+\end{equation*}
