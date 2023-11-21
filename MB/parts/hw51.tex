@@ -1,0 +1,31 @@
+Consider Gaussian integral 
+\begin{equation*}
+	I_1 = \int_{-\infty}^{\infty} e^{-i a x^2} \d x,
+\end{equation*}
+with $\alpha \in \mathbb{R}^+$. We could use that
+\begin{equation*}
+	I_2 = \int_{-\infty}^{\infty} e^{-b x^2} \d x = \sqrt{\frac{\pi}{a}}.
+\end{equation*}
+Define  $\mathcal C_1 = \{z=e^{i \frac{\pi}{4}x} \colon x \in \mathbb{R}\}$,
+$\mathcal C_2 = \{z=x \colon x \in \mathbb{R}\}$ and ${\mathcal C}_R^\pm = \{z = \pm R e^{i \varphi} \colon \varphi \in [0, \pi/4]\}$. Applying Cauchy integral theorem for holomorphic functions to the $\mathcal C = \mathcal C_1 \cup \mathcal C_2 \cup {\mathcal C}_R^+ \cup {\mathcal C}_R^-$ we have 
+\begin{equation*}
+	-I[\mathcal C_1]+I[\mathcal C_2]+I[{\mathcal C}_R^+]+I[{\mathcal C}_R^-] = 0,
+\end{equation*}
+with $I[\mathcal C_1] e^{-i \frac{\pi}{4}} = I_1 $, $I[\mathcal C_2] = I_2$.
+
+The $I[{\mathcal C}_R^\pm]$ could be estimated as
+\begin{equation*}
+	|I[{\mathcal C}_{R \to \infty}^\pm] | \leq \lim_{R \to \infty} \int_{0}^{\pi/2} e^{-a R^2 \varphi} r \d \varphi = \lim_{R \to \infty} \frac{1}{aR}\left(
+		1 - e^{- \frac{1}{2} a \pi r^2}
+	\right) = 0,
+\end{equation*}
+thus we have
+\begin{equation*}
+	I_1 = I[\mathcal C_1] e^{-i \frac{\pi}{4}} =  I[\mathcal C_2] e^{-i \frac{\pi}{4}} = e^{-i \frac{\pi}{4}} \sqrt{\frac{\pi}{a}},
+\end{equation*}
+that could be generalized as
+\begin{equation*}
+	\int_{-\infty}^{\infty} e^{\pm i a x^2} \d x = e^{\pm i \frac{\pi}{4}} \sqrt{\frac{\pi}{a}}.
+\end{equation*}
+
+

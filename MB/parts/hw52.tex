@@ -1,0 +1,39 @@
+We could derive the low-energy effective action for a system of two
+coupled harmonic oscillators, formally described by the classical partition function
+\begin{equation*}
+	Z = \int Dx DX \, \exp\left(
+		i \int dt\ L(x, X, \dot{x}, \dot{X}) 
+	\right),
+\end{equation*}
+with
+\begin{equation*}
+	L = \frac{1}{2} m \dot{x}^2 - \frac{1}{2} m \omega^2 x^2 + \frac{1}{2} M \dot{X}^2 - \frac{1}{2} M \Omega^2 X^2 - g X x.
+\end{equation*}
+It could be expanded as
+\begin{equation*}
+	Z = \int Dx \ e^{i S_0 + i\sub{S}{int}},
+	\hspace{5 mm} 
+	e^{ i\sub{S}{int}} = \int D X \ \exp\left(
+		i \int \d t \left[
+			\tfrac{1}{2} M \dot{X}^2 - \tfrac{1}{2} M \Omega^2 X^2 - g X x
+		\right]
+	\right).
+\end{equation*}
+Integrating by parts we have Gaussian integral that coul be calculated directly
+\begin{equation*}
+	e^{ i\sub{S}{int}} = \int D X \ \exp\left(
+		i \int \d t \left[
+			\tfrac{1}{2} M X(\partial_t^2+ \Omega^2)X - g X x
+		\right]
+	\right) = \mathcal N \exp\left(
+		i \int dt \frac{g^2}{2M} x \left(\partial_t^2 + \Omega^2\right)^{-1} x
+	\right)
+\end{equation*}
+with $\mathcal N$ as some irrelevant normalizing factor. That leads to some $\sub{L}{eff}$
+\begin{equation*}
+	\sub{L}{eff} = \tfrac{1}{2} m \ddot{x}^2 - \frac{1}{2} m x^2 \sub{\omega}{eff}^2,
+	\hspace{10 mm} 
+	\sub{\omega}{eff} =  \omega \sqrt{1 - \alpha^2 \frac{m}{M} \left(\frac{\omega}{\Omega}\right)^2},
+\end{equation*}
+with $g = \alpha m \omega^2$ and, apparently, $\sub{m}{eff} = m$.
+
