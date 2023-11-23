@@ -1,0 +1,42 @@
+Consider the Hamiltonian of the Jaynes-Cummings
+\begin{equation*}
+	\hat{H} = \begin{pmatrix}
+	    0 & 0 \\
+	    0 & \hbar \omega_0  \\
+	\end{pmatrix}
+	+ \hbar \omega \hat{a}\D \hat{a} + \hbar g \begin{pmatrix}
+	    0 & \hat{a}\D \\
+	    \hat{a} & 0 \\
+	\end{pmatrix}.
+\end{equation*}
+Note that  (\textbf{a})
+\begin{equation*}
+	\hat{\sigma}^+ \ket{g} = \ket{e},
+	\hspace{10 mm} 
+	\hat{\sigma}^- \ket{e} = \ket{g}.
+\end{equation*}
+Eigenstates and eigenvalues could be expressed as $\ket{g,n}$ with energy $\hbar \omega n$ and $\ket{e,n}$ with energy $\hbar \omega n + \hbar \omega_0$. As it was noticed in (5.1.e) the nonzero matrix elements of the Hamiltonian coulples (\textbf{c}) only $\ket{g,n+1}$ and $\ket{e, n}$. The Hamiltonian $\hat{H}$ could be expressed as (\textbf{d})
+\begin{align*}
+	\bk{\text{g},n+1}[\hat{H}]{\text{g}, n+1} = \hbar \omega n+ \hbar \omega,
+	\hspace{5 mm} 
+	\bk{\text{e}, n}[\hat{H}]{\text{e}, n} = \hbar \omega n + \hbar \omega_0,
+	\hspace{5 mm} 
+	\bk{\text{e}, n}[\hat{H}]{\text{g}, n+1} = \hbar g \sqrt{n+1}.
+\end{align*}
+
+In resonance (\textbf{e}) we have (in the interaction picture)
+\begin{align*}
+	\tfrac{d }{d t} c_{g, 1}(t) &= - i g   c_{e, 0}(t),\\
+	    \tfrac{d }{d t} c_{e, 0}(t) &= - i g   c_{g, 1}(t),
+\end{align*}
+so evolution could be expressed as
+\begin{equation*}
+	\ket{\psi(t)} =  c_{g, 1}(t) \ket{\text{g}, 1} + c_{e, 0}(t) \ket{\text{e}, 0},
+\end{equation*}
+with coefficients 
+\begin{equation*}
+	 c_{g, 1}(t) = e^{-i (\omega t-\pi/2)} \sin(g t),
+	\hspace{5 mm} 
+	c_{e,0}(t) = e^{-i \omega t} \cos(g t),
+\end{equation*}
+in the moment $t_{\pi/2}=\frac{\pi/2}{g}$ we have $|c_{e,0}(t_{\pi/2})|^2=|c_{g,1}(t_{\pi/2})|^2=1/2$.

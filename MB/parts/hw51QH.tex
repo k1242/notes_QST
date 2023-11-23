@@ -1,0 +1,60 @@
+Consider a resonator with frequency $\omega$ and a two-level system with frequency $\omega_0$ Hamiltonian
+\begin{equation*}
+	H = H_0 + \sub{H}{int},
+	\hspace{10 mm} 
+	H_0 = \hbar \omega \hat{a}\D \hat{a} - \hbar \omega_0 \tfrac{1}{2}\sigma_z,
+	\hspace{5 mm} 
+	\sub{H}{int} = \hbar g(\hat{\sigma}^+ + \hat{\sigma}^-) (\hat{a}\D + \hat{a}).
+\end{equation*}
+After interaction transformation $\ket{\psi} = \hat{U}\D \ket{\tilde{\psi}}$ with $\hat{U} = e^{i \hat{H}_0 t / \hbar}$ we have (\textbf{a})
+\begin{equation*}
+	\sub{H}{I} = \hat{U} \sub{H}{int} \hat{U}\D = \hbar g \left(
+		\hat{a} \hat{\sigma}^+ e^{i(\omega_0 - \omega)t} + \hc
+	\right) + \hbar g \left(
+		\hat{a}\D \hat{\sigma}^+ e^{i(\omega_0 + \omega)t} + \hc
+	\right),
+\end{equation*}
+but after rotating-wave approximation (\textbf{b}), which is goog with $\omega_0 \sim \omega \gg g$,
+\begin{equation*}
+	\sub{H}{I} = \hat{U} \sub{H}{int} \hat{U}\D = \hbar g \left(
+		\hat{a} \hat{\sigma}^+ e^{i(\omega_0 - \omega)t} + \hc
+	\right)
+	\label{QHHI}
+\end{equation*}
+Using the approximated Hamiltonian we could perform the inverse transformation (\textbf{c}) as
+\begin{equation*}
+	\hat{H} = \hat{H}_0 + \hat{U}\D \sub{H}{I} \hat{U} = H_0 + \hbar g (\hat{a} \hat{\sigma}^+ + \hc).
+\end{equation*}
+Transfering this Hamiltonian to the rotating frame of the resonator  (\textbf{d}) we have
+\begin{equation*}
+	\sub{\hat{U}}{R}= e^{i \omega t \hat{a}\D \hat{a}},
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\sub{H}{I,R} = - \hbar \omega_0 \tfrac{1}{2}\sigma_z + \hbar g \left(
+		\hat{a} \hat{\alpha}^+ e^{-i \omega t} + \hc
+	\right) = \hbar \omega \begin{pmatrix}
+	    -\tfrac{1}{2} & 0 \\
+	    0 & \tfrac{1}{2} \\
+	\end{pmatrix}
+	 + \hbar g \begin{pmatrix}
+	     0 & \hat{a}\D e^{i \omega t} \\
+	     \hat{a} e^{- i \omega t} & 0 \\
+	 \end{pmatrix}.
+\end{equation*}
+
+In resonance case (the non-resonant case is more non-trivial) we could fill the resonator with $n$ photons (\textbf{e}) by applying $\hat{\sigma}_x$. We could start with $\ket{\text{e}, n}$  and consider reduced two-dimensional Hamiltonian that evol $\ket{\text{e}, n}$ to the $\ket{\text{g}, n+1}$ by Rabi oscillations:
+\begin{equation*}
+	\ket{\psi(t)} =  c_{g, n+1}(t) \ket{\text{g}, n+1} + c_{e, n}(t) \ket{\text{e}, n},
+\end{equation*}
+with $\delta = \omega_0 - \omega$
+\begin{align*}
+	\tfrac{d }{d t} c_{g, n+1}(t) &= - i g \sqrt{n+1} e^{i \delta t} c_{e, n}(t),\\
+	    \tfrac{d }{d t} c_{e, n}(t) &= - i g \sqrt{n+1} e^{-i \delta t} c_{g, n+1}(t).
+\end{align*}
+Thus we have Rabi oscillations with
+\begin{equation*}
+	\sub{\Omega}{R, n} = \sqrt{g^2 (n+1) + \left(\tfrac{\delta}{2}\right)^2} \overset{\delta=0}{=} g \sqrt{n+1}.
+\end{equation*}
+To pump $n$ photons we need do $\pi$-pulse (apply $\hat{\sigma}_x$) after $T_n$, with
+\begin{equation*}
+	T_n = \frac{\pi}{g \sqrt{n+1}}.
+\end{equation*}

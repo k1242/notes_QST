@@ -1,0 +1,65 @@
+Consider $\sub{H}{JC} = H_0 + \sub{H}{int}$ with $\sub{H}{int} = \hbar g\left(\hat{\sigma}^+ \hat{a} + \hat{\sigma}^- \hat{a}\D\right)$. In the interaction picture we have \eqref{QHHI}, that in the resonance case could be written as
+\begin{equation*}
+	\sub{\hat{H}}{I} = \hbar g \begin{pmatrix}
+	    0 & \hat{a}\D \\
+	   \hat{a} & 0 \\
+	\end{pmatrix}.
+\end{equation*}
+We could calculate state evolution by $\hat{U}(t) = e^{- i \sub{H}{I} t / \hbar}$.  Thus we need
+\begin{equation*}
+	\hat{h} = \begin{pmatrix}
+	    0 & \hat{a}\D \\
+	   \hat{a} & 0 \\
+	\end{pmatrix},
+	\hspace{2.5 mm} 
+	\hat{h}^2 = \begin{pmatrix}
+	    \hat{n} & 0 \\
+	    0 & \hat{n}+1 \\
+	\end{pmatrix},
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\hat{h}^{2k} = \begin{pmatrix}
+	    \hat{n}^k & 0 \\
+	    0 & (\hat{n}+1)^k \\
+	\end{pmatrix},
+	\hspace{2.5 mm} 
+	\hat{h}^{2k+1} = 
+	\begin{pmatrix}
+	    0 &  \hat{a}\D (\hat{n}+1)^k \\
+	    (\hat{n}+1)^k a & 0 \\
+	\end{pmatrix},
+\end{equation*}
+with $\hat{a}\D \hat{a} = n$. Matrix elements could be expressed as
+\begin{align*}
+	\bk{\text{g}}[\hat{U}(t)]{\text{g}} &= \sum_{k=0}^{\infty} (gt)^{2k}\frac{(-i)^{2k}}{(2k)!} n^k = \sum_{k=0}^{\infty} (gt)^{2k} \frac{(-1)^{k}}{(2k)!} (\sqrt{n})^{2k} = \cos(gt \sqrt{n}), \\
+	\bk{\text{e}}[\hat{U}(t)]{\text{e}} &= \sum_{k=0}^{\infty} (gt)^{2k}\frac{(-i)^{2k}}{(2k)!} (n+1)^k = \ldots = \cos(gt \sqrt{n+1}), \\
+	\bk{\text{g}}[\hat{U}(t)]{\text{e}} &= -i\hat{a}\D\sum_{k=0}^{\infty} (gt)^{2k+1}\frac{(-i)^{2k}}{(2k+1)!} (\sqrt{n+1})^{2k} = -i \hat{a}\D \frac{\sin(gt \sqrt{n+1})}{\sqrt{n+1}}.
+\end{align*}
+Starting with the exited state and the cavity in a coherent state 
+\begin{equation*}
+	\ket{\psi(t)} = \hat{U}(t) \ket{\text{e}, \alpha} = \sum_{n=1}^{\infty} c_{g, n} \ket{\text{g}, n} + \sum_{n=0}^{\infty} c_{e, n} \ket{\text{e}, n},
+\end{equation*}
+with 
+\begin{equation*}
+	c_{g, n+1} = -i \frac{e^{-|\alpha|^2/2} \alpha^n}{\sqrt{n!}}  \sin(gt \sqrt{n+1}),
+	\hspace{10 mm} 
+	c_{e, n} =  \frac{e^{-|\alpha|^2/2} \alpha^n}{\sqrt{n!}}  \cos(gt \sqrt{n+1}),
+\end{equation*}
+so $|c_{g, n+1}|^2 + |c_{e, n}|^2 = \tfrac{1}{n!}{e^{-|\alpha|^2} \alpha^{2n}}$. 
+
+The probability  to find the two-level system in the excited state could be expressed as
+\begin{equation*}
+	P_e = \sum_{n=0}^{\infty} P_n = \sum_{n=0}^{\infty} |c_{e,n}|^2 = \sum_{n=0}^{\infty} \frac{e^{-|\alpha|^2} \alpha^{2n}}{n!} \cos(gt \sqrt{n+1})^2.
+\end{equation*}
+Assumin $\bar{n} = |\alpha|^2 \gg 1$ we can estimate Rabi-frequency oscillations as $\sub{\Omega}{R} = g \sqrt{n}$. We can take $\Omega_n = g \sqrt{n+1}$ to be a distributed between $[|\alpha|^2 - \alpha, |\alpha|^2 + \alpha]$ ($\Delta n = \sqrt{\bar{n}}$), thus collapse time could be estimated from decoherence time
+\begin{equation*}
+	\sub{t}{c} \sim \frac{\pi}{g}\left(
+		 \sqrt{\bar{n}+\sqrt{\bar{n}}} - \sqrt{\bar{n}-\sqrt{\bar{n}}}
+	\right)^{-1} \sim \frac{\pi}{g}.
+\end{equation*}
+To calculate revival time we need states to interfere constructively
+\begin{equation*}
+	\sub{t}{r} \sim m \frac{\pi}{g} \left(\sqrt{\bar{n}} - \sqrt{\bar{n}-1}\right)^{-1} \sim m \frac{2 \pi \sqrt{\alpha}}{g},
+	\hspace{5 mm} 
+	m = 1,2,\ldots
+\end{equation*}
+but by numerical calculations I have $\sub{t}{r} \sim 4 \pi \frac{\sqrt{\alpha}}{g}$, so maybe I lost factor 2 somewhere.
