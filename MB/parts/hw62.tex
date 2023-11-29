@@ -1,0 +1,98 @@
+We consider an isotropic Heisenberg ferromagnet with spin 1/2-particles fixed to the sites of a lattice:
+\begin{equation*}
+	\hat{H} = - \frac{1}{2} \sum_{ij} J_{ij} \hat{\vc{S}}_i \cdot \hat{\vc{S}}_j,
+\end{equation*}
+with $J_{ij} > 0$. Let us label the ground states by their orientation in space:
+\begin{equation*}
+	\ket{0_{\vc{n}}} = \bigotimes_{i=1}^N \ket{i, \vc{n}},
+\end{equation*}
+with the single site states satisfying $\vc{n} \cdot \hat{\vc{S}}_j \ket{j, \vc{n}} = - \frac{1}{2} \ket{j, \vc{n}}$.
+
+\textbf{1. Orthogonal states}. In spherical coordinates the single site state could be found from
+\begin{equation*}
+	\vc{n} \cdot \hat{\vc{S}} = \frac{1}{2} \left(
+	\begin{array}{cc}
+	 \cos (\theta ) & e^{-i \varphi } \sin (\theta ) \\
+	 e^{i \varphi } \sin (\theta ) & -\cos (\theta ) \\
+	\end{array}
+	\right),
+\end{equation*}
+with eigenstate
+\begin{equation*}
+	\ket{0_{\vc{n}}} = \frac{\cos(\theta)-1}{\sqrt{2-2 \cos (\theta )}}\ket{\uparrow} + \frac{e^{i \varphi} \sin \theta}{\sqrt{2-2 \cos (\theta )}}\ket{\downarrow}.
+\end{equation*}
+We need projection to the $\ket{\downarrow}$, that could be simplified to the
+\begin{equation*}
+	|\bk{\downarrow}{0_{\vc{n}}}| = \bigg|\frac{2 \sin\left(\tfrac{1}{2}\theta\right)\cos\left(\tfrac{1}{2}\theta\right)}{2 \sin(\tfrac{1}{2}\theta)}\bigg| = |\cos(\tfrac{1}{2}\theta_{\downarrow \vc{n}})|
+\end{equation*}
+In the thermodynamic limit $N \to \infty$ 
+\begin{equation*}
+	| \bk{0_{ \vc{n}_1}}{0_{ \vc{n}_2}}| = \lim_{N \to \infty} |\cos(\tfrac{1}{2}\theta_{ \vc{n}_1 \vc{n}_1})|^N = 0.
+\end{equation*}
+
+\textbf{2. Hamiltonian}. We could substitute
+\begin{equation*}
+	\hat{S}^x = \tfrac{1}{2}\left(\hat{S}^+ + \hat{S}^-\right),
+	\hspace{5 mm} 
+	\hat{S}^y = \tfrac{1}{2i}\left(\hat{S}^+ - \hat{S}^-\right),
+	\hspace{5 mm} 
+	\hat{S}^z = \hat{S}^+ \hat{S}^- - \tfrac{1}{2},
+\end{equation*}
+that leads to terms as
+\begin{align*}
+	\hat{S}^x_i \hat{S}^x_j &= \tfrac{1}{4}\left(
+		\red{\hat{S}^{+}_{i} \hat{S}^{+}_{j}} + \hat{S}^{+}_{i} \hat{S}^{-}_{j}  + \hat{S}^{-}_{i} \hat{S}^{+}_{j} + \red{\hat{S}^{-}_{i} \hat{S}^{-}_{j} }
+	\right) \\
+	\hat{S}^{y}_{i} \hat{S}^{y}_{j} &= \tfrac{-1}{4}\left(
+		\red{\hat{S}^{+}_{i} \hat{S}^{+}_{j}} - \hat{S}^{+}_{i} \hat{S}^{-}_{j} - \hat{S}^{-}_{i} \hat{S}^{+}_{j} + 
+		\red{\hat{S}^{-}_{i} \hat{S}^{-}_{j} }
+	\right) \\
+	\hat{S}^{z}_{i} \hat{S}^{z}_{j} &= \hat{S}^{+}_{i} \hat{S}^{-}_{i} \hat{S}^{+}_{j} \hat{S}^{-}_{j} - \tfrac{1}{2} \hat{S}^{+}_{i} \hat{S}^{-}_{i} - \tfrac{1}{2} \hat{S}^{+}_{j} \hat{S}^{-}_{j} + \tfrac{1}{4},
+\end{align*}
+so the Hamiltonian 
+\begin{equation*}
+	\hat{H} = -\frac{1}{2} \sum_{ij} J_{ij} \left(
+		-\tfrac{1}{2} \left(\hat{S}^{+}_{i} - \hat{S}^{+}_{J} \right) \left(\hat{S}^{-}_{i} - \hat{S}^{-}_{j} \right) + \hat{S}^{+}_{i} \hat{S}^{-}_{i} \hat{S}^{+}_{j} \hat{S}^{-}_{j} + \tfrac{1}{4}
+	\right).
+\end{equation*}
+
+\textbf{3. One-particle Hamiltonian}. We can reduce the Hilbert space to the one-particle states $\ket{j} = \hat{S}^{+}_{j} \ket{0_{\uparrow}}$. Neglecting constant terms, reduced Hamiltonian $\hat{H}'$
+\begin{equation*}
+ H'|i\rangle = -\frac{1}{2} \sum_{k j} J_{k j} \left(  - \frac{1}{2} \left( \delta_{ k i } | k \rangle - \delta_{j i} | k\rangle - \delta_{k i} |  j\rangle +  \delta_{j i }| j \rangle     \right) + \delta_{j i} \delta_{k j} | k \rangle   \right)   = \frac{1}{2} \sum_j J_{i j}(|i\rangle-|j\rangle)
+\end{equation*}
+with  matrix elements
+\begin{equation*}
+	\bk{i}[\hat{H}]{i} = \frac{1}{2} \sum_j J_{ij},
+	\hspace{5 mm} 
+	\bk{j}[\hat{H}]{i} = -\frac{1}{2} \sum_j J_{ij}.
+\end{equation*}
+Assuming $J_{ij} = J(|\vc{x}_i - \vc{x}_j|)$ consider the plane wave state $\ket{k} = \sum_j e^{i \vc{k} \vc{x}_j} \ket{j}$:
+\begin{align*}
+	\hat{H}' \ket{k} = \sum_i e^{i \vc{k} \vc{x}_i} \tfrac{1}{2} \sum_{j} J_{ij} \left(\ket{i} - \ket{j}\right).
+\end{align*}
+To simplify calculations consider
+\begin{align*}
+	\bk{m}[\hat{H}']{k} = \sum_i e^{i \vc{k} \vc{x}_i} \tfrac{1}{2} \sum_{j} J_{ij} \left(\delta_{mi} - \delta_{mj}\right) = e^{i \vc{k} \vc{x}_m} \tfrac{1}{2} \sum_j J_{mj} - \sum_j e^{i \vc{k} \vc{x}_j} \tfrac{1}{2} J_{jm}=  \tfrac{1}{2} \sum_j J_{jm} \left(1 - e^{i \vc{k}(\vc{x}_j - \vc{x}_m)}\right) e^{i \vc{k} \vc{x}_m}.
+\end{align*}
+We could sum over $\vc{x}_n = \vc{x}_j - \vc{x}_m$ and notice that $J_{jm} = J(|\vc{x}_j - \vc{x}_m|) = J(|\vc{x}_n|)$
+\begin{equation*}
+	\bk{m}[\hat{H}']{k}  = \frac{1}{2} \bigg(
+		\sum_n J_{n0} \left(1-e^{i \vc{k} \vc{x}_n}\right)
+	\bigg) e^{i \vc{k} \vc{x}_m} = E_{\vc{k}} \bk{m}{k},
+\end{equation*}
+thus we have proven that $\ket{k}$ is eigenstate with energy $E_{\vc{k}}$
+\begin{equation*}
+	E_{\vc{k}} = \frac{J_0 - J_k}{2},
+	\hspace{10 mm} 
+	J_k = \sum_j J(|x_j|) e^{-i \vc{k} \vc{x}_j}.
+\end{equation*}
+For a constant nearest neighbour interaction on a square lattice $E_{\vc{k}}$ could be calculated explicitly:
+\begin{equation*}
+	J_k = \sum_{\vc{x}_j = \pm \vc{e}_{x,y}} J(|\vc{x}_j|) e^{- i \vc{k} \vc{x}_j} = 2 J\left(
+		\cos k_x + \cos k_y
+	\right),
+\end{equation*}
+and energy
+\begin{equation*}
+	E_k = J\left(2 - \cos k_x - \cos k_y \right) \overset{k \to 0}{\approx} \frac{J}{2}\left(k_x^2 + k_y^2\right).
+\end{equation*}

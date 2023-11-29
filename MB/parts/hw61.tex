@@ -1,0 +1,194 @@
+The thermal Green's function is defined as 
+\begin{equation*}
+	G_{ij}(\tau) = - \langle \text{T}_\tau\ \psi_i(\tau) \psi_j\D (0) \rangle
+\end{equation*}
+The path integral formulation of the Green's function of non-interacting particles is
+\begin{equation}
+	G_{ij}(\tau) = - \frac{1}{Z} \int D(\bar{\psi}, \psi) \psi_i(\tau) \bar{\psi}_j(0) e^{-S[\bar{\psi}, \psi]},
+	\hspace{10 mm} 
+	S = \sum_j \int_0^\beta d\tau\, \bar{\psi}_j (\partial_\tau + \varepsilon_j - \mu) \psi_j = \sum_j 
+	s[\bar{\psi}_j, \psi_j].
+	\label{PIGF}
+\end{equation}
+
+\textbf{1. Time ordering}. 
+The path integral automatically takes care of the time ordering:
+\begin{equation*}
+	G_{ij}(\tau>0) = -\langle \psi_i(\tau) \psi_j\D(0)\rangle = \tr\left(
+		e^{-(\beta-\tau) H}  \psi_i e^{-H \tau} \psi_j\D
+	\right),
+\end{equation*}
+and than we could repeat the construction of the path integral and get \eqref{PIGF}. In other case
+\begin{align*}
+	G_{ij}(\tau<0) &= \zeta \langle \psi_j\D(0) \psi_i(\tau)\rangle = 
+		\tr\left(
+		 \psi_j\D  e^{-(-\tau)H} \psi_i e^{-(\beta+\tau)H}
+	\right)
+	\\
+	&= - \frac{\zeta}{Z} \int D(\bar{\psi}, \psi) \bar{\psi}_j(0) \psi_i(\tau)  e^{-S(\bar{\psi}, \psi)} = - \frac{\zeta^2 }{Z} \int D(\bar{\psi}, \psi) \psi_i(\tau) \bar{\psi}_j(0) e^{-S(\bar{\psi}, \psi)},
+\end{align*}
+thus we come to the same \eqref{PIGF}.
+
+
+\textbf{2. Green's function as Matsubara sum}. After the Fourier transform (unitary)
+\begin{equation}
+	\psi_j(\tau) = \frac{1}{\sqrt{\beta}} \sum_n e^{- i \omega_n \tau} \psi_{jn},
+	\hspace{10 mm} 
+	\omega_n = \frac{\pi}{\beta}\left\{\begin{aligned}
+	    &2n+1, &\text{fermions}, \\
+	    &2n, &\text{bosons}, \\
+	\end{aligned}\right.
+	\label{omegadef}
+\end{equation}
+we get 
+\begin{equation}
+	G_{ij}(\tau) = - \frac{1}{Z} \frac{1}{\beta} \sum_{n,m} \int D(\bar{\psi}, \psi) 
+	e^{-i \omega_n \tau} \psi_{in} 
+	\bar{\psi}_{jm} e^{-S[\bar{\psi}, \psi]},
+	\hspace{10 mm} 
+	S = \sum_{j,n} \bar{\psi}_{jn} (- i \omega_n + \varepsilon_j - \mu) \psi_{jn}.
+	\label{ftgf}
+\end{equation}
+We could simplify calculations noticing that due to the sign symetry of the action
+\begin{equation*}
+	\int d(\bar{\psi}_j, \psi_j) \psi_{j n} e^{-s[\bar{\psi}_{jn}, {\psi}_{jn}]} = 0,
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	G_{i,j \neq i} (\tau) = 0.
+\end{equation*}
+To the next simplification in $G_{jj}(\tau)$ we could factor
+\begin{equation*}
+	I_{nm}^j = \int d(\bar{\psi}_{jn},{\psi}_{jn})\, d(\bar{\psi}_{jm},{\psi}_{jm})\, \psi_{jn} \bar{\psi}_{jm} e^{-s[\bar{\psi}_{jn}, \psi_{jn}]} e^{-s[\bar{\psi}_{jm},{\psi}_{jm}]} \propto \delta_{nm}
+\end{equation*}
+again due to the symmetry. It is useful to rewrite $I_{nn}^j$ as
+\begin{equation*}
+	I_{nn}^j = 
+	 	\red{\int d(\bar{\psi}_{jn}, \psi_{jn})  \psi_{jn} \bar{\psi}_{jn} e^{-s[\bar{\psi}_{jn}, \psi_{jn}]}}
+	 	\blue{\int d(\bar{\psi}_{jn}, \psi_{jn}) e^{-s[\bar{\psi}_{jn}, \psi_{jn}]}}
+	 = \red{\frac{1}{-i \omega_n + \varepsilon_j - \mu}}
+	 \blue{\int d(\bar{\psi}_{jn}, \psi_{jn}) e^{-s[\bar{\psi}_{jn}, \psi_{jn}]}}.
+\end{equation*}
+It remains to note that <<blue>>-term helps us to factorize partition function in the \eqref{ftgf}
+\begin{equation*}
+Z = \bigg(\prod_{k \neq j} 
+			\int d(\bar{\psi}_{k},{\psi}_{k})  e^{- \sum_{k \neq j} s[\bar{\psi}_{k}, \psi_{k}]}\bigg)
+			\cdot
+	\bigg(\prod_{m\neq n} 
+			\int d(\bar{\psi}_{jm},{\psi}_{jm})  e^{-s[\bar{\psi}_{jm}, \psi_{jm}]}\bigg)
+		\cdot
+	\left(\blue{\int d(\bar{\psi}_{jn}, \psi_{jn}) e^{-s[\bar{\psi}_{jn}, \psi_{jn}]}} \right)
+\end{equation*}
+Finally $G_{ij}(\tau)$ could be expressed as
+\begin{equation}
+	G_{ij}(\tau) = \frac{\delta_{ij}}{\beta} \sum_n e^{- i \omega_n \tau} G_0(j, i \omega_n),
+	\hspace{10 mm} 
+	G_0(j, i \omega_n) \overset{\mathrm{def}}{=}  \frac{1}{i \omega_n - \varepsilon_j + \mu}
+	.
+	\label{gfdef}
+\end{equation}
+
+% \textbf{Calculating the Matsubara sum}. 
+Substituting $\omega_n$ from \eqref{omegadef} as usual $G_{ij}(\tau)$ could be rewritten as
+ % Following Jordan's lemma we need consider two cases of $\sign(\tau)$:
+\begin{align}
+	G_{jj}(\tau > 0)  
+	&=
+	-\zeta \oint \frac{dz}{2\pi i} \frac{e^{-z \tau}}{z-\xi_j} \nBF(-z), \\
+	G_{jj}(\tau < 0)  
+	&=
+	-\zeta \oint \frac{dz}{2\pi i} \frac{e^{z \tau}}{-z+\xi_j} \nBF(z),
+\end{align}
+with $\xi_j \overset{\mathrm{def}}{=} \varepsilon_j-\mu$ and $\nBF(z) = (e^{\beta z} - \zeta)^{-1}$. Sign of $z$ was chosen to provide convergence. Summing over the outer pole we get 
+\begin{align*}
+	G_{jj}(\tau > 0) &= \zeta \nBF(-\xi_j) e^{- \xi_j \tau}, \\
+	G_{jj}(\tau < 0) &= -\zeta \nBF(\xi_j) e^{- \xi_j \tau}.
+\end{align*}
+Combining all this happiness into one expression
+\begin{equation}
+	\boxed{
+	G_{ij}(\tau) = -\delta_{ij} \left(
+		\theta(\tau) + \zeta \nBF(\xi_j)
+	\right) e^{-\xi_j \tau}
+	}.
+	\label{res}
+\end{equation}
+In general, it is quite logical to obtain the theta function due to T-ordering, since $\hat{a}\hat{a}\D = 1 + \zeta \hat{a}\D \hat{a} $.
+
+
+% Important to notice, that 
+% \begin{equation*}
+% 	G_{jj}(\tau)^{-1} G_{jj}(\tau) = - ( \partial_\tau + \xi_j)\left(
+% 		\theta(\tau) + \zeta \nBF(\xi_j)
+% 	\right) e^{-\xi_j \tau} = - e^{-\xi_j \tau} \partial_\tau \theta(\tau) = - \delta (\tau),
+% \end{equation*}
+% with $G_{jj}(\tau)^{-1} = \partial_\tau + \xi_j$. 
+% \textcolor{grey}{Although it confuses me a little that this is done as if for any kind of function instead $\nBF$.}
+
+\textbf{3. The occupation number}. The occupation number in a single particle state  $j$ is in general given by
+\begin{align*}
+	n_j &= \langle \psi_j\D(0) \psi_j(0)\rangle 
+	= \zeta \lim_{\tau \to 0^-} \langle \text{T}_{\tau} \psi_i(\tau) \psi_j\D \rangle = - \zeta \lim_{\tau \to 0^-} G_{jj}(\tau), \\
+	&\textcolor{grey}{= \zeta \lim_{\tau \to 0^+} \langle \text{T}_{\tau} \psi_i(\tau) \psi_j\D-1\rangle =  \zeta \lim_{\tau \to 0^+} (-G_{jj}(\tau)-1 )
+	% \ \text{or something like this.}
+	} 
+\end{align*}
+Expanding \eqref{res} we get
+\begin{equation*}
+	n_j =  - \zeta \lim_{\tau \to 0^-} G_{jj}(\tau) = \zeta^2 \nBF(\xi_j) \lim_{\tau \to 0^-} e^{-\xi_j \tau} = \nBF(\xi_j).
+\end{equation*}
+
+
+\textbf{4. The generating functional}. The generating functional for correlation functions is defined as
+\begin{equation*}
+	\Z[\bar{J}, J] = \int D\left(\bar{\psi}, \psi\right) \, \exp\bigg(
+		- S[\bar{\psi}, \psi] - \sum_j \int_{0}^{\beta} d \tau\left(
+			\bar{J}_j \psi_j + \bar{\psi}_j J_j
+		\right)
+	\bigg).
+\end{equation*}
+These can be obtained as functional
+derivatives of $\Z[\bar{J},J]$, where the source fields are set to zero after the evaluation:
+\begin{equation*}
+	\langle 
+		\text{T}_\tau \psi_{in} \psi_{jm}
+	\rangle = \frac{\zeta}{\Z[0,0]} \frac{\delta^{2} \Z[\bar{J},J]}{\delta \bar{J}_{in} \delta J_{jm}} \bigg|_{J, \bar{J}=0}.
+\end{equation*}
+It remains to calculate
+\begin{align*}
+	\Z[\bar{J},J] &= \int D(\bar{\psi}, \psi) \ \exp\bigg(
+		- \sum_{j, n} \bar{\psi}_{jn} \left(-G_0^{-1}(j, i \omega_n)\right) \psi_{jn} + \sum_{j,n} \bigg(
+			\bar{J}_{jn} \psi_{jn} + \bar{\psi}_{jn} J_{jn}
+		\bigg)
+	\bigg) 
+	\\ &=  \Z[0,0] \exp\bigg(
+		- \sum_{j,n} \bar{J}_{jn} G_0(j, i \omega_n) J_{jn}
+	\bigg).
+\end{align*}
+Thus for the Green's function $G_{ij}(i \omega_n)$ in Matsubara space 
+\begin{equation*}
+	G_{ij}(i \omega_n) = -\langle 
+		\text{T}_\tau \psi_{in} \psi_{jm}
+	\rangle = -\zeta \frac{\delta^2}{\delta \bar{J}_{in} \delta J_{jm}} \exp\bigg(
+		- \sum_{j,n} \bar{J}_{jn} G_0(j, i \omega_n) J_{jn}
+	\bigg) \bigg|_{\bar{J}=J=0} = \delta_{ij} \delta_{nm} G_0(j, i \omega_n),
+\end{equation*}
+corresponding to \eqref{gfdef}.
+
+
+% In general
+% \begin{align*}
+% 	\Z_A[\bar{J}, J] = \int D(\bar{\psi}, \psi) \exp\left(
+% 		- \int_{0}^{\beta} \d \tau \sum_{j}\left(\bar{\psi}_{j} A^{-1} \psi_{j} - \bar{J}_j \psi_j - \bar{\psi}_j J_j\right) 
+% 	\right) = \Z[0,0] e^{- \bar{J} A J}.
+% \end{align*}
+% In our case $A=G_{ij}(\tau)$
+
+
+% \begin{align*}
+% 	\Z[\bar{J}, J] = \int D(\bar{\psi}, \psi) \exp\left(
+% 		- \int_{0}^{\beta} \d \tau \sum_{jn}\left(\bar{\psi}_{jn} (-i \omega_n + \varepsilon_j - \mu)\psi_{jn} - \bar{J}_j \psi_j - \bar{\psi}_j J_j\right) 
+% 	\right) 
+	% &= Z[0,0] \exp\left(
+	% 	-\int_{0}^{\beta} d \tau \d \tau' \sum_{n,m} 
+	% 	\bar{J}_n(\tau) 
+	% \right)
+% \end{align*}
