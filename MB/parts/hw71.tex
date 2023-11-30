@@ -1,0 +1,39 @@
+\textbf{General case.} To form some intuition, let's start with the proof
+\begin{equation}
+	\langle e^{\sum_j b_j x_j}\rangle = e^{\frac{1}{2}\sum_{i,j} b_i \langle x_i x_j \rangle b_j},
+	\label{gen}
+\end{equation}
+with averaging defined as
+\begin{equation*}
+	\langle f\rangle = \frac{1}{Z} \int D(\vc{x}) f(\vc{x}) e^{- \frac{1}{2} \vc{x}\T G^{-1} \vc{x}}, \hspace{10 mm} 
+	D(x) = \prod_n d x_n,
+\end{equation*}
+with $Z = \sqrt{\det(2\pi G)}$ so that $\langle 1\rangle = 1$. Both parts of the \eqref{gen} could be calculated directly:
+\begin{equation*}
+	\langle e^{\sum_j b_j x_j}\rangle = 
+	\frac{1}{Z} \int D(x) e^{-\frac{1}{2} \vc{x}\T G^{-1} \vc{x} + \vc{b} \vc{x}} = \frac{1}{Z} \int D(\vc{x}) e^{- \frac{1}{2}(\vc{x}-G \vc{b})\T G^{-1} (\vc{x}-G \vc{b})}e^{\frac{1}{2} \vc{b}\T G \vc{b}},
+\end{equation*}
+and with $\vc{x}' = \vc{x} - G \bar{b}$ and $D(\vc{x}') = D(\vc{x})$ 
+\begin{equation*}
+	\langle e^{\vc{b} \vc{x}}\rangle = \frac{1}{Z} \int D(\vc{x}') e^{- \frac{1}{2} \vc{x}'{}\T G^{-1} \vc{x}'} e^{\frac{1}{2} \vc{b}\T G \vc{b}} = e^{\frac{1}{2} \vc{b}\T G \vc{b}} = e^{\frac{1}{2} \sum_{i,j} b_i \langle x_i x_j\rangle b_j},
+\end{equation*}
+with proved in the previous homework fact that $\langle x_i x_j\rangle = G_{ij}$.
+
+\textbf{Special case}. We want to prove the operator identity
+\begin{equation}
+	\langle e^{i(\varphi(r)-\varphi(0))}\rangle = e^{- \frac{1}{2} \langle (\varphi(r)-\varphi(0))^2\rangle}.
+	\label{base12}
+\end{equation}
+With $b(r') = i \delta(r'-r) - i \delta(r')$:
+\begin{equation*}
+	\sum_j b_j \varphi_j = \int b(r') \varphi(r') \d r' = i (\varphi(r)-\varphi(0)),
+\end{equation*}
+and for other part $\sum_{i,j} b_i \langle x_i x_j\rangle b_j = \langle  \sum_{i,j} b_i  x_i x_j b_j\rangle$, so
+\begin{equation*}
+	\sum_{i,j} b_i  x_i x_j b_j = \int
+	b(r') \varphi(r') \varphi(r'') b(r'')
+	\d r' \d r'' = \bigg(
+		\int b(r') \varphi(r') \d r'
+	\bigg)^2 = - (\varphi(r)-\varphi(0))^2,
+\end{equation*}
+thus we proved \eqref{base12} using \eqref{gen}.

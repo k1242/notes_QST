@@ -1,0 +1,15 @@
+
+
+\textbf{Wick's theorem}. Note that from \eqref{gen} are convenient to obtain Wick’s theorem \red{maybe}. Expanding \eqref{gen} in the Taylor series we have from the LHS
+\begin{equation*}
+	\langle e^{\sum_j b_j x_j}\rangle = 1 + \frac{1}{2!} \sum_{i,j} b_i b_j \langle x_i x_j\rangle + \frac{1}{4!}  \sum_{i,j,k,l} b_i b_j b_k b_l \langle x_i x_j x_k x_l\rangle + \ldots
+\end{equation*}
+and from the RHS 
+\begin{equation*}
+	e^{\frac{1}{2}\sum_{i,j} b_i \langle x_i x_j \rangle b_j} 1 + \frac{1}{2} \sum_{i,j} b_i b_j \langle x_i x_j\rangle + \sum_{i,j,k,l} b_i b_j b_k b_l \langle x_i x_j\rangle \langle x_k x_l\rangle + \ldots,
+\end{equation*}
+so collecting terms with proper $B^4$ we get
+\begin{equation*}
+	\langle x_i x_j x_k x_l\rangle = \langle x_i x_j\rangle \langle x_i x_k\rangle \langle x_j x_l\rangle + \langle x_i x_l\rangle \langle x_j x_k\rangle.
+\end{equation*}
+This result is known as Wick's theorem.
