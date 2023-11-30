@@ -1,0 +1,25 @@
+Consider the Hamiltonian
+\begin{equation*}
+  \hat{H} = \omega\left(\hat{a}\D \hat{a} + \tfrac{1}{2}\right) + \tfrac{1}{2} \omega_0 \hat{\sigma}_z + \chi \hat{\sigma}_z \left(
+    \hat{a}\D \hat{a} + \tfrac{1}{2}
+  \right),
+\end{equation*}
+with $\chi = g^2 / \Delta$. Eigenavalues could be expressed as \textbf{(a)}
+\begin{equation*}
+  E_n^g = \omega (n + \tfrac{1}{2}) - \frac{\omega_0}{2} -\chi (n + \tfrac{1}{2}),
+  \hspace{5 mm} 
+     E_n^e = \omega (n + \tfrac{1}{2}) + \frac{\omega_0}{2} +\chi (n + \tfrac{1}{2})
+\end{equation*}
+corresponding eigenstates $\ket{g, n}$ and $\ket{e, n}$.
+
+Evoultion is just \textbf{(b)}
+\begin{align*}
+  \hat{U}(t_0) (\ket{g,0} + \ket{e,0}) &= \ket{g,0} - i e^{-i \omega_0 t_0} \ket{e,0}, \\
+  \hat{U}(t_0) (\ket{g,1} + \ket{e,1}) &= \ket{g,0} + i e^{-i \omega_0 t_0} \ket{e,0},
+\end{align*}
+with $t_0 = \tfrac{\pi}{2} / \chi$.  For coherent state  \textbf{(c)}
+\begin{equation*}
+  \hat{U}(t_0) \ket{g,0}  = e^{-\frac{|\alpha|^2}{2}} \sum_{n=0}^{\infty} e^{-i E_n^g t} \frac{\alpha^n \ket{g, n}}{\sqrt{n!}},
+  \hspace{10 mm} 
+  \hat{U}(t_0) \ket{e,0}  = e^{-\frac{|\alpha|^2}{2}} \sum_{n=0}^{\infty} e^{-i E_n^e t} \frac{\alpha^n \ket{e, n}}{\sqrt{n!}}.
+\end{equation*}

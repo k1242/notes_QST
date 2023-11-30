@@ -1,0 +1,42 @@
+Solving equations
+\begin{equation*}
+  \begin{cases}
+    \dot{c}_{n+1}^g(t) =  -i g \sqrt{n+1}  c_{n}^e(t)\\
+    \dot{c}_{n}^e(t) = -i g \sqrt{n+1}  c_{n+1}^g(t)
+  \end{cases}
+\end{equation*}
+We get for $c_{n}^e(0) = 1,\ c_{n+1}^g(0) = 0$
+\begin{equation*}
+ \ket{\psi(t)} =  \cos(g\sqrt{n+1}  t) \ket{e,n} - i \sin(g\sqrt{n+1}  t) \ket{g, n+1},
+\end{equation*}
+and density matrix
+\begin{align*}
+  \rho(t)&= \cos(g\sqrt{n+1}  t)^2 \ket{e, n} \bra{e, n}     - i \sin(g\sqrt{n+1}  t)  \cos(g\sqrt{n+1}  t) \ket{g, n+1} \bra{e, n} + \\
+  &+ i \sin(g\sqrt{n+1}  t)  \cos(g\sqrt{n+1}  t) \ket{e, n} \bra{g, n+1}   + \sin(g\sqrt{n+1}  t)^2 \ket{g, n+1} \bra{g, n+1}
+  \end{align*}
+Taking a partial trace \textbf{(a)}
+\begin{equation*}
+  \rho(t) = \cos(g\sqrt{n+1}  t)^2 \ket{n} \bra{n}  + \sin(g\sqrt{n+1}  t)^2 \ket{n+1} \bra{n+1}
+\end{equation*}
+
+Let us now assume that the cavity is in a state $\rho = \sum_n P_n \kb{n}{n}$  before the interaction with the atom.decomposed
+After the interaction with the atom, the state evolves to
+\begin{equation*}
+    \rho(t) = \sum_n P_n \kb{n(t)}{n(t)}
+\end{equation*}
+we could do this because the Hilbert space could be decomposed to pairs  $\ket{g, n}$ and $\ket{e, n}$. Substituting $\ket{n(t)} = \cos(gt \sqrt{n+1}) \ket{e,n} - i \sin (gt \sqrt{n+1}) \ket{g,n+1}$ we have \textbf{(b)}
+\begin{equation}
+    \rho(t) = \sum P_n' \kb{n}{n},
+    \hspace{10 mm} 
+    P_n' = \cos(gt \sqrt{n+1})^2 P_n + \sin(gt \sqrt{n})^2 P_{n-1}.
+    \label{TYTY}
+\end{equation}
+
+Let us now assume that atoms pass one after the other through the cavity. At each step the probability $P_n(m)$ could be expressed through the previous as in \eqref{TYTY}
+\begin{equation*}
+    P_n(m) = \cos(gt \sqrt{n+1})^2 P_n(m-1) + \sin(gt \sqrt{n})^2 P_{n-1}(m-1),
+    \hspace{0.5cm} \Leftrightarrow \hspace{0.5cm}    
+    \vc{P}(m) = \hat{M} \vc{P}(m-1) = \hat{M}^m \vc{P}(0),
+\end{equation*}
+with some matrix $\hat{M}$. So we could \textbf{(c)} calculate figure \ref{fig:3}.
+
