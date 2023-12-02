@@ -1,0 +1,73 @@
+
+\begin{figure}[h]
+    \centering
+% б
+\begin{tikzpicture}
+	\begin{feynman}[small]
+	\vertex (i1);
+	\vertex [below right=of i1] (a);
+	\vertex [below left=of a] (i2);
+	\vertex [right=of a] (b);
+	\vertex [above right=of b] (f1);
+	\vertex [below right=of b] (f2);
+	\diagram* {
+	(i1) -- [scalar] (a) -- [fermion, edge label=\(p\)] (i2),
+	(f1) -- [fermion, edge label'=\(p\)] (b) -- [scalar] (f2),
+	(a) -- [boson] (b),
+	};
+	\end{feynman}
+\end{tikzpicture}
+\hspace{5 mm} 
+% в
+\begin{tikzpicture}
+	\begin{feynman}[small]
+	\vertex (i1);
+	\vertex [below right=of i1] (a);
+	\vertex [below left=of a] (i2);
+	\vertex [right=of a] (b);
+	\vertex [above right=of b] (f1);
+	\vertex [below right=of b] (f2);
+	\diagram* {
+	(f1) -- [scalar] (b) -- [fermion, edge label'=\(p\)] (f2),
+	(i1) -- [fermion, edge label=\(p\)] (a) -- [scalar] (i2),
+	(a) -- [boson] (b),
+	};
+	\end{feynman}
+\end{tikzpicture}
+\hspace{5 mm} 
+% г
+\begin{tikzpicture}
+	\begin{feynman}[small]
+	\vertex (i1);
+	\vertex [below right=of i1] (a);
+	\vertex [below left=of a] (i2);
+	\vertex [right=of a] (b);
+	\vertex [above right=of b] (f1);
+	\vertex [below right=of b] (f2);
+	\diagram* {
+	(i1) -- [fermion, edge label=\(p\)] (a) -- [fermion, edge label=\(p\)] (i2),
+	(f1) -- [scalar] (b) -- [scalar] (f2),
+	(a) -- [boson] (b),
+	};
+	\end{feynman}
+\end{tikzpicture}
+\hspace{5 mm} 
+% г
+\begin{tikzpicture}
+	\begin{feynman}[small]
+	\vertex (i1);
+	\vertex [below right=of i1] (a);
+	\vertex [below left=of a] (i2);
+	\vertex [right=of a] (b);
+	\vertex [above right=of b] (f1);
+	\vertex [below right=of b] (f2);
+	\diagram* {
+	(f1) -- [fermion, edge label'=\(p\)] (b) -- [fermion, edge label'=\(p\)] (f2),
+	(i1) -- [scalar] (a) -- [scalar] (i2),
+	(a) -- [boson] (b),
+	};
+	\end{feynman}
+\end{tikzpicture}
+    \caption{Interaction of condensate particle and  non-condensate particle}
+    \label{fig:BCb}
+\end{figure}

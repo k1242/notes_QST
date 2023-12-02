@@ -1,0 +1,54 @@
+
+\textbf{1. Hamiltonian}. 
+Consider a microscopic Hamiltonian for bosons with weak contact interactions:
+\begin{equation}
+	\hat{H} - \mu \hat{N} = \sum_p (\varepsilon_p - \mu) \hat{a}_p\D \hat{a}_p + \frac{\varphi}{2V} \sum_{p, p', q} \hat{a}\D_{p+q} \hat{a}\D_{p'-q} \hat{a}_{p'} \hat{a}_p,
+	\label{BECbase}
+\end{equation}
+where $\varepsilon_p = p^2 / 2m$ and second term as $\hat{V}$.  For $u = 0$ the groundstate in a grandcanonical description is a coherent
+state of bosons in the zero-momentum state, i.e. all particles are Bose condensed. 
+
+Finite interactions lead to scattering of bosons from the condensate into finite momentum modes
+and hence a depletion of the condensate fraction. However, if the interactions are weak,
+one can still assume that the $p = 0$ mode is macroscopically occupied, $\langle a_0\D a_0\rangle \gg 1$. As $[a_0, a_0\D]=1$, one can neglect it for a macroscopically occupied $p = 0$ mode and replace $a_0,\ a_0\D$ by their expectation value $\sqrt{N_0}$, the number of bosons in the condensate. Thus our small parameter is $(N-N_0)/N_0$. One can therefore approximate all other modes to be small $a_p \ll \sqrt{N_0}$ and  therefore neglect all terms in the interaction part of above Hamiltonian which contain more than two creation/annihilation operators with $p \neq 0$. 
+
+\input{parts/hw72f1}
+
+The leading term of the expansion involves interactions solely between the stationary particles (particles of the condensate) as in fig. \ref{fig:BCa} (the dashed line corresponds to condensed particles)
+\begin{equation*}
+	\hat{V}_0 = \frac{\varphi}{2V} \hat{a}\D_0 \hat{a}\D_0 \hat{a}_0 \hat{a}_0.
+\end{equation*}
+There are no terms that contain only one creation or annihilation operator for non-condensate particles due to the conservation of momentum.
+
+\input{parts/hw72f2}
+
+The next four expansion terms each contain one operator of creation and one operator of annihilation above the non-condensate particles (fig. \ref{fig:BCb}):
+\begin{equation*}
+	\hat{V}_2 = \frac{\varphi}{2V}  \sum_{p \neq 0} \left(
+		\hat{a}\D \hat{a}_0 \hat{a}_0 \hat{a}_p + 
+		\hat{a}_p\D \hat{a}_0\D \hat{a}_p \hat{a}_0 + 
+		\hat{a}_0 \hat{a}\D \hat{a}_0 \hat{a}_p + 
+		\hat{a}_p\D \hat{a}_0\D \hat{a}_p \hat{a}_0
+	\right) \overset{1}{=}  \frac{2\varphi}{V} \hat{a}\D_0 \hat{a}_0 \sum_{p \neq 0} \hat{a}_p\D \hat{a}_p,
+\end{equation*}
+where in $ \overset{1}{=} $ it was used that $[\hat{a}_0, \hat{a}_p] = 0$. 
+
+
+\input{parts/hw72f3}
+
+Two more terms of the expansion contain two creation operators each
+and two operators for annihilation condensate particles (fig. \ref{fig:BCc}):
+\begin{equation*}
+	\hat{V}_2' = \frac{\varphi}{2V} \sum_{p \neq 0} \left(
+		\hat{a}\D_0 \hat{a}\D_0 \hat{a}_p \hat{a}_{-p} + \hat{a}\D_p \hat{a}\D_{-p} \hat{a}_0  \hat{a}_0
+	\right)
+\end{equation*}
+Let's substitute into the equations $\hat{a}_0 = \hat{a}_0\D = \sqrt{N_0}$ and rewrite it in terms $N = N_0 + \sum_{p \neq 0} \hat{a}_p\D \hat{a}_p$. The quadratic terms in the number of non-condensate particles should be discarded. Thus, the complete Hamiltonian can be represented in the following form:
+\begin{equation}
+	\hat{H} = \frac{N^2}{2V}\varphi  + \sum_{p \neq 0} \epsilon_p \hat{a}_p\D \hat{a}_p + \frac{N}{2V} \sum_{p \neq 0} \left(\hat{a}\D_p \hat{a}\D_{-p} + \hat{a}_p \hat{a}_{-p}\right),
+	\hspace{10 mm} 
+	\epsilon_p = \varepsilon_p + \varphi n.
+	\label{H1}
+\end{equation}
+We can assume that the total number of particles is fixed and the number of condensate particles is variable, then we can work with the Hamiltonian in form \eqref{H1}. 
+
