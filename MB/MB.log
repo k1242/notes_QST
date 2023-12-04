@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2023.12.1)  2 DEC 2023 21:21
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10) (format=lualatex 2023.12.1)  4 DEC 2023 22:25
  restricted system commands enabled.
 **C:/ka1242/git/notes_QST/MB/MB.tex
 (C:/ka1242/git/notes_QST/MB/MB.tex
@@ -1093,8 +1093,18 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ftex.map}
 
 ] (./parts/hw721.tex (./parts/hw72f1.tex) (./parts/hw72f2.tex)
-(./parts/hw72f3.tex) [2]) (./parts/hw722.tex) (./parts/hw723.tex)
-(./parts/hw724.tex [3])) [4] (./MB.aux)
+(./parts/hw72f3.tex) [2]) (./parts/hw722.tex) (./parts/hw723.tex
+<imgs/MB71.pdf, id=64, 215.80624pt x 146.5475pt>
+File: imgs/MB71.pdf Graphic file (type pdf)
+<use imgs/MB71.pdf>
+Package luatex.def Info: imgs/MB71.pdf  used on input line 23.
+(luatex.def)             Requested size: 215.80571pt x 146.54712pt.
+<imgs/MB72.pdf, id=65, 144.54pt x 144.54pt>
+File: imgs/MB72.pdf Graphic file (type pdf)
+<use imgs/MB72.pdf>
+Package luatex.def Info: imgs/MB72.pdf  used on input line 25.
+(luatex.def)             Requested size: 144.53963pt x 144.53963pt.
+ [3<./imgs/MB71.pdf><./imgs/MB72.pdf>]) (./parts/hw724.tex)) [4] (./MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1104,14 +1114,14 @@ Package rerunfilecheck Info: File `MB.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29539 strings out of 477259
+ 29561 strings out of 477259
  125016,1977958 words of node,token memory allocated
- 810 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 4 glue, 4 kern, 2 sub_mlist, 1 glyph, 103 attribute
-, 55 glue_spec, 53 attribute_list, 2 write nodes
-   avail lists: 1:7,2:9001,3:2606,4:36,5:651,6:65,7:10064,8:127,9:1837,10:10,11:
+ 823 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 2 sub_mlist, 1 glyph, 105 attribute
+, 55 glue_spec, 54 attribute_list, 2 write nodes
+   avail lists: 1:7,2:8998,3:2606,4:36,5:545,6:65,7:10063,8:127,9:1837,10:11,11:
 422
- 49865 multiletter control sequences out of 65536+600000
+ 49880 multiletter control sequences out of 65536+600000
  80 fonts using 5080119 bytes
  94i,13n,98p,653b,1975s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/opentype/public/lm/lmroman8-regular.otf><C:/Progr
@@ -1138,9 +1148,9 @@ iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on MB.pdf (4 pages, 231314 bytes).
+Output written on MB.pdf (4 pages, 264252 bytes).
 
-PDF statistics: 203 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 131072)
+PDF statistics: 251 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 131072)
  32 words of extra memory for PDF output out of 10000 (max. 100000000)
 

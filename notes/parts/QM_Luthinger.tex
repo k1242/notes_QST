@@ -1,0 +1,66 @@
+\subsection*{A brief intro into Luthinger liquids}
+
+% fermi-liq -- remarkable
+% бозонизация
+
+% Field Theories of Condensed Matter Physics, Книга, Эдуардо Фрадкин
+% Bruus Flensberg
+
+Let's look at the density correlation functions
+\begin{equation*}
+	D(\vc{q}, \omega) = \int \frac{d^D p}{d (2\pi)^D}
+	\frac{n_p - n_{p+q}}{\omega - \varepsilon(p+q) + \varepsilon(p) + i \varepsilon} = 
+	\frac{q}{2\pi} \left(
+		\frac{1}{\omega - q v_F + i \varepsilon} - \frac{1}{\omega + q v_F + i \varepsilon}
+	\right).
+\end{equation*}
+The spinless Tomonaga0Luthinger model
+\begin{equation*}
+	H = H_0 + H_{int} = \sum_k \varepsilon_k c\D_k c_k + \frac{1}{2L} \sum_{k,k',q} V(q) c_k\D c_{k'}\D c_{k'-q} c_{k+q}.
+\end{equation*}
+We could work with the linear dispersion for low energy
+\begin{equation*}
+	\xi_k = \varepsilon_k - \mu \approx (|k|-k_F) v_F.
+\end{equation*}
+Next we separate rightmovers and leftmovers
+\begin{equation*}
+	c_k = c_{kR} \theta(k) + c_{kL} \theta(-k),
+\end{equation*}
+and than
+\begin{equation*}
+	H_0 = v_F \sum_{k > 0} \left(
+		k c_{kR}\D c_{kR} - k c_{kL}\D c_{kL}
+	\right) - \left(N_R+N_L\right) k_F v_F.
+\end{equation*}
+There are two interactions
+\begin{equation*}
+	H_{int}^{(1)} = \frac{1}{2L} \sum_{k > 0, q, k' < 0} V(q) \left(
+		c_{kR}\D c_{k'L}\D c_{k'-q,L} c_{k+q,R} + c_{kR}\D c_{k'L}\D c_{k'-q,R} c_{k+q,L}
+	\right) + (R \leftrightarrow L).
+\end{equation*}
+Note that $k \approx k_F$, $q \approx \pm-2k_F$. 
+Than we could rewrite it in form
+\begin{equation*}
+	H_{int}^{(1)} = \frac{1}{2L} \sum \left(
+		V(q) c_{kR}|\D c_{k+q,R} c\D_{k' L} c_{k'-q,L} - V(-q + k'-k) c\D_{kR} c_{k+q,R} c\D_{k'c} c_{k'-q,L}
+	\right).
+\end{equation*}
+Then we can introduce left/right moving density operators
+\begin{equation*}
+	\rho_R(q) = \sum_{k>0} c_k\D c_{k+q} \approx \sum_{k>0} c\D_{kR} c_{k+qR},
+\end{equation*}
+and rewrite
+\begin{equation*}
+	H_{int}^{(1)} \approx \frac{1}{2L} \sum_q \left(
+		V(0) - V(2 k_F)
+	\right) \rho_R(q) \rho_L(-q) + (R \leftrightarrow L),
+\end{equation*}
+and finally we have
+\begin{equation*}
+	H_{int} = \frac{1}{2L} \sum_{q \neq 0} V_1 \left(
+		\rho_L (q) + \rho_R(q)
+	\right) \left(
+		\rho_L(-q) + \rho_R(-q)
+	\right).
+\end{equation*}
+

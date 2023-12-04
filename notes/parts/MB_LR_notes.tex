@@ -1,0 +1,71 @@
+\subsection*{Linear Response Theory. Response functions}
+
+Consider Hamiltonian
+\begin{equation*}
+	\hat{H} = \hat{H}_0 + \sub{H}{ext}(t) = \hat{H}_0 + \sum_j f_j(t) \hat{\varphi}_j,
+\end{equation*}
+with $\hat{H}_0$ as non-perturbed but interacting Hamiltonian. 
+
+In the interaction (Dirac) picture
+\begin{equation*}
+	\hat{\varphi}_j (t) = \hat{U}_I(t) \hat{\varphi}^I_j(t) \hat{U}_I\D(t),
+\end{equation*}
+with $U_I(t) = e^{- i \hat{H}_0 t}$. Time-ordered ($t_0 < t_1 < t_2 < \ldots$) solution is
+\begin{equation*}
+	U_I(t, t_0) = \1 + \frac{1}{i \hbar} \int_{t_0}^{t}  \sub{H}{ext}(t_1)  \d t_1 + 
+	\left(\frac{1}{i\hbar}\right)^2 \int_{t_0}^{t}  dt_1 \int_{t_0}^{t_1} dt_2 \sub{H}{ext}(t_1) \sub{H}{ext}(t_2) + \ldots.
+\end{equation*}
+Thus 
+\begin{align*}
+	\langle \hat{\varphi}_k(t)\rangle_f = \tr\left(
+		\hat{\rho}_\beta \hat{U}_I(t) \hat{\varphi}_j^I(t) \hat{U}_I\D(t)
+	\right) = \tr\left(
+		\hat{\rho}_\beta \hat{\varphi}_j^I(t)
+	\right) + \frac{1}{i\hbar} \int_{t_0}^{t} dt' \ \tr\left(
+		\hat{\rho}_\beta [\hat{\varphi}^I_j(t'), \sub{H}{ext}(t)]
+	\right).
+\end{align*}
+Or in other words
+\begin{equation}
+	\langle \hat{\varphi}_k(t)\rangle_f - \langle \hat{\varphi}_k(0)\rangle_f 
+	\overset{\mathrm{def}}{=} 
+	\delta \langle \varphi_j(t)\rangle
+	=
+	 - \frac{i}{\hbar}  \int_{t_0}^{t} dt' \ \tr\left(
+		\hat{\rho}_\beta [\hat{\varphi}^I_j(t'), \hat{\varphi}^I_i(t)]
+	\right) f_i(t') 
+	= \int_{-\infty}^{\infty} dt'\ \chi_{ji}(t-t') f_i (t') + O(f^2).
+\end{equation}
+Retarded susceptibility $\chi_{ij}$ is
+\begin{equation}
+	\chi_{ji}(t-t') = \frac{i}{\hbar} \theta(t-t') \left\langle [\hat{\varphi}^I_i(t'), \hat{\varphi}^I_j(t)]\right\rangle_0 = \frac{2i}{\hbar} \theta(t-t') \chi''_{ij}(t-t'),
+\end{equation}
+with spectral function $\chi''_{ij}(t) = - \chi''_{ij}(-t)$.
+
+
+
+
+\subsection*{Fluctuation-Dissipation relations}
+
+Compute the
+change of
+the total
+energy
+\begin{equation*}
+	\frac{d E}{d t}  = \frac{d }{d t} \tr\left( \hat{\rho}(t) \hat{H}(t)\right) = \tr \left(\rho \tfrac{d \hat{H}(t)}{d t} \right) = \sum_j \frac{d f_j(t)}{d t} \langle \varphi_j(t)\rangle_f,
+\end{equation*}
+or in terms of susceptibility
+\begin{equation*}
+	\frac{d E}{d t} = \sum_j \dot{f}_j \langle \varphi_j\rangle_0 + \sum_{ij} \dot{f}_j \int_{-\infty}^{\infty} dt'\ \chi_{ij}(t-t') f_j(t').
+\end{equation*}
+But actually we want to compute
+\begin{equation*}
+	\overline{\frac{d E}{d t} } = \frac{1}{T} \int_{0}^{T} dt\ \frac{d E}{d t} .
+\end{equation*}
+Computing the average energy absorption over one drive cycle
+\begin{equation*}
+	\overline{\frac{d E}{d t} } = \frac{\omega}{2} \sum_{ij} \bar{f}_{i \omega} \chi_{ij}''(\omega) f_{j \omega}.
+\end{equation*}
+In simple case $f_j = \Re f_{j \omega} e^{i \omega t} = A \cos \omega t$, with $f_{j \omega} = A$ and  $\overline{\frac{d E}{d t} } = \frac{\omega}{2} A^2 \chi''$.
+
+
