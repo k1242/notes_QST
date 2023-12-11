@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  4 DEC 2023 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  11 DEC 2023 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,37 +817,45 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(settings/settings.tex) (settings/inputs.tex (parts/QM_Luthinger.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+(settings/settings.tex) (settings/inputs.tex (parts/MB_FL_notes.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-9.
+4.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 9
+LaTeX Font Info:    Trying to load font information for U+esint on input line 4
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))) [1
+)
+<imgs/FS.pdf, id=3, 204.765pt x 146.5475pt>
+File: imgs/FS.pdf Graphic file (type pdf)
+<use imgs/FS.pdf>
+Package pdftex.def Info: imgs/FS.pdf  used on input line 30.
+(pdftex.def)             Requested size: 204.76448pt x 146.54712pt.
+)) [1
 
-{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (notes.aux)
+{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imgs/FS.pd
+f>]
+(notes.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -856,27 +864,27 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15732 strings out of 475248
- 247330 string characters out of 5767628
- 1933785 words of memory out of 5000000
- 36951 multiletter control sequences out of 15000+600000
- 566690 words of font info for 68 fonts, out of 8000000 for 9000
+ 15743 strings out of 475248
+ 247534 string characters out of 5767628
+ 1926785 words of memory out of 5000000
+ 36968 multiletter control sequences out of 15000+600000
+ 565544 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,99p,572b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esi
-nt10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\
-larm1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\labx1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on notes.pdf (1 page, 111812 bytes).
+ 89i,6n,99p,572b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm07
+00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+rm0500.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
+0\larm1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\labx1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb>
+Output written on notes.pdf (1 page, 110322 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

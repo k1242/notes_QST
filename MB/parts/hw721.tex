@@ -5,7 +5,7 @@ Consider a microscopic Hamiltonian for bosons with weak contact interactions:
 	\hat{H} - \mu \hat{N} = \sum_p (\varepsilon_p - \mu) \hat{a}_p\D \hat{a}_p + \frac{\varphi}{2V} \sum_{p, p', q} \hat{a}\D_{p+q} \hat{a}\D_{p'-q} \hat{a}_{p'} \hat{a}_p,
 	\label{BECbase}
 \end{equation}
-where $\varepsilon_p = p^2 / 2m$ and second term as $\hat{V}$.  For $u = 0$ the groundstate in a grandcanonical description is a coherent
+where $\varepsilon_p = p^2 / 2m$ and second term as $\hat{V}$.  For $\varphi = 0$ the groundstate in a grandcanonical description is a coherent
 state of bosons in the zero-momentum state, i.e. all particles are Bose condensed. 
 
 Finite interactions lead to scattering of bosons from the condensate into finite momentum modes
@@ -25,9 +25,9 @@ There are no terms that contain only one creation or annihilation operator for n
 The next four expansion terms each contain one operator of creation and one operator of annihilation above the non-condensate particles (fig. \ref{fig:BCb}):
 \begin{equation*}
 	\hat{V}_2 = \frac{\varphi}{2V}  \sum_{p \neq 0} \left(
-		\hat{a}\D \hat{a}_0 \hat{a}_0 \hat{a}_p + 
+		\hat{a}\D_p \hat{a}_0\D \hat{a}_0 \hat{a}_p + 
 		\hat{a}_p\D \hat{a}_0\D \hat{a}_p \hat{a}_0 + 
-		\hat{a}_0 \hat{a}\D \hat{a}_0 \hat{a}_p + 
+		\hat{a}_0\D \hat{a}_p\D \hat{a}_0 \hat{a}_p + 
 		\hat{a}_p\D \hat{a}_0\D \hat{a}_p \hat{a}_0
 	\right) \overset{1}{=}  \frac{2\varphi}{V} \hat{a}\D_0 \hat{a}_0 \sum_{p \neq 0} \hat{a}_p\D \hat{a}_p,
 \end{equation*}

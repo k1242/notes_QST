@@ -1,0 +1,93 @@
+The following Hamiltonian is a simple model of a condensate in two wells:
+\begin{equation}
+	H = - \frac{g}{2} \sum_{\langle i,j\rangle} a_i\D a_j + \frac{U}{4} \sum_{j} n_j (n_j-1),
+\end{equation}
+with $j \in \{1,2\}$. Consider a system with in total $2N$ particles. After normal ordering $[a_i, a_j\D]=\delta_{ij}$
+\begin{equation*}
+	H(a\D, a) = - \frac{g}{2} \sum_{\langle i,j\rangle} a_i\D a_j  + \frac{U}{4} \sum_{j} a_j\D a_j\D a_j a_j.
+\end{equation*}
+
+
+\textbf{Non-interacting case}. Let's start with $U=0$ and operator canonical transformation (Fourier transform)
+\begin{equation*}
+	\begin{pmatrix}
+		a_1 \\ a_2
+	\end{pmatrix} = \begin{pmatrix}
+	    \cos \alpha & \sin \alpha \\
+	    - \sin \alpha & \cos \alpha \\
+	\end{pmatrix} 
+	\begin{pmatrix}
+		b_1 \\ b_2
+	\end{pmatrix},
+\end{equation*}
+which automatically satisfies the commutation relations $[a_j, a_j\D] = \sin (\alpha)^2 + \cos (\alpha)^2 = 1$. Substituting into the Hamiltonian, we find the condition for diagonalization
+\begin{equation*}
+	\cos (\alpha)^2 - \sin(\alpha)^2 = 0,
+	\hspace{0.5cm} \overset{\alpha=\pi/4}{\Rightarrow}  \hspace{0.5cm}
+	a_{1,2} = \tfrac{1}{\sqrt{2}}(b_1 \pm b_2),
+\end{equation*}
+and the Hamiltonian
+\begin{equation*}
+	H = - \frac{g}{2} \sum_{\langle i,j\rangle} a_i\D a_j =  \tfrac{g}{2} b\D_1 b_1 - \tfrac{g}{2} b\D_2 b_2,
+\end{equation*}
+with ground state $\ket{0,2N}_b$. Define $\ket{n}_b \overset{\mathrm{def}}{=} \ket{n,2N-n}_b$. Now let's find the $\delta N$ as
+\begin{align*}
+	\delta N &= a_2\D a_2 - a_1\D a_1 = - b_2\D b_1 - b_1\D b_2,\\
+	(\delta N)^2 &= b_1\D b_1 + b_2\D b_2 + 2 b_2\D b_1\D b_1 b_2 = 2N + 4 nN - 2n^2.
+\end{align*}
+We immediately see that in the ground state 
+\begin{equation}
+	\langle \delta N^2\rangle_{\text{gs}} = 2N.
+\end{equation}
+Note that in the limit of large $N$ the temperature correction will be
+\begin{equation*}
+	\tfrac{1}{N} \langle \delta N^2\rangle = 2 + 4 e^{- \beta g},
+\end{equation*}
+regardless of $N$. To calculate this we can start with the partition function
+\begin{equation*}
+	Z = \sum_{n=0}^{2N} e^{-\beta E_n} = \left(e^{g \beta/2}+e^{-g \beta/2}\right)^{2N} = \frac{e^{\beta g (N+1)}-e^{- \beta g N}}{e^{\beta g}-1},
+\end{equation*}
+with $E_n = - g(N-n)$, and find $\langle n\rangle$ and $\langle n^2\rangle$ through
+\begin{equation*}
+	\langle N-n\rangle = \frac{1}{\beta} \frac{1}{Z} \frac{\partial Z}{\partial g} = T \partial_g \ln Z,
+	\hspace{10 mm} 
+	\langle (N-n)^2\rangle = \frac{1}{\beta^2} \frac{1}{Z} \frac{\partial^2 Z}{\partial g^2}.
+\end{equation*}
+
+
+
+\textbf{Imaginary-time action}. The imaginary-time action associated with this Hamiltonian in the coherent state representation
+\begin{equation*}
+	S = \tauint \bar{\psi} \partial_\tau \psi + H(\bar{\psi}, \psi)
+	=  \tauint 
+		\bar{\psi} \partial_\tau \psi - \frac{g}{2} \sum_{\langle i,j\rangle} \bar{\psi}_i \psi_j + \frac{U}{4} \sum_j \bar{\psi}_j \bar{\psi}_j \psi_j \psi_j.
+\end{equation*}
+Consider the density-phase representation given by
+\begin{equation*}
+	\psi_1 = \sqrt{N + \frac{\delta N}{2}} e^{i \varphi_1},
+	\hspace{10 mm} 
+	\psi_2 = \sqrt{N - \frac{\delta N}{2}} e^{i \varphi_2}.
+\end{equation*}
+The action than
+\begin{equation*}
+	S \overset{\mathrm{def}}{=} \tauint \mathcal{L(\varphi, \theta)} = \tauint 2N i \dot{\theta} + \frac{\delta N}{2} i \dot{\varphi} - g \sqrt{N^2 - \left(\frac{\delta N}{2}\right)^2} \cos \varphi + 2 \frac{U}{4} \left(\frac{\delta N}{2}\right)^2 + \frac{U}{2} N^2  ,
+\end{equation*}
+with $\varphi = \varphi_1 - \varphi_2$ and $\theta = \tfrac{1}{2}(\varphi_1 + \varphi_2)$. We can find the physical observables that are canonical conjugates to $\varphi$ and $\theta$
+\begin{equation*}
+	P_\varphi = \frac{\partial \mathcal{L}}{i \partial \dot{\varphi}} = \frac{\delta N}{2},
+	\hspace{10 mm} 
+	P_\theta = \frac{\partial \mathcal{L}}{i \partial \dot{\theta}} = 2 N,
+\end{equation*}
+with $i$ factor from Wick rotation $\tau \to - i t$ (it seems to me). 
+
+We can immediately see from Noether’s theorem how symmetry in $\theta$ leads to conservation of $P_\theta = 2N = \const$. And indeed $\mathcal{L}(\theta) = \mathcal{L}(\theta + \text{shift})$ -- $U(1)$ symetry. On the other hand $\mathcal{L}(\varphi) \neq \mathcal{L}(\varphi+\text{shift})$, which corresponds to non-conservation of the $P_\varphi = \delta N$.
+
+\textbf{Effective action}. Expanding the action to quadratic order in the particle number fluctuations $\delta N / N$ and the relative phase $\varphi$ and neglecting constant terms
+\begin{equation*}
+	\sub{S}{eff}(\varphi, P_\varphi) = \tauint i P_\varphi \partial_\tau \varphi + \tfrac{1}{2} g N\varphi^2 + \tfrac{1}{4}(U + g / N)P_\varphi^2.
+\end{equation*}
+The fluctuations of the relative particle number
+between the wells $(\delta N)^2$ could be found as previous through the partition function
+\begin{equation*}
+	Z = \int D[\varphi, \delta N] e^{-S}.
+\end{equation*}

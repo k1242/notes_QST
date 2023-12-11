@@ -64,3 +64,165 @@ and finally we have
 	\right).
 \end{equation*}
 
+% flat band systems
+
+
+
+\subsection*{Real space representation}
+
+We work with
+\begin{equation*}
+	\rho_{R,L}(x) = \frac{1}{L} \sum_q e^{i q x} \rho_{R,L} (q) + \rho_{0, R,L},
+\end{equation*}
+and still
+\begin{equation*}
+	\left[\rho_R(x), \rho_R(x')\right] = \frac{1}{L^2} \sum_{q,q'} e^{i q x - i q' x'} \left[
+		\rho_R(q), \rho_R(-q')
+	\right] = \frac{1}{2\pi L} \sum_q q e^{ i q(x-x')} = \frac{1}{2\pi i} \partial_x \delta(x-x'),
+\end{equation*}
+for left 
+\begin{equation*}
+	[\rho_L(x), \rho_L(x')] = \ldots = - \frac{1}{2\pi i} \partial_x \delta(x-x').
+\end{equation*}
+These relations are called the Kac-Moody algebra.  The Hamiltonian could be rewritten as 
+\begin{equation*}
+	H = \int_{-L/2}^{L/2} dx\ \left(
+		\pi v_F \left(
+			\rho_R(x) \rho_R(x) + \rho_L(x) \rho_L(x)
+		\right) + C(N_L,N_R) + \frac{V_1}{2}\left(
+			\rho_R(x) + \rho_L(x)
+		\right) \left(
+			\rho_R(x) + \rho_L(x)
+		\right)
+	\right).
+\end{equation*}
+Now we wnat to define
+\begin{align*}
+	\tfrac{1}{\sqrt{\pi}} \partial_x \varphi(x) &= \rho_R(x) + \rho_L(x) - \rho_{R_0} - \rho_{L_0},  \\
+	- \tfrac{1}{\sqrt{\pi}} P(x) &= (\rho_R(x) - \rho_L(x) - (\rho_{R_0} - \rho_{L_0}).
+\end{align*}
+We see that $\varphi(x)$ and $P(x)$ are conjugate fields
+\begin{equation*}
+	\left[\varphi(x), P(x)\right] = i \delta(x-x').
+\end{equation*}
+Then we can rewrite the Hamiltonian
+\begin{equation*}
+	H = \frac{\tilde{V}}{2} \int_{-L/2}^{L/2} dx\ \left(
+		g P(x)^2 + \frac{1}{g} (\partial_x \varphi(x))^2
+	\right),
+	\hspace{10 mm} 
+	\tilde{V} = \frac{1}{g} v_F,
+	\hspace{5 mm} 
+	g = \sqrt{1 + \frac{V_1}{v_F}}.
+\end{equation*}
+Thus we can calculate
+\begin{equation*}
+	\langle \rho(x) \rho(x')\rangle \sim \left(\frac{1}{x}\right)^{2g} \cos(2 \pi \rho_0 x).
+\end{equation*}
+
+
+
+\subsection*{Majumdar–Ghosh model}
+
+
+Consider frustrating Hamiltonian
+\begin{equation*}
+	H = J \sum_j \vc{S}_j \cdot \vc{S}_{j+1} + J' \sum_j \vc{S}_j \cdot \vc{S}_{j+2}.
+\end{equation*}
+For the special point $J' = J/2$ the g.s. can be obtained exactly. We can rewrite the Hamiltonian
+\begin{equation*}
+	H_{MG} = \frac{J}{2} \sum_j \left(
+		\vc{S}_j \cdot \vc{S}_{j+1} + \vc{S}_{j} \cdot \vc{S}_{j-1} + \vc{S}_{j-1} \cdot \vc{S}_{j+1}
+	\right) = \frac{J}{4} \sum_j \left(
+		\vc{S}_{j-1} + \vc{S}_j + \vc{S}_{j+1}
+	\right)^2 + \const
+\end{equation*}
+The exact ground state is
+\begin{equation*}
+	\ket{d_{\pm}} = \prod_{n=1}^{N/2} \left(
+		\ket{\uparrow_{2n}} \ket{\downarrow_{2n \pm 1} } - \ket{\downarrow_{2n}} \ket{\uparrow_{2n \pm 1}}
+	\right).
+\end{equation*}
+The main idea is to show that $H_{MG}$ is a sum of projectors.
+
+To proof that $\ket{d_{\pm}}$ is ground state we need to consider
+\begin{equation*}
+	\vc{J}_i = \vc{S}_{i-1} + \vc{S}_i + \vc{S}_{i+1},
+\end{equation*}
+with $J^2 = J (3+1)$ and $J = \frac{1}{2}, \frac{3}{2}$. And we can rewrite $H_{MG}$ in terms of the projectors
+\begin{equation*}
+	H_{MG} = \frac{JJ}{8} \sum_j \hat{P}_{3/2} (j-1,j,j+1),
+	\hspace{10 mm} 
+	\hat{P}_{3/2}(j-1,j,j+1) = \frac{1}{3}\left(J^2 - \frac{3}{4}\right).
+\end{equation*}
+
+The spin correlations is
+\begin{equation*}
+	\langle \vc{S}_i \cdot \vc{S}_j\rangle = \left\{\begin{aligned}
+	    &3/4, &i=j \\
+	    &-3/4, &i,j \in \text{bond} \\
+	    &0, \text{otherwise}
+	\end{aligned}\right.
+\end{equation*}
+VBS -- nonzero correlations singlet bonds. 
+
+
+
+
+\subsection*{Violate LSM}
+
+Consider example that violate LSM:
+\begin{equation*}
+	H_D = \sum_{i \in \text{even}} \left(J_1 \vc{S}_i \cdot \vc{S}_{i+1} + J_2 \vc{S}_i \vc{S}_{i-1}\right).
+\end{equation*}
+The gap remains open for all $J_2 < J_1$. For $J_2 \to - \infty$ the pairs of spins on the $J_2$ bonds are forced to be parallel (in triplets), so we go to the $S=1$ Hamiltonian.
+
+
+
+\subsection*{Haldane gap: AKLT model}
+
+
+AKLT (Affleck-Kennedy-Lieb-Tasaki model) Hamiltonian is
+\begin{equation*}
+	H = \sum_j \left(
+		\vc{S}_j \cdot \vc{S}_{j+1} + \alpha \left(\vc{S}_j \cdot \vc{S}_{j+1}\right)^2
+	\right),
+\end{equation*}
+with $\alpha=1/3$ the model has an exact ground state. 
+
+The spin-two projector
+\begin{equation*}
+	P_2 (j, j+1) = \frac{1}{2} \vc{S}_j \vc{S}_{j+1} + \frac{1}{6}\left(\vc{S}_j \vc{S}_{j+1}\right) + \frac{1}{3} = S^2_{j,j+1} \left(
+		S^2_{j,j+1}-2
+	\right),
+\end{equation*}
+this annihilates states with spin 0 or 1.
+The Hamiltonian	is nothing but
+\begin{equation*}
+	H = J \sum_j \left( 2 P_2 (j, j+1) - \frac{2}{3}\right).
+\end{equation*}
+% фермионы абрикосова
+The key idea of AKLT was to introduce two auxilaries spin $\frac{1}{2}$ on each site. 
+
+Our projector is
+\begin{equation*}
+	P = \kb{1}{\uparrow \uparrow}  + \frac{1}{\sqrt{2}}\ket{0}\left(\bra{\uparrow \downarrow} + \bra{\downarrow \uparrow}\right) + \kb{-1}{\downarrow \downarrow}. 
+\end{equation*}
+The ground state is
+\begin{equation*}
+	\ket{gs} = \left(\prod_j \hat{P}_j\right) \prod_{i=1}^N \left(
+		\ket{\uparrow}_{i,R} \ket{\downarrow}_{i+1,L} - \ket{\downarrow}_{i,R} \ket{\uparrow}_{i+1,L}
+	\right).
+\end{equation*}
+In $\hat{S}^z$ measurements we have hidden order -- non-local string order parameter with LRO
+\begin{equation*}
+	\langle S^z_j \exp\left(i \pi \sum_{k=j+1}^{j+r-1} S_k^z\right) S^z_{j+r}\rangle,
+\end{equation*}
+that is finite in the entire Haldane phase.
+
+% \begin{equation*}
+% 	\Gamma(r) = \langle b\D_r b_0\rangle \propto r^{-K/2}
+% \end{equation*}
+
+% $K = K_c = 1/2$ -- phase transition
+
