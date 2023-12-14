@@ -27,9 +27,10 @@ which automatically satisfies the commutation relations $[a_j, a_j\D] = \sin (\a
 	a_{1,2} = \tfrac{1}{\sqrt{2}}(b_1 \pm b_2),
 \end{equation*}
 and the Hamiltonian
-\begin{equation*}
+\begin{equation}
 	H = - \frac{g}{2} \sum_{\langle i,j\rangle} a_i\D a_j =  \tfrac{g}{2} b\D_1 b_1 - \tfrac{g}{2} b\D_2 b_2,
-\end{equation*}
+	\label{eq1212}
+\end{equation}
 with ground state $\ket{0,2N}_b$. Define $\ket{n}_b \overset{\mathrm{def}}{=} \ket{n,2N-n}_b$. Now let's find the $\delta N$ as
 \begin{align*}
 	\delta N &= a_2\D a_2 - a_1\D a_1 = - b_2\D b_1 - b_1\D b_2,\\
@@ -38,14 +39,15 @@ with ground state $\ket{0,2N}_b$. Define $\ket{n}_b \overset{\mathrm{def}}{=} \k
 We immediately see that in the ground state 
 \begin{equation}
 	\langle \delta N^2\rangle_{\text{gs}} = 2N.
+	\label{eq2}
 \end{equation}
-Note that in the limit of large $N$ the temperature correction will be
+Note that the temperature correction will be
 \begin{equation*}
-	\tfrac{1}{N} \langle \delta N^2\rangle = 2 + 4 e^{- \beta g},
+	\tfrac{1}{N} \langle \delta N^2\rangle = 2 \cth\left(\tfrac{1}{2} \beta g\right) \approx 2 + 4 e^{- \beta g}.
 \end{equation*}
-regardless of $N$. To calculate this we can start with the partition function
+To calculate this we can start with the partition function
 \begin{equation*}
-	Z = \sum_{n=0}^{2N} e^{-\beta E_n} = \left(e^{g \beta/2}+e^{-g \beta/2}\right)^{2N} = \frac{e^{\beta g (N+1)}-e^{- \beta g N}}{e^{\beta g}-1},
+	Z = \sum_{n=0}^{2N} e^{-\beta E_n} = \frac{e^{\beta g (N+1)}-e^{- \beta g N}}{e^{\beta g}-1},
 \end{equation*}
 with $E_n = - g(N-n)$, and find $\langle n\rangle$ and $\langle n^2\rangle$ through
 \begin{equation*}
@@ -69,9 +71,10 @@ Consider the density-phase representation given by
 	\psi_2 = \sqrt{N - \frac{\delta N}{2}} e^{i \varphi_2}.
 \end{equation*}
 The action than
-\begin{equation*}
+\begin{equation}
 	S \overset{\mathrm{def}}{=} \tauint \mathcal{L(\varphi, \theta)} = \tauint 2N i \dot{\theta} + \frac{\delta N}{2} i \dot{\varphi} - g \sqrt{N^2 - \left(\frac{\delta N}{2}\right)^2} \cos \varphi + 2 \frac{U}{4} \left(\frac{\delta N}{2}\right)^2 + \frac{U}{2} N^2  ,
-\end{equation*}
+	\label{eqfull}
+\end{equation}
 with $\varphi = \varphi_1 - \varphi_2$ and $\theta = \tfrac{1}{2}(\varphi_1 + \varphi_2)$. We can find the physical observables that are canonical conjugates to $\varphi$ and $\theta$
 \begin{equation*}
 	P_\varphi = \frac{\partial \mathcal{L}}{i \partial \dot{\varphi}} = \frac{\delta N}{2},
@@ -84,10 +87,99 @@ We can immediately see from Noether’s theorem how symmetry in $\theta$ leads t
 
 \textbf{Effective action}. Expanding the action to quadratic order in the particle number fluctuations $\delta N / N$ and the relative phase $\varphi$ and neglecting constant terms
 \begin{equation*}
-	\sub{S}{eff}(\varphi, P_\varphi) = \tauint i P_\varphi \partial_\tau \varphi + \tfrac{1}{2} g N\varphi^2 + \tfrac{1}{4}(U + g / N)P_\varphi^2.
+	\sub{S}{eff}(\varphi, P_\varphi) = \tauint i P_\varphi \partial_\tau \varphi + \tfrac{1}{2} g N\varphi^2 + \tfrac{1}{2}(U + g / N)P_\varphi^2.
 \end{equation*}
 The fluctuations of the relative particle number
-between the wells $(\delta N)^2$ could be found as previous through the partition function
+between the wells $(\delta N)^2$ could be found as previous through the partition function $Z$
 \begin{equation*}
-	Z = \int D[\varphi, \delta N] e^{-S}.
+	Z = \int D[\varphi, P_\varphi] e^{-\sub{S}{eff}(\varphi, P_\varphi)} , 
+	\hspace{10 mm} 
+	\langle P_\varphi^2\rangle = \frac{1}{Z} \int D[\varphi, P_\varphi]\, P_\varphi^2 e^{-\sub{S}{eff}[\varphi, P_\varphi]} = -\frac{2}{\beta Z} \partial_U Z = -\frac{2}{\beta} \frac{\partial \ln Z}{\partial U},
 \end{equation*}
+so in what follows we only look at factors containing $U$. Integrating by parts
+\begin{equation*}
+	\tauint  P_\varphi i \partial_\tau \varphi = P_\varphi i  \varphi \bigg|_{0}^{\beta} - \tauint \varphi i \partial_\tau P_\varphi,
+\end{equation*}
+and $D[\varphi]$ could be calculated as gaussian integral
+\begin{equation*}
+	Z \propto \int D[P_\varphi] \exp
+	\left(	\tauint 
+					\left(- \frac{(\partial_\tau P_\varphi)^2}{2 g N} + \frac{1}{2}(U+g/ N) P_\varphi^2\right)
+				\right),
+\end{equation*}
+that could be calculated in Matsubara representation $2 P_\varphi = \delta N = \frac{1}{\sqrt{\beta}} \sum_k e^{i \omega_k \tau}  \delta N_k $
+\begin{equation*}
+	Z \propto \int D[\delta N_k] \exp\left(
+		- \frac{1}{8}\sum_k \left(
+			\frac{\omega_k^2}{gN} + U + \frac{g}{N}
+		\right) \delta N_k \delta N_{-k}
+	\right).
+\end{equation*}
+Since the fluctuation $\delta N$ is real, then $\delta N_{-k} = \overline{\delta N}_k$, and
+\begin{equation*}
+	Z \propto \prod_{k}^{} \left(
+		\frac{\omega_k^2}{gN} + U + \frac{g}{N}
+	\right)^{-1/2}
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\langle \delta N^2\rangle = \frac{4}{\beta} \sum_k \left(\frac{\omega_k^2}{gN} + U + \frac{g}{N}\right)^{-1},
+\end{equation*}
+with $\omega_k = 2 \pi k / \beta $. After summation as
+\begin{equation*}
+	\sum_{k=-\infty}^{\infty} \frac{1}{k^2 + x^2} = \frac{\pi}{x} \frac{1}{\cth (\pi x)},
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\langle \delta N^2\rangle = 2 N \frac{\cth \left(\tfrac{1}{2} \beta g F_U \right)}{F_U},
+\end{equation*}
+with $F_U = \sqrt{1 + NU/g}$, in full accordance with formula \eqref{eq2}.
+
+
+
+\textbf{Low fluctuations}. The expansion in $\delta N / N$ is
+justified with  $|\delta N| / N \ll 1$ or $\cth \left(\tfrac{1}{2} \beta g F_U \right) / N F_U \ll 1$. Note that temperature increases fluctuations and decreases interaction. Thus  we could rewrite \eqref{eqfull} as
+\begin{equation*}
+	\sub{S}{eff}(\varphi, P_\varphi) = \tauint P_\varphi i \partial_\tau \varphi - g N \cos(\varphi) + \tfrac{1}{2} U P_\varphi^2,
+\end{equation*}
+where we neglected $P_\varphi^2 / N$ term. 
+
+
+\textbf{Equations of motion}. The real-time effective action is
+\begin{equation*}
+	\sub{S}{eff}[\varphi, P_\varphi] = i \int_{0}^{T} \hspace{-1mm} d t\ \mathcal{L} = i \int_{0}^{T} \hspace{-1mm} d t\  \left(P_\varphi \partial_t \varphi + g N \cos (\varphi) - \tfrac{1}{2} U P_\varphi^2\right).
+\end{equation*}
+Classical equations of motion could be obtained from Euler–Lagrange equation
+\begin{equation*}
+	\frac{\partial \mathcal{L}}{\partial x} - \frac{d }{d t} \frac{\partial \mathcal{L}}{\partial \dot{x}} = 0,
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\left.\begin{aligned}
+	    \dot{\varphi} &= U P_\varphi, \\
+	    \dot{P}_\varphi &= - g N \sin(\varphi)
+	\end{aligned}\right.
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\partial_t^2 \varphi = - g N U \sin \varphi.
+\end{equation*}
+The current between the wells is $\partial_t \delta N / 2 = \partial_t P_\varphi = - g N \sin \varphi$, limited by $g N$.
+
+
+\textbf{Oscillation frequency}. With $\varphi_0 \ll 1$ we could limit $|\varphi|$ and rewrite equations as
+\begin{equation*}
+	\ddot{\varphi} = g N U \varphi,
+	\hspace{1cm} \Rightarrow \hspace{1cm}
+	\varphi = \varphi_0 \cos(\sqrt{gNU} t),
+\end{equation*}
+so oscillation frequency is $\sqrt{g N U}$. Fluctuations are also small as $P_\varphi = \dot{\varphi}/U$. Non-interacting bosons oscillation could be found from \eqref{eq1212} with
+\begin{equation*}
+	\ket{\psi(t)} = \sum_{n=0}^{2N} \alpha_n e^{i g (N-n) t} \ket{n,2N-n},
+\end{equation*}
+we obtain
+\begin{equation*}
+	\langle \delta N(t)\rangle = \bk{\psi(t)}[- b_2\D b_1 - b_1\D b_2]{\psi(t)} = \bra{\psi(t)} \sum_{n=1}^{2N-1} \sqrt{n(2N-n-1)} \alpha_n  e^{i g (N-n)t}\ket{n,2N-n} e^{-i g t} = \sum_n ... e^{-igt},
+\end{equation*}
+so oscillation frequency is $g$.
+
+
+
+
+% \begin{equation*}
+% 	\sub{k}{B} \sub{k}{F} \sub{\mu}{B} 
+% \end{equation*}
+
+

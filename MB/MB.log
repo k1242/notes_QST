@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  11 DEC 2023 07:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  13 DEC 2023 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,45 +834,47 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-86.
+89.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [1{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-])) [2] (MB.aux)
+]) (parts/hw82.tex))
+[2] [3] (MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: BF7D376FEAC4ECA5921B49C71DAE543E;317.
+(rerunfilecheck)             Checksum: D4A5D2417ED78909D516E875C8F68276;542.
  ) 
 Here is how much of TeX's memory you used:
- 15619 strings out of 475248
- 245819 string characters out of 5767628
+ 15638 strings out of 475248
+ 246132 string characters out of 5767628
  1956785 words of memory out of 5000000
- 36846 multiletter control sequences out of 15000+600000
+ 36858 multiletter control sequences out of 15000+600000
  566671 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,99p,566b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt10
-00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600
-\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on MB.pdf (2 pages, 140537 bytes).
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm05
+00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+tt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dp
+i600\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
+-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on MB.pdf (3 pages, 162632 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
