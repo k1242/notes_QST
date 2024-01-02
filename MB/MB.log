@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  13 DEC 2023 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  2 JAN 2024 06:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,13 +692,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 ))
+(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/graphbox\graphbox.sty
+Package: graphbox 2018/01/17 v1.1 extension for graphicx to adjust containing b
+ox
+\Gin@box@box=\box60
+\Gin@box@width=\skip68
+\Gin@box@height=\skip69
+\Gin@box@raise=\skip70
+\Gin@box@hspace=\skip71
+\Gin@box@bwidth=\skip72
+\Gin@box@bheight=\skip73
+)
 (settings/colors.tex) (settings/commands.tex) (settings/header.tex)
 (settings/symbols.tex
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/arydshln\arydshln.sty
 Package: arydshln 2019/02/21 v1.76 
 \dashlinedash=\dimen179
 \dashlinegap=\dimen180
-\adl@box=\box60
+\adl@box=\box61
 \adl@height=\dimen181
 \adl@heightsave=\dimen182
 \adl@depth=\dimen183
@@ -787,7 +798,7 @@ Package caption Info: End \AtBeginDocument code.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count305
 \scratchdimen=\dimen187
-\scratchbox=\box61
+\scratchbox=\box62
 \nofMPsegments=\count306
 \nofMParguments=\count307
 \everyMPshowfont=\toks36
@@ -840,41 +851,133 @@ LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [1{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]) (parts/hw82.tex))
-[2] [3] (MB.aux)
+]) (parts/hw82.tex
+<imgs/erg_reg_add1.pdf, id=42, 144.54pt x 144.54pt>
+File: imgs/erg_reg_add1.pdf Graphic file (type pdf)
+<use imgs/erg_reg_add1.pdf>
+Package pdftex.def Info: imgs/erg_reg_add1.pdf  used on input line 5.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/erg_reg_add2.pdf, id=43, 144.54pt x 144.54pt>
+File: imgs/erg_reg_add2.pdf Graphic file (type pdf)
+<use imgs/erg_reg_add2.pdf>
+Package pdftex.def Info: imgs/erg_reg_add2.pdf  used on input line 8.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+
+[2]
+<imgs/ergodic_reg.pdf, id=49, 144.54pt x 144.54pt>
+File: imgs/ergodic_reg.pdf Graphic file (type pdf)
+<use imgs/ergodic_reg.pdf>
+Package pdftex.def Info: imgs/ergodic_reg.pdf  used on input line 17.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition.pdf, id=50, 144.54pt x 144.54pt>
+File: imgs/transition.pdf Graphic file (type pdf)
+<use imgs/transition.pdf>
+Package pdftex.def Info: imgs/transition.pdf  used on input line 20.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition_leg.pdf, id=51, 50.1875pt x 53.19875pt>
+File: imgs/transition_leg.pdf Graphic file (type pdf)
+<use imgs/transition_leg.pdf>
+Package pdftex.def Info: imgs/transition_leg.pdf  used on input line 22.
+(pdftex.def)             Requested size: 38.3883pt x 40.69446pt.
+<imgs/evecs.pdf, id=52, 492.84125pt x 110.4125pt>
+File: imgs/evecs.pdf Graphic file (type pdf)
+<use imgs/evecs.pdf>
+Package pdftex.def Info: imgs/evecs.pdf  used on input line 32.
+(pdftex.def)             Requested size: 492.84003pt x 110.41222pt.
+) [3 <./imgs/erg_reg_add1.pdf> <./imgs/erg_reg_add2.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/erg_reg_add2.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./imgs/ergodic_reg.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/ergodic_reg.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./imgs/transition.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/transition.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./imgs/transition_leg.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/transition_leg.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./imgs/evecs.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/evecs.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>] (parts/hw9_intro.tex
+Overfull \hbox (20.34761pt too wide) in paragraph at lines 1--4
+\T2A/cmr/m/n/10 двух противоположных эффектов: \T2A/cmr/m/it/10 термолизации \T
+2A/cmr/m/n/10 (иногда возникающей при небольшом уровне шума) и \T2A/cmr/m/it/10
+ локализации
+ []
+
+
+Overfull \hbox (21.61pt too wide) in paragraph at lines 9--14
+\T2A/cmr/m/n/10 некотором смысле возникает термолизация. Что значит интерируема
+я квантовая система? Что такое \T2A/cmr/m/it/10 термолизация\T2A/cmr/m/n/10 ?
+ []
+
+<imgs/lo2.pdf, id=183, 108.405pt x 108.405pt>
+File: imgs/lo2.pdf Graphic file (type pdf)
+<use imgs/lo2.pdf>
+Package pdftex.def Info: imgs/lo2.pdf  used on input line 42.
+(pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
+<imgs/lo2l.pdf, id=184, 176.66pt x 53.19875pt>
+File: imgs/lo2l.pdf Graphic file (type pdf)
+<use imgs/lo2l.pdf>
+Package pdftex.def Info: imgs/lo2l.pdf  used on input line 44.
+(pdftex.def)             Requested size: 176.65956pt x 53.19861pt.
+<imgs/MBL_exp_1.png, id=185, 661.2705pt x 443.256pt>
+File: imgs/MBL_exp_1.png Graphic file (type png)
+<use imgs/MBL_exp_1.png>
+Package pdftex.def Info: imgs/MBL_exp_1.png  used on input line 61.
+(pdftex.def)             Requested size: 179.15584pt x 120.08652pt.
+<imgs/MBL_exp_2.png, id=187, 649.82774pt x 448.67625pt>
+File: imgs/MBL_exp_2.png Graphic file (type png)
+<use imgs/MBL_exp_2.png>
+Package pdftex.def Info: imgs/MBL_exp_2.png  used on input line 64.
+(pdftex.def)             Requested size: 179.15584pt x 123.69785pt.
+) [4 <./imgs/lo2.pdf> <./imgs/lo2l.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/lo2l.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+> <./imgs/MBL_exp_1.png> <./imgs/MBL_exp_2.png>] (MB.bbl)) [5] (MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: D4A5D2417ED78909D516E875C8F68276;542.
+(rerunfilecheck)             Checksum: 124D40BCEA238E2C10D7B54A9AD54502;847.
  ) 
 Here is how much of TeX's memory you used:
- 15638 strings out of 475248
- 246132 string characters out of 5767628
+ 15830 strings out of 475248
+ 250321 string characters out of 5767628
  1956785 words of memory out of 5000000
- 36858 multiletter control sequences out of 15000+600000
- 566671 words of font info for 63 fonts, out of 8000000 for 9000
+ 37027 multiletter control sequences out of 15000+600000
+ 569169 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,99p,566b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm05
-00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
-tt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dp
-i600\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
-rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on MB.pdf (3 pages, 162632 bytes).
+ 89i,12n,99p,592b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx14
+40.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+ti1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
+0\larm0500.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\latt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
+esint/dpi600\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts
+/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb>
+Output written on MB.pdf (5 pages, 481357 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
