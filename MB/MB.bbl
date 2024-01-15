@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{khlebnikov_thermalization_2014}
+Sergei Khlebnikov and Martin Kruczenski.
+\newblock Thermalization of isolated quantum systems, March 2014.
+
+\bibitem{PhysRevA.43.2046}
+J.~M. Deutsch.
+\newblock Quantum statistical mechanics in a closed system.
+\newblock {\em Phys. Rev. A}, 43:2046--2049, Feb 1991.
+
+\bibitem{PhysRevE.50.888}
+Mark Srednicki.
+\newblock Chaos and quantum thermalization.
+\newblock {\em Phys. Rev. E}, 50:888--901, Aug 1994.
+
+\bibitem{schreiber_observation_2015}
+Michael Schreiber, Sean~S. Hodgman, Pranjal Bordia, Henrik~P. Lüschen, Mark~H.
+  Fischer, Ronen Vosk, Ehud Altman, Ulrich Schneider, and Immanuel Bloch.
+\newblock Observation of many-body localization of interacting fermions in a
+  quasi-random optical lattice.
+\newblock {\em Science}, 349(6250):842--845, August 2015.
+
+\bibitem{Choi_2016}
+Jae-yoon Choi, Sebastian Hild, Johannes Zeiher, Peter Schauß, Antonio
+  Rubio-Abadal, Tarik Yefsah, Vedika Khemani, David~A. Huse, Immanuel Bloch,
+  and Christian Gross.
+\newblock Exploring the many-body localization transition in two dimensions.
+\newblock {\em Science}, 352(6293):1547–1552, June 2016.
+
+\bibitem{PhysRev.109.1492}
+P.~W. Anderson.
+\newblock Absence of diffusion in certain random lattices.
+\newblock {\em Phys. Rev.}, 109:1492--1505, Mar 1958.
+
+\bibitem{wei_characterization_2020}
+Xingbo Wei, Rubem Mondaini, and Gao Xianlong.
+\newblock Characterization of many-body mobility edges with random matrices,
+  January 2020.
+
+\bibitem{pal_many-body_2010}
+Arijeet Pal and David~A. Huse.
+\newblock The many-body localization phase transition.
+\newblock {\em Physical Review B}, 82(17):174411, November 2010.
+
+\bibitem{bardarson_unbounded_2012}
+Jens~H. Bardarson, Frank Pollmann, and Joel~E. Moore.
+\newblock Unbounded growth of entanglement in models of many-body localization.
+\newblock {\em Physical Review Letters}, 109(1):017202, July 2012.
+
+\end{thebibliography}

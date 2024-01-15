@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  10 JAN 2024 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  15 JAN 2024 03:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,140 +1134,229 @@ Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
  input line 5.
 
-(settings/settings.tex) (settings/inputs.tex (parts/hw101.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+(settings/settings.tex) (settings/inputs.tex (parts/hw9_abs.tex
+<imgs/lo2.pdf, id=30, 108.405pt x 108.405pt>
+File: imgs/lo2.pdf Graphic file (type pdf)
+<use imgs/lo2.pdf>
+Package pdftex.def Info: imgs/lo2.pdf  used on input line 12.
+(pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
+<imgs/lo2l.pdf, id=31, 176.66pt x 53.19875pt>
+File: imgs/lo2l.pdf Graphic file (type pdf)
+<use imgs/lo2l.pdf>
+Package pdftex.def Info: imgs/lo2l.pdf  used on input line 14.
+(pdftex.def)             Requested size: 176.65956pt x 53.19861pt.
+)
+(parts/hw9_model.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-5.
+3.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
+))
+(parts/hw9_eth.tex
+Overfull \hbox (1.79573pt too wide) in paragraph at lines 2--3
+[]\T2A/cmr/bx/n/10 Термализация\T2A/cmr/m/n/10 . Начнјм с построения некоторой 
+интуиции про то что можно было бы назвать термализацией
+ []
 
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 47.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 54.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 54.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 54.
-
-<imgs/FSe.pdf, id=16, 144.54pt x 110.4125pt>
-File: imgs/FSe.pdf Graphic file (type pdf)
-<use imgs/FSe.pdf>
-Package pdftex.def Info: imgs/FSe.pdf  used on input line 63.
-(pdftex.def)             Requested size: 144.53963pt x 110.41222pt.
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-134.
+35.
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ) [1{C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./imgs/FSe.pdf>])
-(parts/hw102.tex
-<imgs/Apeak.pdf, id=76, 144.54pt x 72.27pt>
-File: imgs/Apeak.pdf Graphic file (type pdf)
-<use imgs/Apeak.pdf>
-Package pdftex.def Info: imgs/Apeak.pdf  used on input line 59.
-(pdftex.def)             Requested size: 144.53963pt x 72.2698pt.
-<imgs/npeak.pdf, id=77, 144.54pt x 72.27pt>
-File: imgs/npeak.pdf Graphic file (type pdf)
-<use imgs/npeak.pdf>
-Package pdftex.def Info: imgs/npeak.pdf  used on input line 62.
-(pdftex.def)             Requested size: 144.53963pt x 72.2698pt.
-)) [2 <./imgs/Apeak.pdf> <./imgs/npeak.pdf
+ <./imgs/lo2.pdf> <./imgs/lo2l.pdf
 
-pdfTeX warning: pdflatex (file ./imgs/npeak.pdf): PDF inclusion: multiple pdfs 
+pdfTeX warning: pdflatex (file ./imgs/lo2l.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+>]) (parts/hw9_loc.tex
+Overfull \hbox (8.37282pt too wide) in paragraph at lines 8--9
+[]\T2A/cmr/m/n/10 Для одночастичной задачи было бы логичным предположить, что т
+акое поведение возникает из-за локализации
+ []
+
+<imgs/evecs.pdf, id=127, 505.89pt x 103.38625pt>
+File: imgs/evecs.pdf Graphic file (type pdf)
+<use imgs/evecs.pdf>
+Package pdftex.def Info: imgs/evecs.pdf  used on input line 16.
+(pdftex.def)             Requested size: 505.88875pt x 103.38599pt.
+) [2 <./imgs/evecs.pdf>] (parts/hw9_num_mod.tex
+<imgs/2Dth_loc.pdf, id=170, 199.74625pt x 129.48375pt>
+File: imgs/2Dth_loc.pdf Graphic file (type pdf)
+<use imgs/2Dth_loc.pdf>
+Package pdftex.def Info: imgs/2Dth_loc.pdf  used on input line 4.
+(pdftex.def)             Requested size: 199.74576pt x 129.48341pt.
+<imgs/2Drdel.pdf, id=171, 130.4875pt x 135.50626pt>
+File: imgs/2Drdel.pdf Graphic file (type pdf)
+<use imgs/2Drdel.pdf>
+Package pdftex.def Info: imgs/2Drdel.pdf  used on input line 7.
+(pdftex.def)             Requested size: 130.48717pt x 135.5059pt.
+<imgs/2Dtherm_1.pdf, id=172, 130.4875pt x 126.4725pt>
+File: imgs/2Dtherm_1.pdf Graphic file (type pdf)
+<use imgs/2Dtherm_1.pdf>
+Package pdftex.def Info: imgs/2Dtherm_1.pdf  used on input line 10.
+(pdftex.def)             Requested size: 130.48717pt x 126.47218pt.
+<imgs/MBL_2D_exp_1.png, id=173, 471.56175pt x 470.9595pt>
+File: imgs/MBL_2D_exp_1.png Graphic file (type png)
+<use imgs/MBL_2D_exp_1.png>
+Package pdftex.def Info: imgs/MBL_2D_exp_1.png  used on input line 19.
+(pdftex.def)             Requested size: 168.91635pt x 168.7045pt.
+<imgs/MBL_2D_exp_2.png, id=175, 608.87476pt x 488.42474pt>
+File: imgs/MBL_2D_exp_2.png Graphic file (type png)
+<use imgs/MBL_2D_exp_2.png>
+Package pdftex.def Info: imgs/MBL_2D_exp_2.png  used on input line 22.
+(pdftex.def)             Requested size: 204.74283pt x 164.23628pt.
+) [3 <./imgs/2Dth_loc.pdf> <./imgs/2Drdel.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/2Drdel.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+> <./imgs/2Dtherm_1.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/2Dtherm_1.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./imgs/MBL_2D_exp_1.png> <./imgs/MBL_2D_exp_2.png>] (parts/hw9_rand_mat.tex
+<imgs/erg_reg_add1.pdf, id=262, 144.54pt x 144.54pt>
+File: imgs/erg_reg_add1.pdf Graphic file (type pdf)
+<use imgs/erg_reg_add1.pdf>
+Package pdftex.def Info: imgs/erg_reg_add1.pdf  used on input line 11.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/erg_reg_add2.pdf, id=263, 144.54pt x 144.54pt>
+File: imgs/erg_reg_add2.pdf Graphic file (type pdf)
+<use imgs/erg_reg_add2.pdf>
+Package pdftex.def Info: imgs/erg_reg_add2.pdf  used on input line 14.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/ergodic_reg.pdf, id=264, 144.54pt x 144.54pt>
+File: imgs/ergodic_reg.pdf Graphic file (type pdf)
+<use imgs/ergodic_reg.pdf>
+Package pdftex.def Info: imgs/ergodic_reg.pdf  used on input line 23.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition.pdf, id=265, 144.54pt x 144.54pt>
+File: imgs/transition.pdf Graphic file (type pdf)
+<use imgs/transition.pdf>
+Package pdftex.def Info: imgs/transition.pdf  used on input line 26.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition_leg.pdf, id=266, 50.1875pt x 53.19875pt>
+File: imgs/transition_leg.pdf Graphic file (type pdf)
+<use imgs/transition_leg.pdf>
+Package pdftex.def Info: imgs/transition_leg.pdf  used on input line 28.
+(pdftex.def)             Requested size: 38.3883pt x 40.69446pt.
+) [4 <./imgs/erg_reg_add1.pdf> <./imgs/erg_reg_add2.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/erg_reg_add2.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./imgs/ergodic_reg.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/ergodic_reg.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./imgs/transition.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/transition.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./imgs/transition_leg.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/transition_leg.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>] (parts/hw9_num_mod1.tex
+<imgs/MBL_exp_1.png, id=373, 661.2705pt x 443.256pt>
+File: imgs/MBL_exp_1.png Graphic file (type png)
+<use imgs/MBL_exp_1.png>
+Package pdftex.def Info: imgs/MBL_exp_1.png  used on input line 6.
+(pdftex.def)             Requested size: 179.15584pt x 120.08652pt.
+<imgs/MBL_exp_2.png, id=374, 649.82774pt x 448.67625pt>
+File: imgs/MBL_exp_2.png Graphic file (type png)
+<use imgs/MBL_exp_2.png>
+Package pdftex.def Info: imgs/MBL_exp_2.png  used on input line 9.
+(pdftex.def)             Requested size: 179.15584pt x 123.69785pt.
+) [5 <./imgs/MBL_exp_1.png> <./imgs/MBL_exp_2.png>]
+(parts/hw9_entropy.tex
+<imgs/S_FV1.pdf, id=386, 184.69pt x 117.43875pt>
+File: imgs/S_FV1.pdf Graphic file (type pdf)
+<use imgs/S_FV1.pdf>
+Package pdftex.def Info: imgs/S_FV1.pdf  used on input line 5.
+(pdftex.def)             Requested size: 184.68953pt x 117.43845pt.
+<imgs/S_FV2.pdf, id=387, 137.51375pt x 112.42pt>
+File: imgs/S_FV2.pdf Graphic file (type pdf)
+<use imgs/S_FV2.pdf>
+Package pdftex.def Info: imgs/S_FV2.pdf  used on input line 8.
+(pdftex.def)             Requested size: 137.51341pt x 112.41972pt.
+<imgs/S_FV_12a.png, id=388, 596.2275pt x 469.15276pt>
+File: imgs/S_FV_12a.png Graphic file (type png)
+<use imgs/S_FV_12a.png>
+Package pdftex.def Info: imgs/S_FV_12a.png  used on input line 19.
+(pdftex.def)             Requested size: 204.74283pt x 161.1062pt.
+<imgs/S_FV_12b.png, id=389, 597.432pt x 457.71pt>
+File: imgs/S_FV_12b.png Graphic file (type png)
+<use imgs/S_FV_12b.png>
+Package pdftex.def Info: imgs/S_FV_12b.png  used on input line 22.
+(pdftex.def)             Requested size: 204.74283pt x 156.85553pt.
+) [6 <./imgs/S_FV1.pdf> <./imgs/S_FV2.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/S_FV2.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
->] (MB.aux)
+> <./imgs/S_FV_12a.png> <./imgs/S_FV_12b.png>] (parts/hw9_list.tex (MB.bbl))
+[7]) (MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: 0A2401449A8A829D619DCBCF64A41E3D;642.
+(rerunfilecheck)             Checksum: 3C6543F2478FFEAFA69073808E900504;781.
  ) 
 Here is how much of TeX's memory you used:
- 28658 strings out of 475248
- 554113 string characters out of 5767628
- 1960785 words of memory out of 5000000
- 49590 multiletter control sequences out of 15000+600000
- 574661 words of font info for 91 fonts, out of 8000000 for 9000
+ 28613 strings out of 475248
+ 553574 string characters out of 5767628
+ 1941785 words of memory out of 5000000
+ 49498 multiletter control sequences out of 15000+600000
+ 574402 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,13n,99p,566b,1884s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi420\esi
-nt10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\
-latt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\larm0800.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
-/dpi600\larm0600.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/publi
-c/esint/dpi600\esint10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour
-/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/lj
-four/lh/lh-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
-ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/amsfonts/cmextra/cmmib7.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MB.pdf (2 pages, 274471 bytes).
+ 94i,11n,99p,917b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati10
+00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+tt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
+0\larm0800.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\larm0600.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
+2a/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/
+lh-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour
+/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/lj
+four/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/p
+k/ljfour/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cmextra/cmex8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Prog
+ram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb>
+Output written on MB.pdf (7 pages, 1731214 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

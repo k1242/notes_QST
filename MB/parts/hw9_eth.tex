@@ -1,0 +1,39 @@
+
+\textbf{Термализация}. Начнём с построения некоторой интуиции про то что можно было бы назвать термализацией для изолированной квантовой системы \cite{khlebnikov_thermalization_2014}. Пусть начальное состояние задаётся $\ket{\psi_0}$, тогда, in the basis of energy eigenstates $\ket{j}$, the evolution 
+\begin{equation*}
+	\ket{\psi(t)} = \sum_{j=1}^{\mathcal{N}} c_j e^{- i \varepsilon_j t} \ket{E_j}
+\end{equation*}
+with $c_j = \bk{E_j}{\psi_0}$, $\varepsilon_j = \bk{j}[\hat{H}]{j}$ and $\mathcal{N} = \dim H$. Для некоторой наблюдаемой $\hat{A}(t)$ the mean value could be expressed as 
+\begin{equation}
+	A(t) = \bk{\psi(t)}[\hat{A}]{\psi(t)} = \sum_{j,k} \bar{c}_k c_j e^{-i (\varepsilon_j - \varepsilon_k)} \bk{k}[\hat{A}]{j}
+	=
+	\sum_j |c_j|^2 \bk{j}[\hat{A}]{j} + \sum_{k \neq j} c_j \bar{c}_k e^{-i (\varepsilon_j - \varepsilon_k)} \bk{k}[\hat{A}]{j}.
+	\label{eq:At}
+\end{equation}
+По прошествию некоторого времени термализации $\tth$ хотелось бы увидеть, что наблюдаемые выходят на термальные значения (независящие от начальных условий) с небольшими флуктуациями вокруг (fig. \ref{fig:BASE}, \red{red curve})
+\begin{equation*}
+	A(t \gg \tth) = A(E) + \text{small fluctuations},
+	\hspace{10 mm} 
+	E = \bk{\psi_0}[\hat{H}]{\psi_0}.
+\end{equation*}
+Для выхода на маленькие флуктуации вокруг среднего значения, как видим из \eqref{eq:At}, достаточно потребовать малости недиагональных элементов\footnote{
+	Заметим, что диагональных слагаемых $\mathcal{N}$ и off-diagonal $\mathcal{N}^2- \mathcal{N}$. Если считать вклад каждого off-diagonal term случайным, то флуктуации может оценить, как $\sqrt{\mathcal{N}^2} |\bk{k}[\hat{A}]{j}|$, откуда и возникает требование малости.
+}. 
+% что и составляет первое условие Eigenstate Thermalization Hypothesis (ETH)
+А чтобы $A(E)$ не зависело от начальных условий может рассмотреть случай, когда diagonal elements are smooth functions of energy
+\begin{equation*}
+	\bk{j}[\hat{A}]{j} = A(\varepsilon_j).
+\end{equation*}
+Действительно, тогда для начального состояния лежащего в $\Delta E $ such that the spread $\partial_E A(E) \Delta E$ is small, the final result is 
+\begin{equation*}
+	A(t \gg \tth) \approx \sum_j |c_j|^2 \bk{j}[\hat{A}]{j} \approx  A(E).
+\end{equation*}
+% \const + \text{fluctuations}
+Так и приходим к формулировке Eigenstate Thermalization Hypothesis (ETH), put forward by Deutsch \cite{PhysRevA.43.2046} and Srednicki \cite{PhysRevE.50.888}: если off-diagonal terms $\bk{k}[\hat{A}]{j}$ are small in compared to diagonal and diagonal terms are smooth functions of energty, то наблюдаемая как будто бы термализуется.  Стоит сделать некоторую оговорку, что для изолированной системы чистое состояния остаётся чистым $\tr \rho^2 = 1$, в то время как для термального состояния $\tr \rho^2 < 1$, поэтому и говорим о термализации наблюдаемых\footnote{
+	Возникает надежда, что если мы будем разобьём систему на две подсистемы $\Omega_1 \cup \Omega_2$, то $\rho_1 = \tr_{\Omega_2} \rho$ уже действительно может оказаться термальной, а $\Omega_2$ выступает в некотором смысле термостатом для $\Omega_1$. Данное предположение не получит развития в рамках этого эссе, однако автор надеется вернуться к этому вопросу позднее.
+}. Опять же, судя по условиям, как будто бы возможны системы и наблюдаемые $A_1,\, A_2$ такие что $A_1$ термализуется, а $A_2$ нет. 
+
+Основной вывод этого раздела: иногда так бывает, что в некоторой системе и для некоторой наблюдаемой $\hat{A}$ её значение $A(t \gg \tth)$ выходит на константу с небольшими флуктуациями вокруг, скорее всего этому будут соответсвовать указанные ETH условия.
+
+
+% , что для short-range наблюдаемой, для вычисления которой можно разбить систему на подситемы и найти $A$ в них, 

@@ -1,0 +1,12 @@
+
+\textbf{Model}. Эффекты термализации и локализации будем изучать на примере Hubbard model with 
+\begin{equation*}
+	\hat{H} = 
+	- J \sum_{\langle i,j\rangle} (\hat{a}_i\D \hat{a}_j + \hc) 
+	+ V \sum_{\langle i,j\rangle} \hat{n}_i \hat{n}_j
+	% + U 
+	+ \Delta \sum_j \delta_j \hat{n}_j,
+\end{equation*}
+with $V$ -- nearest neighbor interaction, $\Delta$ -- noise level, $\delta_j \in [-1,1]$ evenly distributed. Для получения численных результатов используется (если явно не указано иного) предел hard-bosons\footnote{
+	К Гамильтониану добавили слагаемое $+ U \sum_j \hat{n}_j (\hat{n}_j-1)$ and took $U \to \infty$. 
+}.  Эта система удобна тем, что можем посмотреть на различные экспериментальные реализации и в ней реализуются все интересные нам режимы.

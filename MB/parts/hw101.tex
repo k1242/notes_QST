@@ -69,8 +69,11 @@ since $\langle c\D c\rangle = n$ and $\langle c c\D\rangle = 1-n$.
 To calculate this matrix element we need just to decide how to distribute $\ket{k_1, \sigma_1}$, $\ket{k_2, \sigma_2}$, $\ket{k_1-Q, \sigma_1}$, $\ket{k_2+Q, \sigma_2}$ over the $\ket{k, \sigma}$, $\ket{k', \sigma'}$, $\ket{k'-q, \sigma'}$, $\ket{k+q,\sigma}$ (fig. \ref{fig:absd}a). There are only two different ways to do this (\red{sign} could be found as in the Wick's theorem):
 \begin{align*}
 	% \bk{k_1, \sigma_1} [\blue{\hat{V}}]{k_1-Q,\sigma_1; k_2+Q,\sigma_2; \cancel{k_2, \sigma_2}} = 
-	\bk{i}[\hat{V}]{f}_1 &= \frac{\mathcal{N}_{i,f}}{2\mathcal{V}} \sum_{k,k',q} \sum_{\sigma_1,\sigma_2} V(q)   \delta_{\sigma_1, \sigma} \delta_{\sigma_2, \sigma'} \delta(k_1-k-q)  \delta(Q-q) (1-n_{k_1}) n_{k_2} (1-n_{k_1-Q}) (1-n_{k_2+Q})
-	\\ &= \frac{\mathcal{N}_{i,f}}{2\mathcal{V}} V(Q) (1-n_{k_1, \sigma_1}) n_{k_2,\sigma_2} (1-n_{k_2+Q,\sigma_2})(1-n_{k_1-Q,\sigma_1})
+	\bk{i}[\hat{V}]{f}_1 
+	&= 
+	\frac{\mathcal{N}_{i,f}}{2\mathcal{V}} \sum_{k,k',q} \sum_{\sigma_1,\sigma_2} V(q)   \delta_{\sigma_1, \sigma} \delta_{\sigma_2, \sigma'} \delta(k_1-k-q)  \delta(Q-q) (1-n_{k_1}) n_{k_2} (1-n_{k_1-Q}) (1-n_{k_2+Q})
+	\\ &= 
+	\frac{\mathcal{N}_{i,f}}{2\mathcal{V}} V(Q) (1-n_{k_1, \sigma_1}) n_{k_2,\sigma_2} (1-n_{k_2+Q,\sigma_2})(1-n_{k_1-Q,\sigma_1})
 	,
 \end{align*}
 and
