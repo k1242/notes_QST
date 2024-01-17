@@ -1,12 +1,15 @@
 
-\textbf{Model}. Эффекты термализации и локализации будем изучать на примере Hubbard model with 
-\begin{equation*}
+\textbf{Model}. We will study the effects of thermalization and localization using the Hubbard model 
+\begin{equation}
 	\hat{H} = 
 	- J \sum_{\langle i,j\rangle} (\hat{a}_i\D \hat{a}_j + \hc) 
 	+ V \sum_{\langle i,j\rangle} \hat{n}_i \hat{n}_j
 	% + U 
 	+ \Delta \sum_j \delta_j \hat{n}_j,
-\end{equation*}
-with $V$ -- nearest neighbor interaction, $\Delta$ -- noise level, $\delta_j \in [-1,1]$ evenly distributed. Для получения численных результатов используется (если явно не указано иного) предел hard-bosons\footnote{
-	К Гамильтониану добавили слагаемое $+ U \sum_j \hat{n}_j (\hat{n}_j-1)$ and took $U \to \infty$. 
-}.  Эта система удобна тем, что можем посмотреть на различные экспериментальные реализации и в ней реализуются все интересные нам режимы.
+	\label{9:model}
+\end{equation}
+with $V$ -- nearest neighbor interaction, $\Delta$ -- noise level, $\delta_j \in [-1,1]$ evenly distributed (fig. \ref{fig:1Dmain}c). To obtain numerical results, the hard-bosons limit is used (unless explicitly stated otherwise)\footnote{
+	The term $+ \tfrac{1}{2} U \sum_j \hat{n}_j (\hat{n}_j-1)$ was added to the Hamiltonian with $U \to \infty$. 
+}.  This system is convenient in that we can look at various experimental implementations and all phases (EP and LP) of interest to us are implemented in it.
+
+

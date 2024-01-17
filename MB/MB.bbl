@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{khlebnikov_thermalization_2014}
 Sergei Khlebnikov and Martin Kruczenski.
@@ -33,19 +33,36 @@ P.~W. Anderson.
 \newblock Absence of diffusion in certain random lattices.
 \newblock {\em Phys. Rev.}, 109:1492--1505, Mar 1958.
 
-\bibitem{wei_characterization_2020}
-Xingbo Wei, Rubem Mondaini, and Gao Xianlong.
-\newblock Characterization of many-body mobility edges with random matrices,
-  January 2020.
+\bibitem{abanin_many-body_2019}
+Dmitry~A. Abanin, Ehud Altman, Immanuel Bloch, and Maksym Serbyn.
+\newblock Many-body localization, thermalization, and entanglement.
+\newblock {\em Reviews of Modern Physics}, 91(2):021001, May 2019.
 
 \bibitem{pal_many-body_2010}
 Arijeet Pal and David~A. Huse.
 \newblock The many-body localization phase transition.
 \newblock {\em Physical Review B}, 82(17):174411, November 2010.
 
+\bibitem{wei_characterization_2020}
+Xingbo Wei, Rubem Mondaini, and Gao Xianlong.
+\newblock Characterization of many-body mobility edges with random matrices,
+  January 2020.
+
 \bibitem{bardarson_unbounded_2012}
 Jens~H. Bardarson, Frank Pollmann, and Joel~E. Moore.
 \newblock Unbounded growth of entanglement in models of many-body localization.
 \newblock {\em Physical Review Letters}, 109(1):017202, July 2012.
+
+\bibitem{Moudgalya_2022}
+Sanjay Moudgalya, B~Andrei Bernevig, and Nicolas Regnault.
+\newblock Quantum many-body scars and hilbert space fragmentation: a review of
+  exact results.
+\newblock {\em Reports on Progress in Physics}, 85(8):086501, July 2022.
+
+\bibitem{rigol_thermalization_2008}
+Marcos Rigol, Vanja Dunjko, and Maxim Olshanii.
+\newblock Thermalization and its mechanism for generic isolated quantum
+  systems.
+\newblock {\em Nature}, 452(7189):854--858, April 2008.
 
 \end{thebibliography}
