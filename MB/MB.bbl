@@ -38,6 +38,11 @@ Dmitry~A. Abanin, Ehud Altman, Immanuel Bloch, and Maksym Serbyn.
 \newblock Many-body localization, thermalization, and entanglement.
 \newblock {\em Reviews of Modern Physics}, 91(2):021001, May 2019.
 
+\bibitem{PhysRevLett.69.2863}
+Steven~R. White.
+\newblock Density matrix formulation for quantum renormalization groups.
+\newblock {\em Phys. Rev. Lett.}, 69:2863--2866, Nov 1992.
+
 \bibitem{pal_many-body_2010}
 Arijeet Pal and David~A. Huse.
 \newblock The many-body localization phase transition.

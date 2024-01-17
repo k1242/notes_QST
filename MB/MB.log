@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  17 JAN 2024 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  17 JAN 2024 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,47 +1134,47 @@ Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
  input line 5.
 
-(settings/settings.tex) (settings/inputs.tex (parts/hw9_abs.tex)
-(parts/hw9_model.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+(settings/settings.tex) (settings/inputs.tex (parts/hw9_abs.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-3.
+1.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 3
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
 .
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 1.
 
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ))
-<imgs/lo2.pdf, id=36, 108.405pt x 108.405pt>
+(parts/hw9_model.tex)
+<imgs/lo2.pdf, id=49, 108.405pt x 108.405pt>
 File: imgs/lo2.pdf Graphic file (type pdf)
 <use imgs/lo2.pdf>
 Package pdftex.def Info: imgs/lo2.pdf  used on input line 20.
 (pdftex.def)             Requested size: 108.40472pt x 108.40472pt.
-<imgs/lo2l.pdf, id=37, 176.66pt x 53.19875pt>
+<imgs/lo2l.pdf, id=50, 176.66pt x 53.19875pt>
 File: imgs/lo2l.pdf Graphic file (type pdf)
 <use imgs/lo2l.pdf>
 Package pdftex.def Info: imgs/lo2l.pdf  used on input line 22.
 (pdftex.def)             Requested size: 176.65956pt x 53.19861pt.
-
-(parts/hw9_eth.tex
+ (parts/hw9_eth.tex
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 34.
 
@@ -1186,109 +1186,65 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 
 pdfTeX warning: pdflatex (file ./imgs/lo2l.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
->]) (parts/hw9_loc.tex
-<imgs/evecs.pdf, id=135, 505.89pt x 103.38625pt>
-File: imgs/evecs.pdf Graphic file (type pdf)
-<use imgs/evecs.pdf>
-Package pdftex.def Info: imgs/evecs.pdf  used on input line 15.
-(pdftex.def)             Requested size: 505.88875pt x 103.38599pt.
-) (parts/hw9_2dexp.tex
-Overfull \hbox (1.49123pt too wide) in paragraph at lines 2--3
-\T2A/cmr/m/n/10 bosons. ѕоверх решЉтки наложим глобальный гармонический потенци
-ал, также фокусировкой лазера. «аполним
- []
-
-<imgs/MBL_2D_exp_1.png, id=141, 471.56175pt x 470.9595pt>
+>]) (parts/hw9_loc.tex) (parts/hw9_2dexp.tex
+<imgs/MBL_2D_exp_1.png, id=155, 471.56175pt x 470.9595pt>
 File: imgs/MBL_2D_exp_1.png Graphic file (type png)
 <use imgs/MBL_2D_exp_1.png>
-Package pdftex.def Info: imgs/MBL_2D_exp_1.png  used on input line 7.
+Package pdftex.def Info: imgs/MBL_2D_exp_1.png  used on input line 9.
 (pdftex.def)             Requested size: 168.91635pt x 168.7045pt.
-<imgs/MBL_2D_exp_2.png, id=143, 608.87476pt x 488.42474pt>
+<imgs/MBL_2D_exp_2.png, id=157, 608.87476pt x 488.42474pt>
 File: imgs/MBL_2D_exp_2.png Graphic file (type png)
 <use imgs/MBL_2D_exp_2.png>
-Package pdftex.def Info: imgs/MBL_2D_exp_2.png  used on input line 10.
+Package pdftex.def Info: imgs/MBL_2D_exp_2.png  used on input line 12.
 (pdftex.def)             Requested size: 204.74283pt x 164.23628pt.
+ [2 <./imgs/MBL_2D_exp_1.png> <./imgs/MBL_2D_exp_2.png>]) (parts/hw9_1dexp.tex
+<imgs/MBL_exp_1.png, id=180, 661.2705pt x 443.256pt>
+File: imgs/MBL_exp_1.png Graphic file (type png)
+<use imgs/MBL_exp_1.png>
+Package pdftex.def Info: imgs/MBL_exp_1.png  used on input line 15.
+(pdftex.def)             Requested size: 179.15584pt x 120.08652pt.
+<imgs/MBL_exp_2.png, id=181, 649.82774pt x 448.67625pt>
+File: imgs/MBL_exp_2.png Graphic file (type png)
+<use imgs/MBL_exp_2.png>
+Package pdftex.def Info: imgs/MBL_exp_2.png  used on input line 18.
+(pdftex.def)             Requested size: 179.15584pt x 123.69785pt.
+) (parts/hw9_num_mod.tex
+<imgs/2Dth_loc.pdf, id=188, 199.74625pt x 129.48375pt>
+File: imgs/2Dth_loc.pdf Graphic file (type pdf)
+<use imgs/2Dth_loc.pdf>
+Package pdftex.def Info: imgs/2Dth_loc.pdf  used on input line 10.
+(pdftex.def)             Requested size: 199.74576pt x 129.48341pt.
+<imgs/2Drdel.pdf, id=189, 130.4875pt x 135.50626pt>
+File: imgs/2Drdel.pdf Graphic file (type pdf)
+<use imgs/2Drdel.pdf>
+Package pdftex.def Info: imgs/2Drdel.pdf  used on input line 13.
+(pdftex.def)             Requested size: 130.48717pt x 135.5059pt.
+<imgs/2Dtherm_1.pdf, id=190, 130.4875pt x 126.4725pt>
+File: imgs/2Dtherm_1.pdf Graphic file (type pdf)
+<use imgs/2Dtherm_1.pdf>
+Package pdftex.def Info: imgs/2Dtherm_1.pdf  used on input line 16.
+(pdftex.def)             Requested size: 130.48717pt x 126.47218pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (2.79308pt too wide) in paragraph at lines 20--21
-\T2A/cmr/m/n/10 достаточно сильных шумах наступает локализаци€: $\OMS/cmsy/m/n/
-10 I\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ! 1\OT1/cmr/m/n/10 ) =
- \OMS/cmsy/m/n/10 I[] \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 0$\T2A/cmr/m/n/10 . —ч
-ита€ выход на $\OMS/cmsy/m/n/10 I[]$ \T2A/cmr/m/n/10 экспоненциальным
- []
-
-) (parts/hw9_1dexp.tex
-Overfull \hbox (3.70619pt too wide) in paragraph at lines 1--2
-[]\T2A/cmr/m/n/10 ƒл€ демонстрации перехода EP-LP можем рассмотрим также экспер
-имент по реализации одномерной системы
- []
-
-[2 <./imgs/evecs.pdf>]
-<imgs/1d_phases.png, id=193, 1035.26775pt x 413.74574pt>
-File: imgs/1d_phases.png Graphic file (type png)
-<use imgs/1d_phases.png>
-Package pdftex.def Info: imgs/1d_phases.png  used on input line 7.
-(pdftex.def)             Requested size: 358.30386pt x 143.19699pt.
-<imgs/MBL_exp_1.png, id=199, 661.2705pt x 443.256pt>
-File: imgs/MBL_exp_1.png Graphic file (type png)
-<use imgs/MBL_exp_1.png>
-Package pdftex.def Info: imgs/MBL_exp_1.png  used on input line 20.
-(pdftex.def)             Requested size: 179.15584pt x 120.08652pt.
-<imgs/MBL_exp_2.png, id=200, 649.82774pt x 448.67625pt>
-File: imgs/MBL_exp_2.png Graphic file (type png)
-<use imgs/MBL_exp_2.png>
-Package pdftex.def Info: imgs/MBL_exp_2.png  used on input line 23.
-(pdftex.def)             Requested size: 179.15584pt x 123.69785pt.
-) (parts/hw9_num_mod.tex
-Overfull \hbox (19.7936pt too wide) in paragraph at lines 6--7
-\T2A/cmr/m/n/10 здесь не представлены). »нтересно посмотреть на получающеес€ ра
-спределение заселенности узла $\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 n[]\OMS/cmsy/
-m/n/10 i[]$\T2A/cmr/m/n/10 , усредненное
- []
-
-[3 <./imgs/MBL_2D_exp_1.png> <./imgs/MBL_2D_exp_2.png> <./imgs/1d_phases.png>]
-<imgs/2Dth_loc.pdf, id=214, 199.74625pt x 129.48375pt>
-File: imgs/2Dth_loc.pdf Graphic file (type pdf)
-<use imgs/2Dth_loc.pdf>
-Package pdftex.def Info: imgs/2Dth_loc.pdf  used on input line 20.
-(pdftex.def)             Requested size: 199.74576pt x 129.48341pt.
-<imgs/2Drdel.pdf, id=215, 130.4875pt x 135.50626pt>
-File: imgs/2Drdel.pdf Graphic file (type pdf)
-<use imgs/2Drdel.pdf>
-Package pdftex.def Info: imgs/2Drdel.pdf  used on input line 23.
-(pdftex.def)             Requested size: 130.48717pt x 135.5059pt.
-<imgs/2Dtherm_1.pdf, id=216, 130.4875pt x 126.4725pt>
-File: imgs/2Dtherm_1.pdf Graphic file (type pdf)
-<use imgs/2Dtherm_1.pdf>
-Package pdftex.def Info: imgs/2Dtherm_1.pdf  used on input line 26.
-(pdftex.def)             Requested size: 130.48717pt x 126.47218pt.
-) (parts/hw9_rand_mat.tex
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 7.
+) (parts/hw9_rand_mat.tex [3 <./imgs/MBL_exp_1.png> <./imgs/MBL_exp_2.png>]
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 8.
 
 (C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-<imgs/erg_reg_add1.pdf, id=219, 144.54pt x 144.54pt>
+<imgs/erg_reg_add1.pdf, id=206, 144.54pt x 144.54pt>
 File: imgs/erg_reg_add1.pdf Graphic file (type pdf)
 <use imgs/erg_reg_add1.pdf>
-Package pdftex.def Info: imgs/erg_reg_add1.pdf  used on input line 13.
+Package pdftex.def Info: imgs/erg_reg_add1.pdf  used on input line 14.
 (pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
-<imgs/erg_reg_add2.pdf, id=220, 144.54pt x 144.54pt>
+<imgs/erg_reg_add2.pdf, id=207, 144.54pt x 144.54pt>
 File: imgs/erg_reg_add2.pdf Graphic file (type pdf)
 <use imgs/erg_reg_add2.pdf>
-Package pdftex.def Info: imgs/erg_reg_add2.pdf  used on input line 16.
+Package pdftex.def Info: imgs/erg_reg_add2.pdf  used on input line 17.
 (pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
-
-Overfull \hbox (5.49524pt too wide) in paragraph at lines 22--25
-\T2A/cmr/m/n/10 “аким образом при $\OT1/cmr/m/n/10 ^^A \OMS/cmsy/m/n/10 ^^] \OM
-L/cmm/m/it/10 J$ \T2A/cmr/m/n/10 (по крайней мере в одночастичном случае) гамил
-ьтониан практически диагонализуетс€
- []
-
-[4 <./imgs/MBL_exp_1.png> <./imgs/MBL_exp_2.png> <./imgs/2Dth_loc.pdf> <./imgs/
-2Drdel.pdf
+ [4 <./imgs/2Dth_loc.pdf> <./imgs/2Drdel.pdf
 
 pdfTeX warning: pdflatex (file ./imgs/2Drdel.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
@@ -1296,77 +1252,36 @@ pdfTeX warning: pdflatex (file ./imgs/2Drdel.pdf): PDF inclusion: multiple pdfs
 
 pdfTeX warning: pdflatex (file ./imgs/2Dtherm_1.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->]
-<imgs/ergodic_reg.pdf, id=316, 144.54pt x 144.54pt>
-File: imgs/ergodic_reg.pdf Graphic file (type pdf)
-<use imgs/ergodic_reg.pdf>
-Package pdftex.def Info: imgs/ergodic_reg.pdf  used on input line 47.
-(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
-<imgs/transition.pdf, id=317, 144.54pt x 144.54pt>
-File: imgs/transition.pdf Graphic file (type pdf)
-<use imgs/transition.pdf>
-Package pdftex.def Info: imgs/transition.pdf  used on input line 50.
-(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
-<imgs/transition_leg.pdf, id=318, 50.1875pt x 53.19875pt>
-File: imgs/transition_leg.pdf Graphic file (type pdf)
-<use imgs/transition_leg.pdf>
-Package pdftex.def Info: imgs/transition_leg.pdf  used on input line 52.
-(pdftex.def)             Requested size: 38.3883pt x 40.69446pt.
+> <./imgs/erg_reg_add1.pdf
 
-Overfull \hbox (0.34355pt too wide) in paragraph at lines 67--69
-[]\T2A/cmr/m/n/10 јналогична€ зависимость получитс€, если в качестве $\OML/cmm/
-m/it/10 M[]$ \T2A/cmr/m/n/10 будем рассматривать матрицу св€зности случайного
- []
-
-)
-Overfull \hbox (0.66524pt too wide) in paragraph at lines 73--74
-[]\T2A/cmr/m/n/10 ќсновной вывод этого раздела: $\OML/cmm/m/it/10 r$\T2A/cmr/m/
-n/10 -параметр носит достаточно универсальный характер, может использоватьс€
- []
-
-
-Overfull \hbox (10.83043pt too wide) in paragraph at lines 73--74
-\T2A/cmr/m/n/10 как маркер эргодичной фазы и локализованной фазы. ‘азовый перех
-од EP-LP может моделироватьс€ случайными
- []
-
-(parts/hw9_entropy.tex
-<imgs/S_FV1.pdf, id=324, 184.69pt x 117.43875pt>
-File: imgs/S_FV1.pdf Graphic file (type pdf)
-<use imgs/S_FV1.pdf>
-Package pdftex.def Info: imgs/S_FV1.pdf  used on input line 5.
-(pdftex.def)             Requested size: 184.68953pt x 117.43845pt.
-<imgs/S_FV2.pdf, id=325, 137.51375pt x 112.42pt>
-File: imgs/S_FV2.pdf Graphic file (type pdf)
-<use imgs/S_FV2.pdf>
-Package pdftex.def Info: imgs/S_FV2.pdf  used on input line 8.
-(pdftex.def)             Requested size: 137.51341pt x 112.41972pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<imgs/S_FV_12a.png, id=326, 596.2275pt x 469.15276pt>
-File: imgs/S_FV_12a.png Graphic file (type png)
-<use imgs/S_FV_12a.png>
-Package pdftex.def Info: imgs/S_FV_12a.png  used on input line 19.
-(pdftex.def)             Requested size: 204.74283pt x 161.1062pt.
-<imgs/S_FV_12b.png, id=327, 597.432pt x 457.71pt>
-File: imgs/S_FV_12b.png Graphic file (type png)
-<use imgs/S_FV_12b.png>
-Package pdftex.def Info: imgs/S_FV_12b.png  used on input line 22.
-(pdftex.def)             Requested size: 204.74283pt x 156.85553pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [5 <./imgs/erg_reg_add1.pdf> <./imgs/erg_reg_add2.pdf
+pdfTeX warning: pdflatex (file ./imgs/erg_reg_add1.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./imgs/erg_reg_add2.pdf
 
 pdfTeX warning: pdflatex (file ./imgs/erg_reg_add2.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
-> <./imgs/ergodic_reg.pdf
-
-pdfTeX warning: pdflatex (file ./imgs/ergodic_reg.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./imgs/transition.pdf
+>]
+<imgs/ergodic_reg.pdf, id=346, 144.54pt x 144.54pt>
+File: imgs/ergodic_reg.pdf Graphic file (type pdf)
+<use imgs/ergodic_reg.pdf>
+Package pdftex.def Info: imgs/ergodic_reg.pdf  used on input line 62.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition.pdf, id=347, 144.54pt x 144.54pt>
+File: imgs/transition.pdf Graphic file (type pdf)
+<use imgs/transition.pdf>
+Package pdftex.def Info: imgs/transition.pdf  used on input line 65.
+(pdftex.def)             Requested size: 115.17273pt x 115.17119pt.
+<imgs/transition_leg.pdf, id=348, 50.1875pt x 53.19875pt>
+File: imgs/transition_leg.pdf Graphic file (type pdf)
+<use imgs/transition_leg.pdf>
+Package pdftex.def Info: imgs/transition_leg.pdf  used on input line 67.
+(pdftex.def)             Requested size: 38.3883pt x 40.69446pt.
+<imgs/evecs.pdf, id=351, 505.89pt x 103.38625pt>
+File: imgs/evecs.pdf Graphic file (type pdf)
+<use imgs/evecs.pdf>
+Package pdftex.def Info: imgs/evecs.pdf  used on input line 87.
+(pdftex.def)             Requested size: 505.88875pt x 103.38599pt.
+) (parts/hw9_num_mod1.tex [5 <./imgs/ergodic_reg.pdf> <./imgs/transition.pdf
 
 pdfTeX warning: pdflatex (file ./imgs/transition.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -1374,35 +1289,100 @@ pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./imgs/transition_leg.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] (parts/hw9_list.tex (MB.bbl [6 <./imgs/S_FV1.pdf> <./imgs/S_FV2.pdf
+> <./imgs/evecs.pdf
+
+pdfTeX warning: pdflatex (file ./imgs/evecs.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>]
+<imgs/metrics.png, id=457, 658.8615pt x 482.40225pt>
+File: imgs/metrics.png Graphic file (type png)
+<use imgs/metrics.png>
+Package pdftex.def Info: imgs/metrics.png  used on input line 27.
+(pdftex.def)             Requested size: 153.56104pt x 112.4297pt.
+<imgs/metrics2.png, id=458, 720.89325pt x 543.2295pt>
+File: imgs/metrics2.png Graphic file (type png)
+<use imgs/metrics2.png>
+Package pdftex.def Info: imgs/metrics2.png  used on input line 29.
+(pdftex.def)             Requested size: 153.56104pt x 115.7145pt.
+<imgs/metrics3.png, id=459, 653.44125pt x 482.40225pt>
+File: imgs/metrics3.png Graphic file (type png)
+<use imgs/metrics3.png>
+Package pdftex.def Info: imgs/metrics3.png  used on input line 31.
+(pdftex.def)             Requested size: 153.56104pt x 113.36453pt.
+) (parts/hw9_entropy.tex
+<imgs/S_FV1.pdf, id=465, 184.69pt x 117.43875pt>
+File: imgs/S_FV1.pdf Graphic file (type pdf)
+<use imgs/S_FV1.pdf>
+Package pdftex.def Info: imgs/S_FV1.pdf  used on input line 18.
+(pdftex.def)             Requested size: 184.68953pt x 117.43845pt.
+<imgs/S_FV2.pdf, id=466, 137.51375pt x 112.42pt>
+File: imgs/S_FV2.pdf Graphic file (type pdf)
+<use imgs/S_FV2.pdf>
+Package pdftex.def Info: imgs/S_FV2.pdf  used on input line 21.
+(pdftex.def)             Requested size: 137.51341pt x 112.41972pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./imgs/metrics.png> <./imgs/metrics2.png> <./imgs/metrics3.png>]
+<imgs/S_FV_12a.png, id=481, 596.2275pt x 469.15276pt>
+File: imgs/S_FV_12a.png Graphic file (type png)
+<use imgs/S_FV_12a.png>
+Package pdftex.def Info: imgs/S_FV_12a.png  used on input line 38.
+(pdftex.def)             Requested size: 204.74283pt x 161.1062pt.
+<imgs/S_FV_12b.png, id=482, 597.432pt x 457.71pt>
+File: imgs/S_FV_12b.png Graphic file (type png)
+<use imgs/S_FV_12b.png>
+Package pdftex.def Info: imgs/S_FV_12b.png  used on input line 41.
+(pdftex.def)             Requested size: 204.74283pt x 156.85553pt.
+)
+(parts/hw9_conc.tex) [7 <./imgs/S_FV1.pdf> <./imgs/S_FV2.pdf
 
 pdfTeX warning: pdflatex (file ./imgs/S_FV2.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
-> <./imgs/S_FV_12a.png> <./imgs/S_FV_12b.png>])) [7]) (MB.aux)
+> <./imgs/S_FV_12a.png> <./imgs/S_FV_12b.png>] (parts/hw9_add.tex
+<imgs/1d_phases.png, id=539, 1035.26775pt x 413.74574pt>
+File: imgs/1d_phases.png Graphic file (type png)
+<use imgs/1d_phases.png>
+Package pdftex.def Info: imgs/1d_phases.png  used on input line 12.
+(pdftex.def)             Requested size: 358.30386pt x 143.19699pt.
+<imgs/1d_add1.png, id=546, 504.6855pt x 368.577pt>
+File: imgs/1d_add1.png Graphic file (type png)
+<use imgs/1d_add1.png>
+Package pdftex.def Info: imgs/1d_add1.png  used on input line 25.
+(pdftex.def)             Requested size: 179.15584pt x 130.8373pt.
+<imgs/1d_add2.png, id=547, 551.661pt x 408.3255pt>
+File: imgs/1d_add2.png Graphic file (type png)
+<use imgs/1d_add2.png>
+Package pdftex.def Info: imgs/1d_add2.png  used on input line 28.
+(pdftex.def)             Requested size: 204.74283pt x 151.54535pt.
+) [8 <./imgs/1d_phases.png> <./imgs/1d_add1.png> <./imgs/1d_add2.png>] (parts/h
+w9_list.tex
+(MB.bbl))) [9] (MB.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `MB.out' has not changed.
-(rerunfilecheck)             Checksum: E3366CEA63C9017E3B588CD7D69E5D24;1079.
+(rerunfilecheck)             Checksum: AD3B37F1866044461730B58E0EBFEFE1;1599.
  ) 
 Here is how much of TeX's memory you used:
- 28670 strings out of 475248
- 554856 string characters out of 5767628
- 1942785 words of memory out of 5000000
- 49536 multiletter control sequences out of 15000+600000
- 575061 words of font info for 90 fonts, out of 8000000 for 9000
+ 28766 strings out of 475248
+ 556727 string characters out of 5767628
+ 1943785 words of memory out of 5000000
+ 49604 multiletter control sequences out of 15000+600000
+ 577818 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,12n,99p,2054b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,12n,99p,1178b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati10
 00.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\b
 bm10.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\
 latt1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi
 600\larm0800.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a
 /dpi600\larm0600.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh
--t2a/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/
+-t2a/dpi600\labx1000.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfour/l
+h/lh-t2a/dpi600\labx1200.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\larm0700.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts/pk/
 ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\khoru\AppData\Local\MiKTeX\fonts
 /pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
@@ -1411,16 +1391,17 @@ i10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y8.pfb>
-Output written on MB.pdf (7 pages, 1902374 bytes).
+amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MB.pdf (9 pages, 2278332 bytes).
 PDF statistics:
- 927 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 

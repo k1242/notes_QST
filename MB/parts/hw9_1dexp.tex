@@ -1,20 +1,15 @@
-Для демонстрации перехода EP-LP можем рассмотрим также эксперимент по реализации одномерной системы \cite{schreiber_observation_2015}. Теперь рассматривается движение в quasi-random optical lattice созданной двумя решетками с несоизмерным шагом, но в целом всё также описывающейся гамильтонианом \eqref{9:model}.
+To demonstrate the EP-LP transition, we can also consider an experiment on the implementation of a one-dimensional system \cite{schreiber_observation_2015} with degenerate Fermi gase of ${}^{40}$K via sympathetic cooling with ${}^{87}$Rb in a magnetic quadrupole and optical dipole trap followed by evaporative cooling. 
+
+Now we consider the motion in a quasi-random optical lattice created by two gratings with an incommensurate step, but in general still described by the Hamiltonian close to \eqref{9:model}:
+\begin{equation*}
+         \hat{H} = - J \sum_{j,\sigma} \left(\hat{c}\D_{j,\sigma} \hat{c}_{j+1,\sigma} + \hc \right) + \Delta \sum_{j, \sigma} \cos(2 \pi \beta j + \varphi) \hat{n}_{j, \sigma} + U \sum_j \hat{n}_{j, \uparrow} \hat{n}_{j, \downarrow},
+\end{equation*} 
+with $\beta \in \mathbb{Q}$ to have quasi-random potential.  A general view of the phase diagram is presented in fig. \ref{fig:1Dmain}b.
 
 
+Now odd nodes are chosen as $\Omega_1$ and we also study how quickly and to what extent the contrast $\mathcal{I}$ of the population of even and odd nodes will disappear (fig. \ref{fig:loc1D1}). It can be seen that for $t \approx 15 \tau$ the observed $\mathcal{I}$ also reaches a stationary value (fig. \ref{fig:loc1D1}a), where the dependence $\mathcal{I}(\Delta)$ (fig. \ref{fig:loc1D1}b) is plotted based on the results of averaging in the yellow region.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{imgs/1d_phases.png}
-    \caption{\cite{schreiber_observation_2015} a) Initial state of the system consisting of a charge density wave, where all atoms occupy even sites only. For an interacting many-body system, the evolution of this state over time depends on whether the system is ergodic or not. b) Schematic phase diagram for the system: in the ergodic, delocalized phase (white) the initial state quickly decays, while it persists for long times in the non-ergodic, localized phase (yellow). c) Schematic showing a visual representation of the three terms in the Hamiltonian. }
-    \label{fig:1Dmain}
-\end{figure}
-
-
-
-
-Теперь в качестве $\Omega_1$ выбраны нечётные узлы и также исследуется на сколько быстро исчезнет и до какой степени контрастность $\mathcal{I}$ заселенности чётных и нечётных узлов (fig. \ref{fig:loc1D1}). Видно, что за $t \approx 15 \tau$ наблюдаемая $\mathcal{I}$ также выходит на стационарное значение (fig. \ref{fig:loc1D1}a), где по результатм усреднения в желтой области строится зависимость $\mathcal{I}(\Delta)$ (fig. \ref{fig:loc1D1}b).
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \addletter{45}{a}
     \includegraphics[align=c, width=0.35\textwidth]{imgs/MBL_exp_1.png}
@@ -31,7 +26,10 @@
     \label{fig:loc1D1}
 \end{figure} 
 
-
+In the paper also measured the stationary value of $\mathcal{I}$ for different interactions $U$ and different noise $\Delta$ (fig. \ref{fig:1daddb}b), in full accordance with the results of DMRG simulation 
+\cite{PhysRevLett.69.2863}. 
+It can be seen that LP is preserved in a wide range of interactions. The effect of interactions on the localization gives rise to a characteristic W-shape. It is also worth noting that the interaction leads to a logarithmic increase in the entropy of entanglement of subsystems (DMRG results at fig. \ref{fig:1daddb}a)
+, which we will return to in the corresponding section.
 
 
 
