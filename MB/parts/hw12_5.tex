@@ -1,0 +1,25 @@
+\textbf{5. RPA.} Now we add a contact interaction $u$ between the Fermions. The density response function $\chi(q, \omega)$ of the interacting system at small $q$ at zero temperature, using the result of the random phase approximation (RPA)
+\begin{equation*}
+	\chi(q, \omega) = \frac{\chi_0(q, \omega)}{1 - u \chi_0 (q, \omega)}.
+\end{equation*}
+
+%  While the imaginary part doesn't change much, the real part does
+% \begin{equation*}
+% 	\chi
+% \end{equation*}
+
+To find the pole we need
+\begin{align*}
+	\chi_0' (q, \omega) &= \Re \int_{-\infty}^{\infty} \frac{dk}{2\pi} \frac{n_{k+q} - n_k}{\omega - ( \xi_{k+q} - \xi_k) + 0 i} 
+	\\ &= 
+	\Re \int_{-\kF - q}^{\kF - q} \frac{dk}{2\pi} \frac{1}{\omega - \frac{1}{2m} (2 k q + q^2) + i0} - 
+	\Re  \int_{-\kF}^{\kF} \frac{dk}{2\pi} \frac{1}{\omega - \frac{1}{2m} (2 k q + q^2) + i0}
+	\\ &\approx \frac{1}{\pi} \frac{q^2 \vF}{\omega^2 + \vF^2 q^2}.
+\end{align*}
+Thus $\xi$ has a pole at $1 - u \chi_0 = 0$ 
+\begin{equation*}
+	\omega = \sqrt{1+ \tfrac{1}{\pi \vF}} \vF = \sub{\tilde{v}}{sound} q,
+	\hspace{10 mm} 
+	\sub{\tilde{v}}{sound} = \vF \sqrt{1 + \frac{u}{\pi \vF}},
+\end{equation*}
+with almost the same the sound velocity.

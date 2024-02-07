@@ -1,0 +1,16 @@
+\textbf{2. Nernst's theorem}. We can find low-temperature asymptotics to $C(\beta \to \infty)$
+\begin{equation*}
+	C = - 2 \beta V N(0) \int \frac{\partial f_k}{\partial E_k} \left(
+		E_k^2 + \frac{\beta}{2} \frac{d \Delta^2}{d \beta} 
+	\right) \d \xi.
+\end{equation*}
+
+For low temperatures we can neglect the temperature dependence for the $\Delta_k(\beta \to \infty) \approx 1.76 T_c$ and it is convenient to use the saddle-point method
+\begin{equation*}
+	C \approx 2 V N(0) \Delta^2 e^{-\beta \Delta} \int e^{- (\beta \xi)^2 / 2 \beta \Delta} \d (\beta \xi) = 2 \sqrt{2\pi} V N(0) (\beta \Delta)^{5/2} \frac{e^{-\beta \Delta}}{\beta},
+\end{equation*}
+which corresponds to the desired exponential decay. 
+\begin{equation*}
+	\frac{C}{C_n} \approx (\beta \Delta)^{5/2} e^{- \beta \Delta}.
+\end{equation*}
+So $C / C_n = 0.01$ at $\beta \Delta \approx 10$ or $T \approx 0.2 T_c$. 

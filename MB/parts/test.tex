@@ -1,0 +1,147 @@
+Phase space density
+\begin{equation*}
+	\rho = \exp\left( - \beta(\varepsilon-\mu)\right)
+\end{equation*}
+
+Fugacity
+\begin{equation*}
+	z = e^{\beta \mu}
+\end{equation*}
+
+
+Observables
+\begin{equation*}
+	A = \int \frac{d^3 k \ d^3 x}{(2\pi)^3} f_A(x, k) \rho(x, k)
+\end{equation*}
+
+Thermal wavelength
+\begin{equation*}
+	\lambda_T = \sqrt{\frac{\hbar^2 2\pi}{m k_B T}}
+\end{equation*}
+
+\begin{equation*}
+	n(x) = \int \frac{d^3 k}{(2\pi)^3} \rho(x, k) = \lambda_T^{-3} z e^{- \beta V(x)}
+\end{equation*}
+
+
+
+
+In semiclassical case
+\begin{equation*}
+	\rho_B = \frac{1}{z^{-1} e^{\beta \varepsilon(x,k)}-1}
+\end{equation*}
+
+
+Polylogarithm function
+\begin{equation*}
+	g_\alpha(z) = \sum_{k=1}^{\infty} \frac{z^k}{k^\alpha} = \frac{1}{\Gamma(\alpha)} \int_{0}^{\infty} \frac{t^{\alpha-1}}{z^{-1} e^t - 1},
+	\hspace{10 mm} 
+	\Gamma(\alpha) = \int t^{\alpha-1} e^{-t} \d t.
+\end{equation*}
+For example
+\begin{equation*}
+	g_1(z) = \ln (1-z),
+	\hspace{10 mm} 
+	g_0(z) = \frac{z}{1-z},
+	\hspace{10 mm} 
+	g_{-1}(z) = \frac{z}{(1-z)^2}
+\end{equation*}
+with limits
+\begin{equation*}
+	g_\alpha (|z|\ll 1) \approx z + 2^{-\alpha} z^2,
+	\hspace{10 mm} 
+	g_\alpha(z \to 1) = \Gamma(1-\alpha) (-\ln z)^{\alpha-1} + \zeta(\alpha)
+\end{equation*}
+
+Thus Bose/Fermi
+\begin{equation*}
+	\rho_{B,F} (\varepsilon) = \pm g_0 (\pm z e^{-\beta \varepsilon})
+\end{equation*}
+
+
+\begin{equation*}
+	\int_{0}^{\infty}  x^p g_\alpha(A e^{- a |x|^s})
+	\d x = \frac{\Gamma(b)}{s a^b} g_{a+b}(A),
+	\hspace{10 mm} 
+	b =  \frac{1+p}{s} > 0.
+\end{equation*}
+
+
+And here
+\begin{equation*}
+	n(x,y,z) = \int \rho_{B,F}(\vc{r},k) \frac{d k^3}{(2\pi)^3} = \pm \lambda_T^{-3} g_{3/2} (\pm z e^{- \beta V(\vc{r})})
+\end{equation*}
+where we integrated over $z$-direction. 
+
+
+\red{Effective thermal volume in terms of n(k) to calculate PSD}.
+\begin{equation*}
+	N \propto g_{\alpha}(\pm z),
+	\hspace{10 mm} 
+	\alpha = \frac{3}{2} + \frac{1}{\sigma_x} + \frac{1}{\sigma_y} + \frac{1}{\sigma_z}
+\end{equation*}
+with
+\begin{equation*}
+	V = a_x |x|^{\sigma_x} + \ldots
+\end{equation*}
+
+% absorbtion image in-situ?
+
+Absorption
+\begin{equation*}
+	n(x,y) = \lambda_T^{-3} L_{z, \text{eff}} g_{\frac{3}{2}+\frac{1}{2}} (z e^{- \beta \frac{m}{2} \omega^2 x^2})
+\end{equation*}
+
+\begin{equation*}
+	\frac{\hbar^2}{m} = (k_B) 80 \text{ nK} \ \mu\text{m}^2 = (2\pi \hbar) 1.7  \text{ kHz} \ \mu\text{m}^2
+\end{equation*}
+
+\begin{equation*}
+	\sub{L}{eff} = 2 \frac{\Gamma(1/\sigma)}{\sigma (\beta a)^\sigma},
+	\hspace{10 mm} 
+	\sub{V}{eff} = \sub{L}{eff}^3.
+\end{equation*}
+
+\begin{equation*}
+	\lambda_T = 0.08\ \mu\text{m},
+	\hspace{10 mm} 
+	L_z = 80 \, \mu\text{m},
+\end{equation*}
+anf fugacity
+\begin{equation*}
+	\frac{N}{\sub{V}{eff}} \lambda_T^3 = g_3 (z),
+	\hspace{10 mm} 
+	z = 2.5 \cdot 10^{-4}.
+\end{equation*}
+
+And POD
+\begin{equation*}
+	\text{OD}_{\text{peak}} = n(x, y) \frac{3 \lambda^2}{2\pi} = 10,
+\end{equation*}
+with $n \sigma$ actually.
+
+With $T = 5 \ \mu\text{K}$ we have
+\begin{equation*}
+	1 = g_3 (z)
+\end{equation*}
+
+% g_{5/2} and g_{2} for radial and one-simensional problem
+% 
+
+
+% we should be carefull with T~T_c
+
+For BEC
+\begin{equation*}
+	g_\alpha(1) = \zeta(\alpha)
+\end{equation*}
+
+$\alpha = 1$ -- NO BEC! because of $\zeta(1) = \infty$.
+
+
+\begin{equation*}
+	\frac{N}{\sub{V}{eff}} \lambda_T^3 =\pm g_\alpha (\pm z),
+\end{equation*}
+
+% 3body losses in Fermi gases in box potential
+% 

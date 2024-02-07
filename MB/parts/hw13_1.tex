@@ -1,0 +1,84 @@
+Consider a 3D Fermi gas with point-like interactions:
+\begin{equation*}
+	H = T + V = \sum_{k \sigma} \left(
+		\frac{k^2}{2\sub{m}{e}}-\mu
+	\right) n_{k \sigma} + u 
+	\int \psi\D_{\up} (x) \psi\D_{\down} (x) \psi_{\down} (x) \psi_{\up} (x) \d^3 x,
+\end{equation*}
+or, completely in the momentum representation:
+\begin{equation*}
+	H = \sum_{k \sigma} \left(
+		\frac{k^2}{2\sub{m}{e}}-\mu
+	\right) n_{k \sigma} + \frac{u}{V}  \sum_{k_1, k_2, q} c\D_{k_1 + q, \up} c\D_{k_2 - q, \down} c_{k_2, \down} c_{k_1, \up},
+\end{equation*}
+after substitution $\psi_\sigma(x) = V^{-1/2} \sum_k e^{- i k x} c_{k, \sigma}$.
+
+\textbf{The density of states}. 
+The density of states at the Fermi Energy for the non-interacting system
+\begin{equation*}
+	2 \int \frac{d^3 k}{(2\pi)^3} = \int d\varepsilon \ D(\varepsilon),
+	\hspace{5 mm} 
+	\Leftrightarrow
+	\hspace{5 mm} 
+	D(\varepsilon) = 2 \int \frac{d^3 k}{(2\pi)^3} \delta(\varepsilon - \varepsilon_k) = \frac{\sqrt{2}}{\pi^2} \sub{m}{e}^{3/2} \sqrt{\varepsilon},
+\end{equation*}
+with $\varepsilon_k = \frac{1}{2\sub{m}{e}}k^2$. Considering that $n = \frac{N}{V} = \frac{2}{6 \pi^2} \kF^3$, we have
+\begin{equation*}
+	\DF \overset{\mathrm{def}}{=} D(\eF)  = \frac{3^{1/3}}{2\pi^{4/3}} \sub{m}{e} \left(\frac{N}{V}\right)^{1/3}.
+\end{equation*}
+For an interacting gas, as a first approximation, we can simply replace the mass $m \to \sub{m}{eff}$.
+
+\textbf{The Hartree-Fock approximation}.  Consider one parameter family of states $\ket{m}$:
+\begin{equation*}
+	\left.\begin{aligned}
+	    m &= \tfrac{1}{V}\left(N_\up - N_\down\right)\\
+	    n &= \tfrac{1}{V}\left(N_\up + N_\down\right)
+	\end{aligned}\right.
+\end{equation*}
+which have a fixed magnetisation $m$ and density $n$, as trial states to find the magnetisation $m$ which minimises the energy $E(m) = \bk{m}[H]{m}$.  For kinetic energy term\footnote{
+	Here I don't write $5^{-1} 3^{5/3} 2^{-1/3} \approx 0.99 \approx 1$, but take into account in calculations.
+}
+\begin{align*}
+	\bk{m}[T]{m} &= \sum_{k, \sigma}^{\kF} \left(\frac{k^2}{2\sub{m}{e}} - \mu\right) n_{k \sigma} = \sum_\sigma V \int \frac{d^3 k}{(2\pi)^3} \left(\frac{k^2}{2\sub{m}{e}} - \mu\right)  \theta(\eF(\sigma) - \varepsilon_k) 
+	% \\&
+	= \frac{1}{\sub{m}{e}}\left(\frac{\pi^4}{V^2}\right)^{1/3} \left(N_\up^{5/3} + N_\down^{5/3}\right) + \tfrac{1}{2} \mu N,
+\end{align*}
+with $N_{\up,\down} = \frac{N}{2} \left(1 \pm \frac{m}{n}\right)$. And, by Wick's theorem, for interaction energy
+\begin{equation*}
+	\bk{m}[V]{m} 
+	% = \frac{u}{V} \sum_{k_1, k_2, q} \langle c\D_{k_1 + q, \up} c\D_{k_2 - q, \down} c_{k_2, \down} c_{k_1, \up}\rangle 
+	= 
+	\frac{u}{V} \sum_{k_1, k_2, q} \langle 
+		c\D_{k_1 + q, \up} c_{k_1, \up}
+	\rangle \langle c\D_{k_2 - q, \down} c_{k_2, \down} \rangle
+	- \frac{u}{V} \sum_{k_1, k_2, q} \langle 
+		c\D_{k_1 + q, \up} c_{k_2, \down} \rangle \langle  c\D_{k_2 - q, \down} c_{k_1, \up}
+	\rangle = \frac{u}{V} \sum_{k_1, k_2} n_{k_1 \up} n_{k_2 \down} = \frac{u}{V} N_\up N_\down.
+\end{equation*}
+Thus the expression for energy is
+\begin{align*}
+	E(m) 
+	&= 
+	\frac{1}{\sub{m}{e}}\left(\frac{\pi^4}{V^2}\right)^{1/3} \left(\frac{N}{2}\right)^{5/3} \left(
+		\left(1 + \tfrac{m}{n}\right)^{5/3}+\left(1 - \tfrac{m}{n}\right)^{5/3}
+	\right) + \frac{u N^2}{4V}  \left(1 - \frac{m^2}{n^2}\right) 
+	\\
+	\DF E(m) / V &=
+	\left(\frac{9}{20} + \frac{1}{4}u \DF\right)n^2 +   \left(\frac{1 - u \DF }{4}\right) m^2 + \frac{1}{108}  \frac{m^4}{n^2} + o(m^4).
+\end{align*}
+It looks like a second-order phase transition in Landau's theory, only with interaction $u$ instead of $T$ -- quantum phase transition. Magnetisation
+\begin{equation*}
+	m(u) = \pm \sqrt{\frac{27}{2}}\theta(u \DF - 1)  n \sqrt{u \DF - 1}.
+\end{equation*}
+
+\textbf{Stoner criterion}.  The critical value of the dimensionless interaction strength for the gas developing a spontaneous magnetisation $m \neq 0$ within the HF approximation
+\begin{equation*}
+	u \DF > 1,
+	\hspace{0.5cm} \Rightarrow \hspace{0.5cm}
+	\sub{u}{crit} = \frac{1}{\DF}.
+\end{equation*}
+The critical exponent 
+\begin{equation*}
+	m \sim \theta(u - \sub{u}{crit})  \left(\frac{u  - \sub{u}{crit}}{\sub{u}{crit}}\right)^\beta,
+\end{equation*}
+corresponds to the $\beta = 1/2$, as  in the classical Ising model -- second order phase transition.

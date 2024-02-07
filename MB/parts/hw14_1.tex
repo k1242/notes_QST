@@ -1,0 +1,33 @@
+As we have shown in the previous exercise, in the mean field approximation the BCS Hamilto-
+nian describes non-interacting fermionic Bogoliubov quasiparticles with dispersion $E_k$. Conse-
+quently, their average occupation at inverse temperature $\beta$ is given by the Fermi-Dirac
+distribution
+\begin{equation*}
+	\langle \hat{\gamma}_{k \sigma}\D \hat{\gamma}_{k \sigma}\rangle = f_k = \frac{1}{e^{\beta E_k(\beta)} + 1},
+	\hspace{10 mm} 
+	E_k = \sqrt{\xi_k^2 + \Delta_k^2(\beta)}.
+\end{equation*}
+Next we assume that $\sub{k}{B} = 1$.
+
+\textbf{1. The specific heat}.  Starting from the expression
+\begin{equation*}
+	S = - 2 \sum_k \left(
+		(1-f_k) \ln (1-f_k) + f_k \ln f_k
+	\right),
+\end{equation*}
+for the entropy of a gas of non-interacting fermions, we could find 
+\begin{equation*}
+	C = T \frac{\partial S}{\partial T} \bigg|_V = - \beta \frac{\partial S}{\partial \beta}  = 2 \beta \sum_k \ln\left(\frac{f_k}{1-f_k}\right) \frac{\partial f_k}{\partial \beta}.
+\end{equation*}
+All that remains is to find
+\begin{equation*}
+	\frac{\partial f_k}{\partial \beta} = \left(\frac{1}{2E_k } \frac{d \Delta_k^2}{\beta} + \frac{E_k}{\beta}\right) \frac{\partial f_k}{\partial E_k},
+\end{equation*}
+thus
+\begin{equation*}
+	C = 2 \beta \sum_k \left(- \frac{\partial f_k}{\partial E_k} \right) \left(
+		E_k^2 + \frac{\beta}{2} \frac{d \Delta+k^2}{d \beta} 
+	\right).
+\end{equation*}
+
+

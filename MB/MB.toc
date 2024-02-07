@@ -1,0 +1,34 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Exercises and tasks}{2}{section*.1}%
+\contentsline {subsection}{1.1 \ \ Equations of motion for creation and annihilation operators}{2}{section*.2}%
+\contentsline {subsection}{1.2 \ \ Non-interacting lattice fermions}{2}{section*.2}%
+\contentsline {subsection}{\numberline {2.1}Second Quantization}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Mapping between Quantum and Classical Systems}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {3.1}The Transverse Field Ising Model}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {4.1}Feynman Path Integral of the Harmonic Oscillator}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Grassmannian Algebra}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {5.1}Complex analysis}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Effective action of coupled harmonic oscillators}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {6.1}Thermal Green’s functions}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Nambu-Goldstone Modes in the Heisenberg Ferromagnet}{14}{subsection.6.2}%
+\contentsline {subsection}{\numberline {7.1}Operator Identity for Gaussian Theories}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Bogoliubov theory}{17}{subsection.7.2}%
+\contentsline {subsection}{\numberline {8.1}Effective action of a condensate in a double well}{20}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Vortex Excitation in a Superfluid}{22}{subsection.8.2}%
+\contentsline {subsection}{\numberline {10.1}Phase Space Argument for the Life Time of Quasi-particles}{23}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Microscopic Basis of the Fermi-liquid Theory}{24}{subsection.10.2}%
+\contentsline {subsection}{11.1 \ (external) Fermi Liquid Theory and Green’s Functions}{24}{figure.9}%
+\contentsline {subsection}{\numberline {12.1}Fermions in one dimension}{31}{subsection.12.1}%
+\contentsline {subsection}{\numberline {13.1}Stoner instability}{33}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Bogoliubov rotation and gap equation at zero temperature}{34}{subsection.13.2}%
+\contentsline {subsection}{\numberline {14.1}Specific heat of a BCS superconductor}{36}{subsection.14.1}%
+\contentsline {section}{Scientific Essay: Thermalization and Localization}{37}{section*.3}%
+\contentsline {subsection}{\numberline {9.1}Intro}{37}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}MBL experiment in 2D}{38}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}MBL experiment in 1D}{39}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Numerical model in 2D}{39}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Random Matrices}{40}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Numerical model in 1D}{41}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Entropy growth}{42}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Conclusion}{43}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Supplementary Material}{44}{subsection.9.9}%
