@@ -1,0 +1,38 @@
+\section{Non-equilibrium and Transport in Integrable Models}
+
+
+Consider evolution
+\begin{equation*}
+	\ket{\psi_0} \to e^{-i t \hat{H}} \ket{\psi_0} = \ket{\psi_t}.
+\end{equation*}
+But we expect ti thermal state be with
+\begin{equation*}
+	\hat{\rho} = \frac{1}{Z} e^{- \beta \hat{H}},
+\end{equation*}
+what is not the same to
+\begin{equation*}
+	\kb{\psi_t}{\psi_t} = \sum_{n,m} c_n \bar{c}_m e^{-i t(E_n - E_m)} \kb{n}{m}.
+\end{equation*}
+But there is thermalization, at least with local observables
+\begin{equation*}
+	\bk{\psi_t}[\hat{O}]{\psi_t} = \frac{1}{Z} \tr\left(
+		e^{- \beta \hat{H}} \hat{O}
+	\right).
+\end{equation*}
+
+% потеря термализации это crossover или фазовый переход, какой фазовый переход?
+
+So, we could define something as local (extensive) quantity if
+\begin{equation*}
+	\partial_r Q = 0, \ \ [Q, H] = 0,
+	\hspace{10 mm} 
+	\hat{Q} = \sum_j \hat{q}_j,
+\end{equation*}
+with $\hat{q}_j$ a local operators. Cluster property
+\begin{equation*}
+	\lim_{|x-y|\to \infty} \langle Q_x Q_y\rangle = \langle Q_x\rangle \langle Q_y\rangle,
+\end{equation*}
+which is actually the same as extensivity.
+
+
+

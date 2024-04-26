@@ -1,0 +1,62 @@
+% формула (3), лишний предел
+
+\textbf{The problem of thermalization}.
+Let $\{\ket{n}\}_n$ be the set of normalized eigenstates for $\hat{H}$ with energies $E_n$, then the state evolves $\ket{\psi} \to \ket{\psi(t)}$ as
+\begin{equation*}
+	\ket{\Psi(t)} = \sum_n e^{- i E_n t} \ket{n},
+	\hspace{10 mm} 
+	c_n = \bk{n}{\Psi}.
+\end{equation*}
+Howeever for observable $\hat{O}$ 
+\begin{equation*}
+	\langle \hat{O}(t)\rangle = \bk{\Psi(t)}[\hat{O}]{\Psi(t)} = \sum_{n, n'} e^{it(E_n - E_{n'})} \bar{c}_n c_{n'} \bk{n}[\hat{O}]{n'}.
+\end{equation*}
+If a stationary value exists, this must be
+\begin{equation*}
+	\lim_{t \to \infty} \langle \hat{O}(t)\rangle = \lim_{t \to \infty} \frac{1}{t} \int_{0}^{t}  \d \tau \langle \hat{O}(\tau)\rangle = \sum_n |c_n|^2 \bk{n}[\hat{O}]{n} = \tr \left[ \hat{\rho}_{\text{diag}} \hat{O}\right],
+	\hspace{5 mm} 
+	\sub{\hat{\rho}}{diag} \propto \sum_n c_n |c_n|^2 \kb{n}{n},
+\end{equation*}
+with $\tr \sub{\hat{\rho}}{diag} = 1$, which must be compared with the thermal enemble
+\begin{equation*}
+	\sub{\hat{\rho}}{th} = \frac{1}{Z_\beta} e^{- \beta \hat{H}} = \frac{1}{Z_\beta} \sum_n e^{- \beta E_n} \kb{n}{n}.
+\end{equation*}
+We see that a thermal ensemble is attained if $|c_n|^2 = \frac{1}{Z} e^{-\beta E_n}$. The projectors on the eigenstates $P_n = \kb{n}{n}$ are conserved quantities, so thermalization seems impossible.
+
+
+\textbf{The importance of locality}. Consider Hamiltonian in the form
+\begin{equation*}
+	\hat{H} = \sum_j \hat{h}_j,
+\end{equation*}
+with $\hat{h}_j$ an operator that acts non trivially on a finite range around the lattice $j$. 
+
+We also ask all the connected correlators to vanish
+\begin{equation*}
+	\lim_{|j - j'| \to \infty } \left(
+		\langle \hat{O}_j \hat{O}_{j'}\rangle - \langle \hat{O}_j\rangle \langle \hat{O}_{j'}\rangle
+	\right),
+\end{equation*}
+this is the definition of the cluster property.
+
+
+\textbf{Conservation laws and locality}. According to different conserved charges $\{\hat{H}_j\}$,  the entropy maximization constrained
+to the knowledge of the expectation values of $\hat{H}_j$  gives a generalization of the Gibbs ensemble
+\begin{equation*}
+	\hat{\rho} = \frac{1}{Z} e^{- \sum_j \beta_j \hat{H}_j}.
+\end{equation*}
+To proof it we can
+\begin{equation*}
+	F[\hat{\rho}] = S[\hat{\rho}] + \lambda \left(\tr \hat{\rho} - 1\right) - \sum_j \beta_j \left(
+		\tr \rho \hat{H}_j - E_j
+	\right),
+\end{equation*}
+where $\lambda$ is a Lagrange multiplier to impose the normalization $\tr \hat{\rho} = 1$ and $\beta_j$ are the Lagrange multipliers associated with the charges.
+\begin{equation*}
+	\delta F[\hat{\rho}] = - \tr \left(\1 + \ln \hat{\rho}\right) \delta \hat{\rho} + \lambda \tr \delta \hat{\rho} - \sum_j \beta_j 
+		\tr \hat{H}_j \delta \hat{\rho}
+	 \overset{(1)}{=}  \tr\left[\left(
+		\1 (\lambda - 1 + \ln Z)  + \textstyle \sum_j \beta_j \hat{H}_j - \textstyle \sum_j \beta_j \hat{H}_j
+	\right) \delta \hat{\rho}\right] = 0,
+\end{equation*}
+with $\overset{(1)}{=}$ we substitute $\rho = \frac{1}{Z} e^{- \sum_j \beta_j \hat{H}_j}$.
+
