@@ -1,0 +1,33 @@
+\subsection*{Dipol trap} 
+
+The potential of a dipole trap is
+\begin{equation}
+	\sub{U}{dip} = \frac{2\pi}{c} \sub{\alpha}{s} I_0 = -\frac{1}{2 \varepsilon_0 c} \Re(\alpha) I,
+	\hspace{10 mm} 
+	\alpha = 6 \pi \varepsilon_0 c^3 \frac{\Gamma/\omega_0^2}{\omega_0^2 - \omega^2 - i (\omega^3 / \omega_0^2) \Gamma},
+\end{equation}
+with $\sub{\alpha}{s} = 24.3 \cdot 10^{-24}\,cm^{3}$ static polarizability of $^{6}$Li at $F = 1/2$, $I_0$ -- intensity at the beam focusing point.
+
+
+Assuming the power of the laser at the center of the ODT is 100W, the beam waist is $55\, \mu$m, and assuming the beam has to cross through a single window of the glass cell and allowing for the maximum angle between each beam and normal (11.6 deg), the potential at the trap would be 2.53\,mK.
+
+
+\begin{equation*}
+	U(x,y,z) = \frac{2\pi}{c} \sub{\alpha}{s} I(x, y,z) = U_0 \left(
+		\frac{x^2}{\rho_x^2} + \frac{y^2}{\rho_y^2} + \frac{z^2}{2} \left(\frac{1}{z_{Dx}^2} + \frac{1}{z_{Dy}^2}\right)
+	\right) = \frac{m}{2}\omega_x^2 x^2 + \frac{m}{2} \omega_y^2 y^2 + \frac{m}{2} \omega_z^2 z^2
+\end{equation*}
+with trap frequencies
+\begin{equation*}
+	\omega_x = \sqrt{\frac{2U_0}{m \rho_x^2}},
+	\hspace{5 mm} 
+	\omega_y = \sqrt{\frac{2 U_0}{m \omega_y^2}},
+	\hspace{5 mm} 
+	\omega_z = \sqrt{\frac{U_0}{m}\left(
+		\frac{1}{z_{Dx}^2} + \frac{1}{z_{Dy}^2}
+	\right)}
+\end{equation*}
+The potential depth and trap frequency are related by 
+\begin{equation*}
+	U_0 = \frac{m(\omega_x^4 + \omega_y^4)}{4 k^2 \omega_z^2}.
+\end{equation*}
