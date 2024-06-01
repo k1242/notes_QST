@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  20 MAY 2024 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  1 JUN 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,39 +817,35 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(settings/settings.tex) (settings/inputs.tex (parts/MPQ_base.tex
-(parts/MPQ1.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-4.
-
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esvect\uesvect.fd
-File: uesvect.fd 
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
-.
-
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
-
-
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)))) [1
+(settings/settings.tex) (settings/inputs.tex (parts/labs.tex
+<../labs/1/hom_plot.pdf, id=3, 249.30545pt x 224.57254pt>
+File: ../labs/1/hom_plot.pdf Graphic file (type pdf)
+<use ../labs/1/hom_plot.pdf>
+Package pdftex.def Info: ../labs/1/hom_plot.pdf  used on input line 11.
+(pdftex.def)             Requested size: 249.30484pt x 224.57198pt.
+<../labs/1/hom_base.png, id=4, 970.22475pt x 1067.78925pt>
+File: ../labs/1/hom_base.png Graphic file (type png)
+<use ../labs/1/hom_base.png>
+Package pdftex.def Info: ../labs/1/hom_base.png  used on input line 15.
+(pdftex.def)             Requested size: 204.74283pt x 225.3177pt.
+<../labs/2/calibration_linear_fit.pdf, id=6, 161.40268pt x 169.84128pt>
+File: ../labs/2/calibration_linear_fit.pdf Graphic file (type pdf)
+<use ../labs/2/calibration_linear_fit.pdf>
+Package pdftex.def Info: ../labs/2/calibration_linear_fit.pdf  used on input li
+ne 32.
+(pdftex.def)             Requested size: 161.40228pt x 169.84085pt.
+<../labs/2/calibration_gaussian_fits.pdf, id=7, 273.40735pt x 158.62906pt>
+File: ../labs/2/calibration_gaussian_fits.pdf Graphic file (type pdf)
+<use ../labs/2/calibration_gaussian_fits.pdf>
+Package pdftex.def Info: ../labs/2/calibration_gaussian_fits.pdf  used on input
+ line 35.
+(pdftex.def)             Requested size: 273.40668pt x 158.62865pt.
+)) [1
 
 {C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/khor
-u/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc}] (notes.aux
-)
+u/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <../labs/1/
+hom_plot.pdf> <../labs/1/hom_base.png> <../labs/2/calibration_linear_fit.pdf> <
+../labs/2/calibration_gaussian_fits.pdf>] (notes.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -858,25 +854,23 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15738 strings out of 475248
- 247442 string characters out of 5767628
- 1931785 words of memory out of 5000000
- 36959 multiletter control sequences out of 15000+600000
- 565544 words of font info for 61 fonts, out of 8000000 for 9000
+ 15681 strings out of 475248
+ 246895 string characters out of 5767628
+ 1926785 words of memory out of 5000000
+ 36938 multiletter control sequences out of 15000+600000
+ 559662 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,5n,99p,572b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
-s/khoru/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Use
-rs/khoru/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Us
-ers/khoru/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (1 page, 127150 bytes).
+ 89i,6n,99p,572b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/khoru/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on notes.pdf (1 page, 497573 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
