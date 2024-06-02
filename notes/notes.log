@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  1 JUN 2024 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.4)  2 JUN 2024 01:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -268,17 +268,7 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)
-(C:\Users\khoru\AppData\Roaming\MiKTeX\tex/latex/babel-russian\russianb.ldf
-File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
-Language: russian 2020/09/09 1.3k Russian support for the Babel system
-Package babel Info: Making " an active character on input line 124.
-Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
-(C:\Program Files\MiKTeX\tex/generic/babel/locale/ru\babel-russian.tex
-Package babel Info: Importing font and identification data for russian
-(babel)             from babel-ru.ini. Reported on input line 11.
-)
 (C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -381,7 +371,6 @@ File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 3153.
 Package hyperref Info: Option `unicode' set `true' on input line 4050.
 Package hyperref Info: Hyper figures OFF on input line 4167.
 Package hyperref Info: Link nesting OFF on input line 4172.
@@ -751,7 +740,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-LaTeX Info: Redefining \th on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -832,20 +820,26 @@ Package pdftex.def Info: ../labs/1/hom_base.png  used on input line 15.
 File: ../labs/2/calibration_linear_fit.pdf Graphic file (type pdf)
 <use ../labs/2/calibration_linear_fit.pdf>
 Package pdftex.def Info: ../labs/2/calibration_linear_fit.pdf  used on input li
-ne 32.
+ne 30.
 (pdftex.def)             Requested size: 161.40228pt x 169.84085pt.
 <../labs/2/calibration_gaussian_fits.pdf, id=7, 273.40735pt x 158.62906pt>
 File: ../labs/2/calibration_gaussian_fits.pdf Graphic file (type pdf)
 <use ../labs/2/calibration_gaussian_fits.pdf>
 Package pdftex.def Info: ../labs/2/calibration_gaussian_fits.pdf  used on input
- line 35.
+ line 33.
 (pdftex.def)             Requested size: 273.40668pt x 158.62865pt.
-)) [1
+ [1
 
 {C:/Users/khoru/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/khor
 u/AppData/Roaming/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <../labs/1/
 hom_plot.pdf> <../labs/1/hom_base.png> <../labs/2/calibration_linear_fit.pdf> <
-../labs/2/calibration_gaussian_fits.pdf>] (notes.aux)
+../labs/2/calibration_gaussian_fits.pdf>]
+<../labs/2/T_dep.pdf, id=79, 426.39299pt x 137.313pt>
+File: ../labs/2/T_dep.pdf Graphic file (type pdf)
+<use ../labs/2/T_dep.pdf>
+Package pdftex.def Info: ../labs/2/T_dep.pdf  used on input line 56.
+(pdftex.def)             Requested size: 426.39194pt x 137.31265pt.
+)) [2 <../labs/2/T_dep.pdf>] (notes.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -854,10 +848,10 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 15681 strings out of 475248
- 246895 string characters out of 5767628
+ 15540 strings out of 475248
+ 244933 string characters out of 5767628
  1926785 words of memory out of 5000000
- 36938 multiletter control sequences out of 15000+600000
+ 36805 multiletter control sequences out of 15000+600000
  559662 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,6n,99p,572b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -868,9 +862,9 @@ eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type
 onts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
 /khoru/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on notes.pdf (1 page, 497573 bytes).
+Output written on notes.pdf (2 pages, 524709 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
