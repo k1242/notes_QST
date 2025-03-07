@@ -1,0 +1,82 @@
+\section{Диффузное расстояние}
+
+% Мы предполагаем, что случайных количество шагов $K$ необходимое для достижения вершины монотонно связано с расстоянием 
+Рассмотрим следующее семейство случайных блужданий: начинаем из стартовой вершины $V_0$, делаем $K \in [1, \sub{K}{max}]$ шагов $k$ блуждающими, в итоге получаем $k \sub{K}{max}$ вершин размеченных некоторым значением $K$. Конечно же в одну и ту же вершину можно прийти разными случайными блужданиями разной длительности, однако интересно посмотреть на зависимость \textit{диффузного расстояния} $D(V)$:
+\begin{equation*}
+    D(V) = \sum_{K=1}^{\sub{K}{max}} K \tilde{p}_K(V),
+    \hspace{5 mm} 
+    \tilde{\vc{p}} = \vc{p} / \|\vc{p}\|_1,
+\end{equation*}
+где $\vc{p} = (p_1(V), p_2(V), \ldots)$ -- вектор из вероятностей находиться в вершине $V$ на шаге $K$. Изначально нормировка такая, что $\sum_V p_K(V) = 1$.
+
+
+Стоит заметить, что $D(V)$ зависит от выбора $\sub{K}{max}$. Более того, при $\sub{K}{max} \to \infty$ мы увидим расходимость $D(V)$ для конечных графов. Это легко увидеть, если вспомнить, что $p_{\infty}(V) \sim 1/N$, где $N$ это размер графа. Тогда в сумме можем оценить $\vc{p}_{\infty}(V) \sim 1/\sub{K}{max}$ и
+\begin{equation*}
+    \lim_{\sub{K}{max} \to \infty} D(V) \sim \sub{K}{max} / 2 \to \infty.
+\end{equation*}
+Где наступает этот момент, когда $D(V)$ теряет информативность? Пока не могу явно оценить, но например для кубика 222 можно заметить, когда $p_K(V_0)$ выходит на константу по $K$ (fig. \ref{fig:2}). 
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{C:/Users/khoru/Downloads/RC_2.pdf}
+    \caption{Вероятность оказаться в $V_0$ после $K$ случайных шагов, каждая точка получена по $k=10^{8}$ блуждающим}
+    \label{fig:2}
+\end{figure}
+
+
+
+Посмотрим для меньших значений на зависимость $D(d)$, где $d$ это истинная дистанция до $V_0$ (fig. \ref{fig:1}). Для удобства переопределим $D(V_0) \overset{\mathrm{def}}{=} 0$. В данном случае диаметр кубика равен $14$. Видно, что для $\sub{K}{max}$ сильно превыщающем диаметр (однако при $p_K(V) \neq \const$) диффузное расстояние остаётся информативным и монотонно зависит от $K$ (за исключением последних двух колец $d=13,14$, что не принципиально во время сборки кубика). 
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{C:/Users/khoru/Downloads/RC_1.pdf}
+    \caption{Зависимость диффузного расстояния $D$ от истинного $d$, каждая точка получена по $k=10^{9}$ блуждающим}
+    \label{fig:1}
+\end{figure}
+
+
+
+\begin{table}
+\caption{Количество верщин в колце $d$ для кубика 222, QTM}
+\begin{tabular}{cl}
+\toprule
+$d$ & counts \\
+\midrule
+0  & 1 \\
+1  & 6 \\
+2  & 27 \\
+3  & 120 \\
+4  & 534 \\
+5  & 2256 \\
+6  & 8969 \\
+7  & 33058 \\
+8  & 114149 \\
+9  & 360508 \\
+10 & 930588 \\
+11 & 1350852 \\
+12 & 782536 \\
+13 & 90280 \\
+14 & 276 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\newpage
+
+\phantom{42}
+
+\newpage
+
+\phantom{42}

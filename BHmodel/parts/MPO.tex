@@ -1,0 +1,26 @@
+\section{MPO Representation of the Hamiltonian}
+
+Following \cite{catarina_density-matrix_2023}, we can express the 1D Bose-Hubbard Hamiltonian with several terms:
+\begin{align*}
+	&\ldots \overset{4}{\otimes} \1 \overset{4}{\otimes} - t \hat{a}^\dagger \overset{2}{\otimes} \hat{a} \overset{1}{\otimes} \1 \overset{1}{\otimes} \ldots \\
+	&\ldots \overset{1}{\otimes} \1 \overset{4}{\otimes} -t \hat{a} \overset{3}{\otimes} \hat{a}^\dagger \overset{1}{\otimes} \1 \overset{1}{\otimes} \ldots \\
+	&\ldots \overset{1}{\otimes} \1 \overset{4}{\otimes} \phantom{-t} \hat{c} \phantom{\D} \overset{1}{\otimes} \1 \phantom{\D} \overset{1}{\otimes} \1 \overset{1}{\otimes} \ldots
+\end{align*}
+where the operator $\hat{c}$ is defined as:
+\begin{equation*}
+	\hat{c} = \tfrac{1}{2}U \hat{n}^2 - \left(\mu + \tfrac{U}{2}\right) \hat{n}_j.
+\end{equation*}
+Thus, we can write our Hamiltonian as an MPO of the form:
+\begin{equation*}
+	\hat{H} = \begin{pmatrix}
+		\1 & 0 & 0 & 0 \\
+		\hat{a} & 0 & 0 & 0 \\
+		\hat{a}^\dagger & 0 & 0 & 0 \\
+		\hat{c} & -t \hat{a}^\dagger & -t \hat{a} & \1 \\
+	\end{pmatrix}.
+\end{equation*}
+
+For $L=4$, it has been verified that the Hamiltonian obtained from the MPO matches the explicitly written Hamiltonian. Additionally, using Exact Diagonalization (ED), it was confirmed that the ground states obtained from both methods are consistent.
+
+
+

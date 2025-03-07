@@ -1,0 +1,47 @@
+The cost of each node $V$ in the search tree:
+\begin{equation*}
+	f(V) = 
+	\only<7>{\textcolor{blue}{\lambda}} 
+	g(v) + h(V), 
+	\hspace{5 mm} 
+	\text{with }
+	\left[\begin{aligned}
+	    &g(v) &\text{ path cost} \\
+	    &h(v) &\text{ heuristic function} \\
+	\end{aligned}\right.
+\end{equation*}
+
+\begin{minipage}{0.55\textwidth}
+
+\begin{beamerboxesrounded}[upper=block title, lower=block body,shadow=true]{\underline{A* algorithm}}
+while $\sub{V}{n} \neq V_0$:
+\begin{enumerate}
+	\item $\sub{V}{n} = \argmin\limits_{V \in \text{queue}} f(V)$
+	\item for $\sigma \in \{\sigma_j\}$: \\
+	\hspace{5mm} if $g(V_n)+1 < g(\sigma V_n)$: \\
+	\hspace{10mm} extend queue with $\sigma \sub{V}{n}$ \\
+	\hspace{10mm} upd $g(\sigma \sub{V}{n}) = g(\sub{V}{n}) + 1$
+\end{enumerate}
+\end{beamerboxesrounded}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.37\textwidth}
+    \begin{figure}[h]
+	    \centering
+	    \only<1>{\includegraphics{imgs/pAsset 11.pdf}}
+	    \only<2>{\includegraphics{imgs/pAsset 12.pdf}}
+	    \only<3>{\includegraphics{imgs/pAsset 13.pdf}}
+	    \only<4>{\includegraphics{imgs/pAsset 14.pdf}}
+	    \only<5>{\includegraphics{imgs/pAsset 15.pdf}}
+	    \only<6>{\includegraphics{imgs/pAsset 16.pdf}}
+	    \only<7>{\includegraphics{imgs/pAsset 19.pdf}}
+	    %\caption{}
+	    %\label{fig:}
+	\end{figure}
+\end{minipage}
+
+\phantom{42}
+
+The path is guaranteed to be the shortest if $h(V) \leq d(V)$!
+

@@ -1,0 +1,25 @@
+ \begin{tikzpicture}[overlay, remember picture]
+        \node[circle, fill=black, inner sep=2pt, label=above:$A$] at (current page.north east) [xshift=-2cm, yshift=-1.5cm] (A) {};
+        \node[circle, fill=black, inner sep=2pt, label=above:$B$] at (current page.north east) [xshift=-1cm, yshift=-1.5cm] (B) {};
+        \draw (A) -- (B);
+\end{tikzpicture}
+
+The Entanglement of Formation  defined throught \textit{convex roof}:
+\begin{equation*}
+	E_F(\rho_{AB}) \overset{\mathrm{def}}{=} \min_{\{p_j, \psi_j\}} \sum_j p_j S(\rho_{A,j}), 
+\end{equation*}
+with $\rho_{AB} = \sum_j p_j \kb{\psi_j}{\psi_j}$ and $\rho_{A,j} = \tr_B \kb{\psi_j}{\psi_j}$.
+
+
+\onslide<2>{
+	\phantom{42}
+
+	For two qubits:
+	\begin{equation*}
+		E_F(\rho) = - \sum_{\sigma = \pm} \tfrac{1}{2}\sqrt{1+\sigma C^2(\rho)} \ln \tfrac{1}{2}\sqrt{1 + \sigma C^2(\rho)},
+	\end{equation*}
+	$C(\rho) \in [0, 1]$ -- \textit{concurrence}, that can be calculated from $R = \sqrt{\rho} \tilde{\rho} \sqrt{\rho} = \sqrt{\rho} (\sigma_y \otimes \sigma_y) \rho^* (\sigma_y \otimes \sigma_y)$ with $\lambda_1^2 \geq \ldots \geq \lambda_4^2$
+	\begin{equation*}
+		C = \max(\lambda_1 - \lambda_2 - \lambda_3 - \lambda_4, 0).
+	\end{equation*}
+}

@@ -1,0 +1,63 @@
+ \begin{tikzpicture}[overlay, remember picture]
+        \node[circle, fill=black, inner sep=2pt, label=above:$A$] at (current page.north east) [xshift=-2cm, yshift=-1.6cm] (A) {};
+        \node[circle, fill=black, inner sep=2pt, label=above:$B$] at (current page.north east) [xshift=-1cm, yshift=-1.6cm] (B) {};
+        \draw (A) -- (B);
+\end{tikzpicture}
+
+
+\only<1>{
+	Which one is more entangled?
+}
+\only<2, 3, 4>{
+	Which one is more entangled? (singular values could help):
+}
+\begin{align*}
+	\onslide<1, 2, 3, 4>{
+		\ket{\psi_{AB}^{I}} &= \tfrac{1}{\sqrt{4}}\left(\ket{00} + \ket{10} - \ket{01} - \ket{11}\right), 
+	}
+	\onslide<2, 3, 4>{
+		&\lambda_{1,2}^{I} &= \{1, 0\}
+	}
+	\\
+	\onslide<1, 2, 3, 4>{
+		\ket{\psi_{AB}^{II}} &= \tfrac{1}{\sqrt{3}}\left(\ket{00} + \ket{01} + \ket{10}\right), 
+	}
+	\onslide<2, 3, 4>{
+		&\lambda_{1,2}^{II} &= \{0.87, 0.13\}
+	}
+	\\
+	\onslide<1, 2, 3, 4>{
+		\ket{\psi_{AB}^{III}} &= \tfrac{1}{\sqrt{2}}\left(\ket{00} + \ket{11}\right) 
+	}
+	\onslide<2, 3, 4>{
+		&\lambda_{1,2}^{III} &= \{0.5, 0.5\}
+	}
+	\\
+\end{align*}
+
+\onslide<3,4>{
+Measure of entanglement is fixed, if it has
+\begin{itemize}
+	\iitem{invariance under LUO $ \Rightarrow E = E(\lambda)$} %local unitary operators
+	\iitem{continuity}
+	\iitem{additivity $E(\ket{\psi_{AB}} \otimes \ket{\varphi_{AB}}) = E(\ket{\psi_{AB}}) + E(\ket{\varphi_{AB}})$}
+\end{itemize}
+}
+
+\onslide<4>{
+This is \textit{the von Neumann entropy}
+\begin{equation*}
+\boxed{
+	S(\rho_A) = S(\rho_B) = - \sum_j \lambda_j \ln \lambda_j,
+}
+	\hspace{5 mm} 
+	S^{I} = 0, \ 
+	S^{II} = 0.6, \ 
+	S^{II} = 1.
+\end{equation*}
+}
+
+% This $\lambda_{1,2}$ from Schmidt decomposition help us to construct nice measure of entanglement: the von Neumann entropy 
+% \begin{equation*}
+% f	
+% \end{equation*}

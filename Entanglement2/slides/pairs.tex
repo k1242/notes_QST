@@ -1,0 +1,31 @@
+\begin{tikzpicture}[overlay, remember picture]
+    \node[anchor=north west, rotate=0, gray, font=\tiny, text width=\paperwidth] at (current page.south west)  [xshift=0, yshift=0.75cm] {
+    [1] L. Amico et al., Entanglement in Many-Body Systems, Reviews of Modern Physics 80, no. 2 (2008)
+    };
+\end{tikzpicture}
+
+The purity of the state represented by \textit{one-tangle}
+\begin{equation*}
+	\tau_1[\rho_A] = 4 \det \rho_A = 1 - 4 \left(
+		\langle S_x\rangle^2+\langle S_y\rangle^2+\langle S_z\rangle^2
+	\right)
+\end{equation*}
+for $\rho_A = \tr_B \rho_{AB}$.
+
+\phantom{42}
+
+\onslide<2,3>{
+For a pure state of \underline{two qubits} we can define \textit{concurrence}
+\begin{equation*}
+	C[\ket{\psi_{AB}}] = |\bk{\psi^*}[\sigma_A^y \otimes \sigma_B^y]{\psi}| = \sqrt{\tau_1}
+\end{equation*}
+}
+
+% \phantom{42}
+
+\onslide<3>{
+Not all entanglement is stored in pairs:
+\begin{equation*}
+	\text{residual tangle} = \tau_{1, i} - \sum_{j \neq i} C_{ij}^2 \geq 0
+\end{equation*}
+}

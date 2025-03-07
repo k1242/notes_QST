@@ -1,0 +1,145 @@
+\begin{widetext}
+\section{Code listing: Python} \label{app:codesP}
+
+The code for DMRG was based on \cite{catarina_density-matrix_2023}, with the convolution functions and the DMRG implementation taken directly from \href{https://github.com/GCatarina/DMRG_MPS_didactic/blob/main/DMRG-MPS_implementation.ipynb}{GitHub} without modifications.
+\begin{lstlisting}[language=Python]
+import numpy as np
+
+nc = 5
+d = nc+1
+
+# d-dim local operators
+_a    = np.diag((1+np.arange(d-1))**0.5, k=1)   #a
+_adag = np.diag((1+np.arange(d-1))**0.5, k=-1)  #a^\dag
+_n    = np.matmul(_adag, _a)                    #n
+_n2   = np.matmul(_n, _n)                       #n^2
+
+_z    = np.zeros((d,d))                         #0
+_I    = np.eye(d)                               #1
+
+def mpo2mat(mpo):
+    """
+    Convert a Matrix Product Operator (MPO) to a regular matrix.
+    Parameters:
+    mpo (list of ndarray): List of tensors representing the MPO.
+    Returns:
+    ndarray: The resulting matrix after conversion.
+    """
+    N = len(mpo)  # Number of tensors in the MPO
+    for l in range(N):
+        if l == 0:
+            # Initialize the resulting matrix with the first tensor in the MPO
+            mat = mpo[l][0, :, :, :]
+        else:
+            # Perform tensor contraction and reshape
+            mat = np.einsum('ijk,jlmn', mat, mpo[l])
+            mat = np.transpose(mat, (0, 2, 3, 1, 4))
+            mat = np.reshape(mat, (np.shape(mat)[0] * np.shape(mat)[1],
+                                   np.shape(mat)[2],
+                                   np.shape(mat)[3] * np.shape(mat)[4]))
+    return mat[:, 0, :]
+
+def gen_H_mpo(N, t=1.0, mu=1.0, U=1.0):    
+    """
+    Generate the MPO Hamiltonian for an XY chain with N sites and open boundary conditions.
+
+    Parameters:
+    N (int): Number of sites in the chain.
+    t (float): Hopping parameter.
+    mu (float): Chemical potential.
+    U (float): Interaction strength.
+
+    Returns:
+    list of ndarray: The MPO Hamiltonian.
+    """
+    # Initialize the MPO Hamiltonian tensor
+    Hl = np.zeros((4, d, 4, d))
+    Hl[0, :, 0, :] = _I
+    Hl[1, :, 0, :] = _a
+    Hl[2, :, 0, :] = _adag
+    Hl[3, :, 0, :] = -(mu + U / 2) * _n + U / 2 * _n2
+    Hl[3, :, 1, :] = -t * _adag
+    Hl[3, :, 2, :] = -t * _a
+    Hl[3, :, 3, :] = _I
+    
+    # Construct the MPO Hamiltonian for each site
+    H = [Hl for l in range(N)]
+    H[0] = Hl[-1:np.shape(Hl)[0], :, :, :]
+    H[N-1] = Hl[:, :, 0:1, :]
+    
+    return H
+
+def gen_H_mat(N, t=1.0, mu=1.0, U=1.0):
+    """
+    Generate the Hamiltonian matrix for an XY chain with N sites.
+
+    Parameters:
+    N (int): Number of sites in the chain.
+    t (float): Hopping parameter.
+    mu (float): Chemical potential.
+    U (float): Interaction strength.
+
+    Returns:
+    ndarray: The Hamiltonian matrix.
+    """
+    # Initialize the Hamiltonian matrix
+    H = np.zeros((d ** N, d ** N))
+    
+    # Construct the Hamiltonian for hopping terms
+    for l in range(N - 1):
+        Ileft = np.eye(d ** l)  # Identity matrix for left part
+        Hmid = np.kron(_z, _z)
+        Hmid += -t * np.kron(_adag, _a)
+        Hmid += -t * np.kron(_a, _adag)
+        Iright = np.eye(d ** (N - l - 2))  # Identity matrix for right part
+        H += np.kron(np.kron(Ileft, Hmid), Iright)
+    
+    # Construct the Hamiltonian for on-site terms
+    for l in range(N):
+        Ileft = np.eye(d ** l)  # Identity matrix for left part
+        Hmid = _z.copy()
+        Hmid += -(mu + U / 2) * _n + U / 2 * _n2
+        Iright = np.eye(d ** (N - l - 1))  # Identity matrix for right part
+        H += np.kron(np.kron(Ileft, Hmid), Iright)
+    
+    return H
+
+
+# Define MPO for local operators
+# Matrix Product Operator (MPO) for the annihilation operator
+_a_MPO = np.zeros((1, d, 1, d))
+_a_MPO[0, :, 0, :] = _a
+# MPO for the creation operator
+_adag_MPO = np.zeros((1, d, 1, d))
+_adag_MPO[0, :, 0, :] = _adag
+# MPO for the identity operator
+_I_MPO = np.zeros((1, d, 1, d))
+_I_MPO[0, :, 0, :] = _I
+
+def get_corr(M, i, j):
+    """
+    Calculate the correlation function for a given MPS and indices i and j.
+
+    Parameters:
+    M (list of ndarray): List of tensors representing the Matrix Product State (MPS).
+    i (int): Index of the site for the creation operator.
+    j (int): Index of the site for the annihilation operator.
+
+    Returns:
+    complex: The value of the correlation function.
+    """
+    # Initialize the auxiliary tensor for contraction
+    Taux = np.ones((1, 1, 1))
+    for l in range(N):
+        if l == i:
+            # Contract with the creation operator MPO at site i
+            Taux = ZipperLeft(Taux, M[l].conj().T, _adag_MPO, M[l])
+        elif l == j:
+            # Contract with the annihilation operator MPO at site j
+            Taux = ZipperLeft(Taux, M[l].conj().T, _a_MPO, M[l])
+        else:
+            # Contract with the identity operator MPO at other sites
+            Taux = ZipperLeft(Taux, M[l].conj().T, _I_MPO, M[l])
+    return Taux[0, 0, 0]
+\end{lstlisting}
+\end{widetext}

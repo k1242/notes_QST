@@ -1,0 +1,62 @@
+\newcommand{\incfig}[1]{%
+    % \def\svgwidth{\columnwidth}
+    \import{figures/}{#1.pdf_tex}
+}
+
+% \usepackage{circuitikz}
+
+% \newcommand{\vc}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
+\newcommand{\smallvc}[1]{\scalebox{0.65}{\mbox{\boldmath $#1$}}}
+
+\newcommand{\T}{^{\text{T}}}
+\newcommand{\D}{^{\dag}}
+\newcommand{\R}{\text{R}}
+\newcommand{\const}{\text{const}}
+\newcommand{\tg}{\mathop{\mathrm{tg}}\nolimits}
+
+\renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
+\renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
+\renewcommand{\d}{\, d}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\newcommand{\diag}{\mathop{\mathrm{diag}}\nolimits}
+\newcommand{\card}{\mathop{\mathrm{card}}\nolimits}
+\newcommand{\grad}{\mathop{\mathrm{grad}}\nolimits}
+\renewcommand{\div}{\mathop{\mathrm{div}}\nolimits}
+\newcommand{\rot}{\mathop{\mathrm{rot}}\nolimits}
+\newcommand{\Ker}{\mathop{\mathrm{ker}}\nolimits}
+\newcommand{\spec}{\mathop{\mathrm{spec}}\nolimits}
+\newcommand{\sign}{\mathop{\mathrm{sign}}\nolimits}
+\newcommand{\argmin}{\mathop{\mathrm{argmin}}\nolimits}
+\newcommand{\tr}{\mathop{\mathrm{tr}}\nolimits}
+\newcommand{\rg}{\mathop{\mathrm{rg}}\nolimits}
+
+
+
+\newcommand{\cmark}{\text{\ding{51}}}
+\newcommand{\xmark}{\text{\ding{55}}}
+
+
+\definecolor{mygray}{gray}{0.6}
+\definecolor{mygreen}{RGB}{8,99,44}
+\definecolor{myred}{RGB}{164,0,0}
+\definecolor{myblue}{RGB}{100,100,200}
+
+
+\newcommand{\sub}[2]{#1_{\textnormal{#2}}}
+
+\newcommand{\iitem}[1]{\item[\textcolor{myblue}{\scalebox{0.7}{$\blacksquare$}}]{#1}}
+
+
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+
+
+\DeclareDocumentCommand{\bk}{m o m}{
+    \IfNoValueTF{#2}{\langle #1 | #3 \rangle}{\langle #1 | #2 | #3 \rangle}
+}
+
+\DeclareDocumentCommand{\kb}{m o m}{
+    \IfNoValueTF{#2}{| #1 \rangle \langle #3 |}{| #1 \rangle #2 \langle #3 |}
+}

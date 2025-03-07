@@ -1,0 +1,40 @@
+\begin{widetext}
+\section{Code} \label{app:codesP}
+
+Код для получения диффузного расстояния на кубике 222. Для $\sub{K}{max} = 30$ кривая с fig. \ref{fig:2} считается за 2 минуты, для $\sub{K}{max} = 50$ за 9 минут. В примере $k=10^{8}$ и резудьтат усредняется $\text{rep}=10$ раз.
+
+\begin{lstlisting}[language=Python]
+import torch
+
+neighbors = ... # torch.tensor
+distance  = ... # torch.tensor
+ds        = torch.unique(distance)
+N         = neighbors.size(0)
+
+def get_pilgrims_position(L, k=100_000):
+    pilgrims_position = torch.zeros(k, dtype=torch.int64, device=device) 
+    for j in range(L):
+        pilgrims_position = torch.gather(
+            neighbors[pilgrims_position], 
+            1, 
+            torch.randint(6, (k,), device=device).view(k, 1)
+        ).squeeze(1)
+    return pilgrims_position
+
+def get_D(Kmax, k=100_000_000, rep=10):
+    Ks = torch.arange(1, Kmax+1, device=device)
+    visited = torch.zeros((neighbors.size(0), Kmax), dtype=torch.int64, device=device)
+    
+    for R in tqdm(range(rep)):
+        for (j, K) in enumerate(Ks):
+            pilgrims_position = get_pilgrims_position(K, k)
+            vs, counts = torch.unique(pilgrims_position, return_counts=True)
+            visited[vs, j] += counts
+    clear_output()
+    
+    probs = visited / torch.sum(visited, dim=1).unsqueeze(1)
+    D = torch.sum(probs * Ks, dim=1)
+    D[0] = 0 #D(V_0) != 0, so it is convinient just redefine it
+    return D
+\end{lstlisting}
+\end{widetext}

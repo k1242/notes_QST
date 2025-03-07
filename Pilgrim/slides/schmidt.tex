@@ -1,0 +1,87 @@
+ \begin{tikzpicture}[overlay, remember picture]
+        \node[circle, fill=black, inner sep=2pt, label=above:$A$] at (current page.north east) [xshift=-2cm, yshift=-2cm] (A) {};
+        \node[circle, fill=black, inner sep=2pt, label=above:$B$] at (current page.north east) [xshift=-1cm, yshift=-2cm] (B) {};
+        \draw (A) -- (B);
+\end{tikzpicture}
+
+
+\only<1,2>{
+    \onslide<1,2>{
+        Is this state entangled?
+        \begin{equation*}
+            \ket{\psi_{AB}} = \tfrac{1}{\sqrt{2}}\left(\ket{00} + \ket{01}\right)
+        \end{equation*}
+    }
+    \onslide<2>{
+    Of course not:
+    \begin{equation*}
+        \ket{\psi_{AB}} = \ket{0} \otimes \frac{1}{\sqrt{2}} \left(\ket{0}+ \ket{1}\right)
+    \end{equation*}
+    }
+}
+\only<3,4,5,6>{
+    \onslide<3,4,5,6>{
+    What about this?
+    \begin{equation*}
+        \ket{\psi_{AB}} = \tfrac{1}{2}\left(\ket{00} + \ket{10} - \ket{01} - \ket{11}\right)
+    \end{equation*}
+    }
+    \onslide<4,5,6>{
+    After some SVD (or \textbf{Schmidt decomposition}):
+    \begin{equation*}
+        \ket{\psi_{AB}} = \sum_{a \in A} \sum_{b \in B} \psi_{ab} \ket{a} \otimes \ket{b} = \sum_a \sum_b \frac{1}{2}\begin{pmatrix}
+        1 & -1 \\
+        1 & -1 \\
+    \end{pmatrix}_{ab}
+     \ket{ab}
+    \end{equation*}
+    }
+    \only<5>{
+        \begin{equation*}
+        U \begin{pmatrix}
+            \sqrt{\lambda_1} & 0 \\
+            0 & \sqrt{\lambda_2} \\
+        \end{pmatrix} V = 
+        \frac{1}{\sqrt{2}}\begin{pmatrix}
+        1 & . \\
+        1 & . \\
+        \end{pmatrix}
+        \begin{pmatrix}
+        1 & 0 \\
+        0 & 0 \\
+        \end{pmatrix}
+        \frac{1}{\sqrt{2}}
+        \begin{pmatrix}
+        1 & . \\
+        -1 & . \\
+        \end{pmatrix}
+        =
+        \frac{1}{2}
+        \begin{pmatrix}
+        1 & -1 \\
+        1 & -1 \\
+        \end{pmatrix}       
+        \end{equation*}
+    }
+    \only<6>{
+        \begin{equation*}
+            \ket{\psi_{AB}} = \tfrac{1}{\sqrt{2}} \left(\ket{0} + \ket{1}\right) \otimes \tfrac{1}{\sqrt{2}} \left(\ket{0} - \ket{1}\right)
+        \end{equation*}
+        We can see, that it is separable.
+    }
+}
+\only<7>{
+    Schmidt decomposition
+    \begin{equation*}
+        \ket{\psi_{AB}} = \sum_{a \in A} \sum_{b \in B} \psi_{ab} \ket{a} \otimes \ket{b} = \sum_j \sqrt{\lambda_j} \ket{\psi_{A,j}} \ket{\psi_{B,j}}
+    \end{equation*}
+    feeply connected with the reduced density matrix $\rho_{A,B}$
+    \begin{equation*}
+        \rho_{B, A} = \tr_{A,B} \left(\ket{\psi_{AB}}\right) = \sum_{i} \lambda_i \kb{\psi_{B,A}}{\psi_{B,A}}.
+    \end{equation*}
+
+    If there is no entanglement, than 
+    \begin{equation*}
+        \rho_{A,B} = \kb{\psi_{A,B}}{\psi_{A,B}} 
+    \end{equation*}
+}

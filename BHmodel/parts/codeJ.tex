@@ -1,0 +1,49 @@
+\begin{widetext}
+\section{Code listing: Julia} \label{app:codesP}
+
+The calculation of the ground state of the system can be implemented using DMRG in Julia and the ITensor package \cite{Fishman_2022}, which was convenient for verifying the correctness of the implementation on larger system sizes.
+\begin{lstlisting}[language=Python]
+using NPZ
+using ITensors
+using ITensorMPS
+
+
+function calculate_adagacorr(L, mu, U, J, nsweeps, maxdim, cutoff, bc, nc)
+    file_name = "data/J$(round(Int,100*J))_mu$(round(Int,100*mu))_L$(L)_bc$(bc)_nc$(nc)_sweeps$(nsweeps)_dim$(maxdim[1]).npy"
+    println("processing $(file_name[6:end-4])")
+    
+    # Initialize the sites
+    sites = siteinds("Boson", L; dim=5, conserve_qns=false)
+
+    # Define the operator sum
+    os = OpSum()
+    for b in 1:(L - 1)
+        os += -mu - U*0.5, "N", b
+        os += U*0.5, "N", b, "N", b
+        os += -J, "A", b, "Adag", b + 1
+        os += -J, "Adag", b, "A", b + 1
+    end
+    os += -mu - U*0.5, "N", L
+    os += U*0.5, "N", L, "N", L
+    if bc == 1
+        os += -J, "A", 1, "Adag", L
+        os += -J, "Adag", 1, "A", L
+    end
+
+    # Construct the Hamiltonian as an MPO
+    H = MPO(os, sites)
+
+    # Initialize a random MPS
+    psi0 = randomMPS(sites)
+    
+    # Run DMRG to find the ground state
+    energy, psi = dmrg(H, psi0; nsweeps, maxdim, cutoff)
+
+    # Calculate the correlation matrix
+    adagacorr = correlation_matrix(psi, "Adag", "A")
+    npzwrite(file_name, adagacorr)
+
+    return adagacorr, psi, energy
+end
+\end{lstlisting}
+\end{widetext}

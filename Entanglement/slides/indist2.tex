@@ -1,0 +1,51 @@
+\begin{tikzpicture}[overlay, remember picture]
+    \node[anchor=north west, rotate=0, gray, font=\tiny, text width=\paperwidth] at (current page.south west)  [xshift=0, yshift=1.25cm] {
+    [1] L. Amico et al., Entanglement in Many-Body Systems, Reviews of Modern Physics 80, no. 2 (2008)
+
+    [4] A. P. Majtey et al., Indistinguishable Entangled Fermions: Basics and Future Challenges, Phil. Trans. R. Soc. A.381 (2023)
+    };
+\end{tikzpicture}
+
+\only<1>{
+In general for $N$ identical fermions identified with a single Slater determinant reduced density matrix of $M$ fermions
+\begin{equation*}
+	\tr \left(\rho_M^{\text{SD}}\right)^2 = \begin{pmatrix}
+		N \\ M
+	\end{pmatrix}^{-1}.
+\end{equation*}
+Such correlations are compatible with the possibility of assigning a complete set of properties to the individual fermions.
+}
+
+\only<2, 3>{
+	
+State that can not be represented by the Slater determinant
+\begin{gather*}
+	\ket{\psi}^{\text{SD}} = \tfrac{1}{2}\left(
+		\ket{A,0} \ket{B,1} - \ket{B,1} \ket{A,0} + \ket{A,1} \ket{B,0} - \ket{B,0} \ket{A,1}
+	\right), \\
+	\ket{\psi}^{\text{non-prod}} = \tfrac{1}{\sqrt{2}}\left(\ket{A,0} \ket{B,1} + \ket{A,1} \ket{B,0}\right)
+\end{gather*}
+And the purity of $\rho^{\text{non-SD}}_\text{f}$ is lower than the purity of $\rho^{\text{SD}}_\text{f}$.
+
+\phantom{42}
+
+\only<2>{
+This feature reveals the presence of correlations beyond exchange correlations.
+}
+}
+
+
+\only<3>{
+Entanglament criteria: \vspace{-3mm}
+	\begin{equation*}
+		\tr \rho_M^2 < \begin{pmatrix}
+			N \\ M
+		\end{pmatrix}^{-1}
+		\hspace{5 mm} 
+		\Leftrightarrow
+		\hspace{5 mm} 
+		\ket{\psi} \text{ is entangled}.
+	\end{equation*}
+
+In other words: how many Slater determinants you need to describe the state (\textit{Slater rank})?
+}

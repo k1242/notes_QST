@@ -1,0 +1,107 @@
+\documentclass[reprint,amsmath,amssymb,aps,prb]{revtex4-2}
+
+
+
+\input{settings/packages}
+\input{settings/colors}
+\input{settings/commands}
+
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+
+\begin{document}
+
+
+\title{Quantum Phase Transitions in the 1D Bose-Hubbard Model with DMRG}
+
+\author{Kirill Khoruzhii}
+\affiliation{Technische Universität München, Max-Planck-Institut für Quantenoptik}
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+This study investigates quantum phase transitions in the 1D Bose-Hubbard model. Noted for its Mott insulator (MI) and superfluid (SF) phases, the model is analyzed using Density Matrix Renormalization Group (DMRG) methods. The correlation length $\xi$ and average site occupancy $\langle n_j \rangle$ are examined. Our findings indicate that in the MI phase, particle mobility is suppressed and $\Gamma(r)$ decays exponentially, whereas in the SF phase, particles are delocalized, leading to polynomial decay. We also explore the impact of bond dimension $D$ in DMRG, noting that small $D$ yields mean-field-like solutions.
+\end{abstract}
+
+
+% MI-SF_QPT
+
+\maketitle
+
+\input{parts/intro}
+\input{parts/phases}
+\input{parts/XX}
+
+
+% \input{parts/acknowledgements}
+
+\bibliography{DMRG}
+
+\newpage
+
+
+\appendix
+
+\input{parts/MPO}
+
+% \newpage \phantom{42} \newpage
+
+\input{parts/codeJ}
+
+% \newpage \phantom{42} \newpage
+
+% \input{parts/code}
+
+
+
+% \newpage
+% \phantom{42}
+% \newpage
+
+% \input{parts/appendix}
+
+
+
+
+
+% \input{parts/guidelines}
+% \input{parts/test0}
+% \input{parts/test}
+% \input{parts/test2}
+
+
+% \bibliography{DMRG}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+

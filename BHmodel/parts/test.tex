@@ -1,0 +1,209 @@
+\section{Test}
+
+
+
+
+О чем эта заметка? О том что есть у BHmodel две фазы: MI и SF, которые хочется охарактеризовать. (кстати можно взять ED, посмотреть на запутанность в разных значениях параметров, посмотреть на спектр!). 
+Она о том, как составить гамильтониан в терминах ED и tensor networks (MPO) для модели Бозе-Хаббарда. 
+\begin{equation*}
+	H = -t \sum_{j} (a_j\D a_{j+1} + \hc) + \tfrac{1}{2}U \sum_j n_j (n_j-1) - \mu \sum_j n_j
+\end{equation*}
+Затем мы можем найти для ED методом Ланцоша, а для MPO через DMRG найти ground state (и увидеть, что это одно и то же). Чтобы определять фазы нам нужно выбрать за какими корреляторами мы будем следить: число частиц на узел и скорость затухания корреляционныой функции $\Gamma$. 
+I read  \cite{kuehner_phases_1998}, \cite{sandvik_computational_2010}, \cite{schollwoeck_density-matrix_2011}, \cite{catarina_density-matrix_2023}, чтобы это всё понять и сделать. 
+
+Для DMRG нам хочется убедиться в сходимости метода. ?Для этого например можем запускать несколько раз и потом усредниться. Также мы можем смотреть, что maxdim не влияет.
+
+
+
+
+
+
+
+Ещё важно сделать сompare the influence of different cutoffs nc on the result. 
+Также было бы здорово попробовать сделать finite size scaling. 
+
+Based on  \cite{kuehner_phases_1998}, \cite{sandvik_computational_2010}, \cite{schollwoeck_density-matrix_2011}, \cite{catarina_density-matrix_2023}. Впервые наблюдали MI-SF в \cite{greiner_quantum_2002}, впервые с разрешением на единичные атомы в \cite{sherson_single-atom-resolved_2010},
+активно используется в эксперименте \cite{choi_exploring_2016}.
+
+
+График для xi и K через фит экспонентой и полиномом: шумит, как и произведение. А потому говорим, что выбрали xi через интеграл, стабильная штука, и смотрим как он меняется от bond dimension, как раз видим как от mean field приходим к истине.  Заметить, что для маленьких D больше застревает в локальных максимумах, сослаться на https://t.me/tech\_priestess/1580.
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{imgs/phases2.pdf}
+%     \caption{Image}
+%     %\label{fig:}
+% \end{figure}
+
+
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\linewidth]{imgs/decay.pdf}
+%     \caption{Image}
+%     %\label{fig:}
+% \end{figure}
+
+% \begin{figure*}
+%     \centering
+%     \includegraphics[width=\textwidth]{imgs/phases2mf.pdf}
+%     \caption{Image.}
+%     % \label{fig:yourlabel}
+% \end{figure*}
+
+
+
+% \begin{figure*}
+%     \centering
+%     \includegraphics[width=\textwidth]{imgs/MIexp.png}
+%     \caption{Your caption here.}
+%     \label{fig:yourlabel}
+% \end{figure*}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+% tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+% quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+% consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+% cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+% proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
